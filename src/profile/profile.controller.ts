@@ -1,15 +1,34 @@
-import { Controller, Post, Body } from '@nestjs/common'
-import { ProfileService } from './profile.service'
-import { MovieDto } from './dto/add-movie.dto'
-// import { UpdateProfileDto } from './dto/update-profile.dto'
+import {Controller, Post, Body, Get, Delete} from '@nestjs/common'
+import {ProfileService} from './profile.service'
+import {MovieDto} from './dto/movie.dto'
+import {ApiBody, ApiOkResponse, ApiTags} from '@nestjs/swagger'
 
 @Controller('profile')
+@ApiTags('profile')
 export class ProfileController {
-  constructor(private readonly profileService: ProfileService) {}
+  constructor(private readonly profileService: ProfileService) { }
 
+  @ApiOkResponse({
+    description: 'The movies list',
+    type: MovieDto,
+    isArray: true
+  })
+  @Get('get_movies')
+  async getMovies() {
+    return this.profileService.getMovies()
+  }
+
+  @ApiBody({type: MovieDto})
   @Post('add_movie')
-  addMovie(@Body() AddMovieDto: MovieDto) {
-    return this.profileService.addMovie(AddMovieDto)
+  async addMovie(@Body() body: MovieDto) {
+    return this.profileService.addMovie(body)
+  }
+
+  @Delete()
+  async delete(
+    @Body('id') id: string | number,
+  ) {
+    return this.profileService.deleteMovie(+id)
   }
 
   // @Get()
@@ -25,10 +44,5 @@ export class ProfileController {
   // @Patch(':id')
   // update(@Param('id') id: string, @Body() updateProfileDto: UpdateProfileDto) {
   //   return this.profileService.update(+id, updateProfileDto);
-  // }
-
-  // @Delete(':id')
-  // remove(@Param('id') id: string) {
-  //   return this.profileService.remove(+id);
   // }
 }
