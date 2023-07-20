@@ -2,6 +2,7 @@ import {Controller, Post, Body, Get, Delete} from '@nestjs/common'
 import {ProfileService} from './profile.service'
 import {MovieDto} from './dto/movie.dto'
 import {ApiBody, ApiOkResponse, ApiTags} from '@nestjs/swagger'
+import {DeleteMovieDto} from './dto/delete-movie.dto'
 
 @Controller('profile')
 @ApiTags('profile')
@@ -24,25 +25,11 @@ export class ProfileController {
     return this.profileService.addMovie(body)
   }
 
+  @ApiBody({type: DeleteMovieDto})
   @Delete()
   async delete(
     @Body('id') id: string | number,
   ) {
     return this.profileService.deleteMovie(+id)
   }
-
-  // @Get()
-  // findAll() {
-  //   return this.profileService.findAll();
-  // }
-
-  // @Get(':id')
-  // findOne(@Param('id') id: string) {
-  //   return this.profileService.findOne(+id);
-  // }
-
-  // @Patch(':id')
-  // update(@Param('id') id: string, @Body() updateProfileDto: UpdateProfileDto) {
-  //   return this.profileService.update(+id, updateProfileDto);
-  // }
 }

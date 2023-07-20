@@ -1,4 +1,8 @@
-import {ConflictException, Injectable, NotFoundException} from '@nestjs/common'
+import {
+  ConflictException,
+  Injectable,
+  NotFoundException
+} from '@nestjs/common'
 import {MovieDto} from './dto/movie.dto'
 import fs = require('fs')
 import path = require('path')
@@ -61,24 +65,5 @@ export class ProfileService {
     }
 
     return deletedMovie
-
-
-
-
-
   }
-
-  // findAll() {
-  //   return `This action returns all profile`;
-  // }
-
-  // findOne(id: number) {
-  //   return `This action returns a #${id} profile`;
-  // }
-
-  // update(id: number, updateProfileDto: UpdateProfileDto) {
-  //   return `This action updates a #${id} profile`;
-  // }
-
-
 }
