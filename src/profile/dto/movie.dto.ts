@@ -78,9 +78,7 @@ export class MovieDto {
     @ApiProperty({
         default: false,
     })
-    filters: {
-        id: number,
-        name: string,
-        path: string
-    }[] | null
+    settings?: {
+        tags: string[]
+    }
 }

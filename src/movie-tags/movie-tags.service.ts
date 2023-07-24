@@ -10,7 +10,9 @@ export class MovieTagsService {
         const movieTagsData = this.readTags()
 
         if (!movieTagsData) {
-            this.writeTags([{}])
+            this.writeTags({
+                'tags': []
+            })
 
             return {}
         }

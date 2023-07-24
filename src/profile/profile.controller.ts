@@ -1,4 +1,4 @@
-import {Controller, Post, Body, Get, Delete} from '@nestjs/common'
+import {Controller, Post, Body, Get, Delete, Put, } from '@nestjs/common'
 import {ProfileService} from './profile.service'
 import {MovieDto} from './dto/movie.dto'
 import {ApiBody, ApiOkResponse, ApiTags} from '@nestjs/swagger'
@@ -31,5 +31,11 @@ export class ProfileController {
     @Body('id') id: string | number,
   ) {
     return this.profileService.deleteMovie(+id)
+  }
+
+  @ApiBody({type: MovieDto})
+  @Put('update_movie')
+  async update(@Body() body: MovieDto) {
+    return this.profileService.updateMovie(body)
   }
 }

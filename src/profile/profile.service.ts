@@ -50,12 +50,12 @@ export class ProfileService {
 
     const deletedMovie = moviesData.find(movie => movie.id === id)
 
-    const updateMovie = moviesData.filter(movie => movie.id !== id)
+    const updateMovies = moviesData.filter(movie => movie.id !== id)
 
     if (!deletedMovie) {
       throw new NotFoundException('The movie was not found')
     } else {
-      fs.writeFile(dir, JSON.stringify(updateMovie), 'utf-8', (error) => {
+      fs.writeFile(dir, JSON.stringify(updateMovies), 'utf-8', (error) => {
         if (error) {
           console.log(`WRITE ERROR: ${error}`)
         } else {
@@ -65,5 +65,33 @@ export class ProfileService {
     }
 
     return deletedMovie
+  }
+
+  updateMovie(movie: MovieDto) {
+    const moviesDataJSON = fs.readFileSync(dir, 'utf-8')
+    const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
+
+    const currentMovie = moviesData.find(item => item.id === movie.id)
+
+    if (currentMovie) {
+      const updateMovies = moviesData.map(item => {
+        if (item.id === movie.id) {
+          return movie
+        }
+        return item
+      })
+
+      fs.writeFile(dir, JSON.stringify(updateMovies), 'utf-8', (error) => {
+        if (error) {
+          console.log(`WRITE ERROR: ${error}`)
+        } else {
+          console.log('FILE WRITTEN TO')
+        }
+      })
+
+      return movie
+    } else {
+      throw new NotFoundException('The movie was not found')
+    }
   }
 }
