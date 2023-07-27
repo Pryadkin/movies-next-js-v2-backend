@@ -1,4 +1,5 @@
 import {
+  BadRequestException,
   ConflictException,
   Injectable,
   NotFoundException
@@ -67,14 +68,44 @@ export class ProfileService {
     return deletedMovie
   }
 
-  updateAllMovie(movies: MovieDto[]) {
+  updateMovieSettings() {
+    const movies = this.getMovies()
+    const updateMovies = movies.map(movie => {
+
+      return {
+        ...movie,
+        settings: {
+          tags: movie.settings.tags.map(tag => ({
+            tagName: tag,
+            color: ''
+          })),
+          dateAdd: movie.settings.dateAdd
+        }
+      }
+    })
+
+    this.writeMovies((updateMovies as any))
+
+    return updateMovies
+  }
+
+  writeMovies(movies: MovieDto[]) {
     fs.writeFile(dir, JSON.stringify(movies), 'utf-8', (error) => {
       if (error) {
         console.log(`WRITE ERROR: ${error}`)
+
+        throw new BadRequestException('Something bad happened', {
+          cause: new Error(),
+          description: 'Some error description'
+        })
       } else {
         console.log('FILE WRITTEN TO')
       }
     })
+  }
+
+  updateAllMovie(movies: MovieDto[]) {
+    this.writeMovies(movies)
 
     return 'movies updated successfully'
   }
@@ -93,13 +124,7 @@ export class ProfileService {
         return item
       })
 
-      fs.writeFile(dir, JSON.stringify(updateMovies), 'utf-8', (error) => {
-        if (error) {
-          console.log(`WRITE ERROR: ${error}`)
-        } else {
-          console.log('FILE WRITTEN TO')
-        }
-      })
+      this.writeMovies(updateMovies)
 
       return movie
     } else {

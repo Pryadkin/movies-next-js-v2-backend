@@ -8,6 +8,27 @@ const dirMovieTags = path.resolve(__dirname, 'movie-tags.json')
 
 @Injectable()
 export class MovieTagsService {
+    getTags(): TagsDto[] {
+        const movieTagsData = this.readTags()
+
+        return movieTagsData
+    }
+
+    addTag(value: TagsDto) {
+        console.log('value', value)
+        const movieTagsData = this.readTags()
+        const isTagExists = movieTagsData.find(tag => tag.tagName === value.tagName)
+
+        if (isTagExists) {
+            throw new NotFoundException('Tag already exists')
+        }
+
+        movieTagsData.unshift(value)
+
+        this.writeTags(movieTagsData)
+
+        return movieTagsData
+    }
 
     updateMovieTags(
         {
@@ -17,13 +38,18 @@ export class MovieTagsService {
         movies: MovieDto[]
     ) {
         const updateMovieTags = movies.map(movie => {
-            if (movie.settings.tags.includes(oldTagName)) {
+            const isOldTagExists = movie.settings.tags.find(tag => tag.tagName === oldTagName)
+
+            if (isOldTagExists) {
                 return {
                     ...movie,
                     settings: {
                         ...movie.settings,
                         tags: movie.settings.tags.map(tag => {
-                            if (tag === oldTagName) return newTagName
+                            if (tag.tagName === oldTagName) return {
+                                ...tag,
+                                tagName: newTagName,
+                            }
                             return tag
                         })
                     }
@@ -41,77 +67,51 @@ export class MovieTagsService {
     }: UpdateTagDto) {
         const tags = this.getTags()
 
-        if (!oldTagName) throw new NotFoundException('The tags is null')
-
-        const updateTags = {
-            tags: tags.tags.map(tag => {
-                if (tag === oldTagName) {
-                    return newTagName
+        const updateTags = tags.map(tag => {
+            if (tag.tagName === oldTagName) {
+                return {
+                    ...tag,
+                    tagName: newTagName,
                 }
-                return tag
-            })
-        }
+            }
+            return tag
+        })
 
         this.writeTags(updateTags)
 
         return updateTags
     }
 
-    addTag(value: string) {
-        if (!value) throw new NotFoundException('The tags is null')
-
+    deleteTag(tagName: string) {
         const movieTagsData = this.readTags()
 
-        if (movieTagsData) {
-            movieTagsData.tags.unshift(value)
+        const isTagExists = movieTagsData.find(tag => tag.tagName === tagName)
 
-            this.writeTags(movieTagsData)
-
-            return movieTagsData
-        } else {
-            throw new NotFoundException('The tags was not found')
+        if (!isTagExists) {
+            throw new NotFoundException('Tag does not found to delete')
         }
-    }
 
-    deleteTag(value: string) {
-        const movieTagsData = this.readTags()
-
-        const updateTagsData = {
-            tags: movieTagsData.tags.filter(tag => tag !== value)
-        }
+        const updateTagsData = movieTagsData.filter(tag => tag.tagName !== tagName)
 
         this.writeTags(updateTagsData)
 
         return updateTagsData
     }
 
-    getTags(): TagsDto {
-        const movieTagsData = this.readTags()
-
-        if (!movieTagsData) {
-            this.writeTags({
-                'tags': []
-            })
-
-            return {tags: []}
-        }
-
-        return movieTagsData
-    }
-
     readTags() {
         try {
             const movieTagsDataJSON = fs.readFileSync(dirMovieTags, 'utf-8')
-            const res: TagsDto = JSON.parse(movieTagsDataJSON)
+            const res: TagsDto[] = JSON.parse(movieTagsDataJSON)
 
             return res
         } catch (error) {
-            console.log(`READ ERROR: ${error}`)
-            throw new NotFoundException('The tags was not found')
+            this.writeTags([])
+
+            return []
         }
     }
 
-    writeTags(file: TagsDto) {
+    writeTags(file: TagsDto[]) {
         fs.writeFile(dirMovieTags, JSON.stringify(file), 'utf-8', (error) => {
             if (error) {
                 console.log(`WRITE ERROR: ${error}`)

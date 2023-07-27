@@ -1,9 +1,9 @@
-import {Body, Controller, Get, Post, Put} from '@nestjs/common'
+import {Body, Controller, Delete, Get, Post, Put} from '@nestjs/common'
 import {MovieTagsService} from './movie-tags.service'
 import {ApiBody, ApiTags} from '@nestjs/swagger'
-import {AddTagDto} from './dto/add-tag.dto'
 import {ProfileService} from 'src/profile/profile.service'
 import {UpdateTagDto} from './dto/update-tag.dto'
+import {TagsDto} from './dto/tags.dto'
 
 @ApiTags('movie-tags')
 @Controller('movie_tags')
@@ -18,21 +18,21 @@ export class MovieTagsController {
     return this.movieTagsService.getTags()
   }
 
-  @ApiBody({type: AddTagDto})
+  @ApiBody({type: TagsDto})
   @Post('add_movie_tag')
-  async addMovieTag(@Body() {name}: AddTagDto) {
-    return this.movieTagsService.addTag(name)
+  async addMovieTag(@Body() body: TagsDto) {
+    return this.movieTagsService.addTag(body)
   }
 
-  @ApiBody({type: AddTagDto})
-  @Post('delete_movie_tag')
-  async deleteMovieTag(@Body() {name}: AddTagDto) {
-    return this.movieTagsService.deleteTag(name)
+  @ApiBody({type: TagsDto})
+  @Delete('delete_movie_tag')
+  async deleteMovieTag(@Body() body: TagsDto) {
+    return this.movieTagsService.deleteTag(body.tagName)
   }
 
   @ApiBody({type: UpdateTagDto})
   @Put('update_tags')
-  async updateTags(@Body() body: UpdateTagDto) {
+  async updateTags(@Body() body: UpdateTagDto): Promise<TagsDto[]> {
     return this.movieTagsService.updateTag(body)
   }
 
@@ -41,6 +41,7 @@ export class MovieTagsController {
   async updateMovieTags(@Body() body: UpdateTagDto) {
     const movies = this.profileService.getMovies()
     const moviesWithNewTags = this.movieTagsService.updateMovieTags(body, movies)
+
     return this.profileService.updateAllMovie(moviesWithNewTags)
   }
 }

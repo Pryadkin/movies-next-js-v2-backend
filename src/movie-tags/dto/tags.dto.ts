@@ -2,7 +2,12 @@ import {ApiProperty} from '@nestjs/swagger'
 
 export class TagsDto {
     @ApiProperty({
-        default: ['newTag'],
+        default: 'newTag',
     })
-    tags: string[]
+    tagName: string
+
+    @ApiProperty({
+        default: 'red',
+    })
+    color: string
 }

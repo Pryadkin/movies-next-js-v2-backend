@@ -38,4 +38,9 @@ export class ProfileController {
   async update(@Body() body: MovieDto) {
     return this.profileService.updateMovie(body)
   }
+
+  @Put('update_movie_settings')
+  async updateMovieSettings() {
+    return this.profileService.updateMovieSettings()
+  }
 }

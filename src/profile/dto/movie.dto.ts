@@ -76,9 +76,7 @@ export class MovieDto {
     release_date: string
 
     @ApiProperty({
-        default: false,
+        default: {}
     })
-    settings?: {
-        tags: string[]
-    }
+    settings: any
 }
