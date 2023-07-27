@@ -1,0 +1,42 @@
+[
+    {
+        "adult": false,
+        "backdrop_path": "/dbrLfmFNFEJWv8rLnjpgCKlXWSy.jpg",
+        "genre_ids": [
+            878,
+            12,
+            28
+        ],
+        "id": 333339,
+        "original_language": "en",
+        "original_title": "Ready Player One",
+        "overview": "When the creator of a popular video game system dies, a virtual contest is created to compete for his fortune.",
+        "popularity": 85.304,
+        "poster_path": "https://image.tmdb.org/t/p/w300/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
+        "release_date": "2018-03-28",
+        "title": "Ready Player One",
+        "video": false,
+        "vote_average": 7.6,
+        "vote_count": 13718
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/o8dPH0ZSIyyViP6rjRX1djwCUwI.jpg",
+        "genre_ids": [
+            9648,
+            53,
+            27
+        ],
+        "id": 419430,
+        "original_language": "en",
+        "original_title": "Get Out",
+        "overview": "Chris and his girlfriend Rose go upstate to visit her parents for the weekend. At first, Chris reads the family's overly accommodating behavior as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined.",
+        "popularity": 53.505,
+        "poster_path": "https://image.tmdb.org/t/p/w300/mE24wUCfjK8AoBBjaMjho7Rczr7.jpg",
+        "release_date": "2017-02-24",
+        "title": "Get Out",
+        "video": false,
+        "vote_average": 7.62,
+        "vote_count": 15798
+    }
+]

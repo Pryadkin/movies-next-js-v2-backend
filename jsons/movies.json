@@ -1,0 +1,740 @@
+[
+    {
+        "adult": false,
+        "backdrop_path": "/d59cyYhl5xx4x4KQCY9JkwU8xRy.jpg",
+        "genre_ids": [
+            16,
+            10751,
+            12,
+            14,
+            28
+        ],
+        "id": 10228,
+        "original_language": "ja",
+        "original_title": "劇場版ポケットモンスター ミュウツーの逆襲",
+        "overview": "Determined to prove its superiority, a bio-engineered Pokémon called Mewtwo lures Ash, Pikachu and others into a Pokemon match like none before.",
+        "popularity": 33.379,
+        "poster_path": "https://image.tmdb.org/t/p/w300/6YPzBcMH0aPNTvdXNCDLY0zdE1g.jpg",
+        "release_date": "1998-07-18",
+        "title": "Pokémon: The First Movie",
+        "video": false,
+        "vote_average": 6.915,
+        "vote_count": 1305,
+        "settings": {
+            "tags": [
+                "Animation",
+                "Fantasy",
+                "I Have Seen"
+            ],
+            "date": {
+                "dateAdd": "2023-07-23:10-59-29 pm"
+            }
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/mSDsSDwaP3E7dEfUPWy4J0djt4O.jpg",
+        "genre_ids": [
+            16,
+            10751,
+            14
+        ],
+        "id": 129,
+        "original_language": "ja",
+        "original_title": "千と千尋の神隠し",
+        "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+        "popularity": 98.08,
+        "poster_path": "https://image.tmdb.org/t/p/w300/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+        "release_date": "2001-07-20",
+        "title": "Spirited Away",
+        "video": false,
+        "vote_average": 8.54,
+        "vote_count": 14575,
+        "settings": {
+            "tags": [
+                "Animation",
+                "Fantasy",
+                "I Have Seen"
+            ],
+            "dateAdd": "2023-07-25:06-33-37 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+        "genre_ids": [
+            18,
+            80
+        ],
+        "id": 238,
+        "original_language": "en",
+        "original_title": "The Godfather",
+        "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+        "popularity": 133.67,
+        "poster_path": "https://image.tmdb.org/t/p/w300/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "release_date": "1972-03-14",
+        "title": "The Godfather",
+        "video": false,
+        "vote_average": 8.7,
+        "vote_count": 18278,
+        "settings": {
+            "tags": [
+                "I Have Seen",
+                "Crime"
+            ],
+            "dateAdd": "2023-07-25:06-46-27 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/zNnjHLDtV8Ti3aworltaeaLMov4.jpg",
+        "genre_ids": [
+            80,
+            18,
+            53
+        ],
+        "id": 242,
+        "original_language": "en",
+        "original_title": "The Godfather Part III",
+        "overview": "In the midst of trying to legitimize his business dealings in 1979 New York and Italy, aging mafia don, Michael Corleone seeks forgiveness for his sins while taking a young protege under his wing.",
+        "popularity": 59.521,
+        "poster_path": "https://image.tmdb.org/t/p/w300/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
+        "release_date": "1990-12-25",
+        "title": "The Godfather Part III",
+        "video": false,
+        "vote_average": 7.417,
+        "vote_count": 5524,
+        "settings": {
+            "tags": [
+                "I Have Seen",
+                "Crime"
+            ],
+            "dateAdd": "2023-07-25:06-47-40 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+        "genre_ids": [
+            18,
+            80
+        ],
+        "id": 278,
+        "original_language": "en",
+        "original_title": "The Shawshank Redemption",
+        "overview": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+        "popularity": 111.88,
+        "poster_path": "https://image.tmdb.org/t/p/w300/lyQBXzOQSuE59IsHyhrp0qIiPAz.jpg",
+        "release_date": "1994-09-23",
+        "title": "The Shawshank Redemption",
+        "video": false,
+        "vote_average": 8.7,
+        "vote_count": 24188,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-27-50 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
+        "genre_ids": [
+            18,
+            36,
+            10752
+        ],
+        "id": 424,
+        "original_language": "en",
+        "original_title": "Schindler's List",
+        "overview": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+        "popularity": 56.31,
+        "poster_path": "https://image.tmdb.org/t/p/w300/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+        "release_date": "1993-12-15",
+        "title": "Schindler's List",
+        "video": false,
+        "vote_average": 8.571,
+        "vote_count": 14298,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-28-24 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/dIWwZW7dJJtqC6CgWzYkNVKIUm8.jpg",
+        "genre_ids": [
+            10749,
+            16,
+            18
+        ],
+        "id": 372058,
+        "original_language": "ja",
+        "original_title": "君の名は。",
+        "overview": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
+        "popularity": 102.823,
+        "poster_path": "https://image.tmdb.org/t/p/w300/q719jXXEzOoYaps6babgKnONONX.jpg",
+        "release_date": "2016-08-26",
+        "title": "Your Name.",
+        "video": false,
+        "vote_average": 8.519,
+        "vote_count": 10057,
+        "settings": {
+            "tags": [
+                "Animation"
+            ],
+            "dateAdd": "2023-07-25:08-28-56 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
+        "genre_ids": [
+            35,
+            53,
+            18
+        ],
+        "id": 496243,
+        "original_language": "ko",
+        "original_title": "기생충",
+        "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+        "popularity": 76.253,
+        "poster_path": "https://image.tmdb.org/t/p/w300/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+        "release_date": "2019-05-30",
+        "title": "Parasite",
+        "video": false,
+        "vote_average": 8.515,
+        "vote_count": 16042,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-29-08 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
+        "genre_ids": [
+            18,
+            28,
+            80,
+            53
+        ],
+        "id": 155,
+        "original_language": "en",
+        "original_title": "The Dark Knight",
+        "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+        "popularity": 119.463,
+        "poster_path": "https://image.tmdb.org/t/p/w300/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "release_date": "2008-07-14",
+        "title": "The Dark Knight",
+        "video": false,
+        "vote_average": 8.5,
+        "vote_count": 30102,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-29-24 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/Yrpb32j3eMpMVX7ND3TnOkHnbl.jpg",
+        "genre_ids": [
+            28,
+            80,
+            18,
+            53
+        ],
+        "id": 49026,
+        "original_language": "en",
+        "original_title": "The Dark Knight Rises",
+        "overview": "Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Department. Eight years later, Batman encounters the mysterious Selina Kyle and the villainous Bane, a new terrorist leader who overwhelms Gotham's finest. The Dark Knight resurfaces to protect a city that has branded him an enemy.",
+        "popularity": 106.091,
+        "poster_path": "https://image.tmdb.org/t/p/w300/85cWkCVftiVs0BVey6pxX8uNmLt.jpg",
+        "release_date": "2012-07-16",
+        "title": "The Dark Knight Rises",
+        "video": false,
+        "vote_average": 7.778,
+        "vote_count": 21048,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-29-28 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/l6hQWH9eDksNJNiXWYRkWqikOdu.jpg",
+        "genre_ids": [
+            14,
+            18,
+            80
+        ],
+        "id": 497,
+        "original_language": "en",
+        "original_title": "The Green Mile",
+        "overview": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
+        "popularity": 75.787,
+        "poster_path": "https://image.tmdb.org/t/p/w300/o0lO84GI7qrG6XFvtsPOSV7CTNa.jpg",
+        "release_date": "1999-12-10",
+        "title": "The Green Mile",
+        "video": false,
+        "vote_average": 8.509,
+        "vote_count": 15643,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-29-47 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
+        "genre_ids": [
+            28,
+            12,
+            16,
+            878
+        ],
+        "id": 569094,
+        "original_language": "en",
+        "original_title": "Spider-Man: Across the Spider-Verse",
+        "overview": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
+        "popularity": 1239.773,
+        "poster_path": "https://image.tmdb.org/t/p/w300/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+        "release_date": "2023-05-31",
+        "title": "Spider-Man: Across the Spider-Verse",
+        "video": false,
+        "vote_average": 8.49,
+        "vote_count": 2442,
+        "settings": {
+            "tags": [
+                "Animation"
+            ],
+            "dateAdd": "2023-07-25:08-29-59 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+        "genre_ids": [
+            53,
+            80
+        ],
+        "id": 680,
+        "original_language": "en",
+        "original_title": "Pulp Fiction",
+        "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+        "popularity": 87.651,
+        "poster_path": "https://image.tmdb.org/t/p/w300/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+        "release_date": "1994-09-10",
+        "title": "Pulp Fiction",
+        "video": false,
+        "vote_average": 8.489,
+        "vote_count": 25494,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-30-12 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/qdIMHd4sEfJSckfVJfKQvisL02a.jpg",
+        "genre_ids": [
+            35,
+            18,
+            10749
+        ],
+        "id": 13,
+        "original_language": "en",
+        "original_title": "Forrest Gump",
+        "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+        "popularity": 77.517,
+        "poster_path": "https://image.tmdb.org/t/p/w300/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+        "release_date": "1994-06-23",
+        "title": "Forrest Gump",
+        "video": false,
+        "vote_average": 8.479,
+        "vote_count": 24997,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-30-31 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
+        "genre_ids": [
+            12,
+            14,
+            28
+        ],
+        "id": 122,
+        "original_language": "en",
+        "original_title": "The Lord of the Rings: The Return of the King",
+        "overview": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm.",
+        "popularity": 92.386,
+        "poster_path": "https://image.tmdb.org/t/p/w300/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+        "release_date": "2003-12-01",
+        "title": "The Lord of the Rings: The Return of the King",
+        "video": false,
+        "vote_average": 8.478,
+        "vote_count": 21875,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-30-56 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/eoCSp75lxatmIa6aGqfnzwtbttd.jpg",
+        "genre_ids": [
+            37
+        ],
+        "id": 429,
+        "original_language": "it",
+        "original_title": "Il buono, il brutto, il cattivo",
+        "overview": "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
+        "popularity": 70.291,
+        "poster_path": "https://image.tmdb.org/t/p/w300/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
+        "release_date": "1966-12-23",
+        "title": "The Good, the Bad and the Ugly",
+        "video": false,
+        "vote_average": 8.5,
+        "vote_count": 7543,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-31-36 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/gavyCu1UaTaTNPsVaGXT6pe5u24.jpg",
+        "genre_ids": [
+            35,
+            18
+        ],
+        "id": 637,
+        "original_language": "it",
+        "original_title": "La vita è bella",
+        "overview": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
+        "popularity": 49.301,
+        "poster_path": "https://image.tmdb.org/t/p/w300/mfnkSeeVOBVheuyn2lo4tfmOPQb.jpg",
+        "release_date": "1997-12-20",
+        "title": "Life Is Beautiful",
+        "video": false,
+        "vote_average": 8.455,
+        "vote_count": 12020,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-32-01 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+        "genre_ids": [
+            18
+        ],
+        "id": 550,
+        "original_language": "en",
+        "original_title": "Fight Club",
+        "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+        "popularity": 81.744,
+        "poster_path": "https://image.tmdb.org/t/p/w300/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        "release_date": "1999-10-15",
+        "title": "Fight Club",
+        "video": false,
+        "vote_average": 8.436,
+        "vote_count": 26794,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-32-28 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/qUq3QTr2KLvGIcN0GaaaYx9bbyH.jpg",
+        "genre_ids": [
+            18
+        ],
+        "id": 510,
+        "original_language": "en",
+        "original_title": "One Flew Over the Cuckoo's Nest",
+        "overview": "A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward.",
+        "popularity": 37.216,
+        "poster_path": "https://image.tmdb.org/t/p/w300/3jcbDmRFiQ83drXNOvRDeKHxS0C.jpg",
+        "release_date": "1975-11-19",
+        "title": "One Flew Over the Cuckoo's Nest",
+        "video": false,
+        "vote_average": 8.421,
+        "vote_count": 9499,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-32-41 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/8RKBHHRqOMOLh5qW3sS6TSFTd8h.jpg",
+        "genre_ids": [
+            28,
+            878,
+            12
+        ],
+        "id": 399579,
+        "original_language": "en",
+        "original_title": "Alita: Battle Angel",
+        "overview": "When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.",
+        "popularity": 103.701,
+        "poster_path": "https://image.tmdb.org/t/p/w300/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+        "release_date": "2019-01-31",
+        "title": "Alita: Battle Angel",
+        "video": false,
+        "vote_average": 7.217,
+        "vote_count": 8327,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-32-53 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+        "genre_ids": [
+            12,
+            18,
+            878
+        ],
+        "id": 157336,
+        "original_language": "en",
+        "original_title": "Interstellar",
+        "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+        "popularity": 177.602,
+        "poster_path": "https://image.tmdb.org/t/p/w300/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+        "release_date": "2014-11-05",
+        "title": "Interstellar",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 31914,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-33-25 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/qGQf2OHIkoh89K8XeKQzhxczf96.jpg",
+        "genre_ids": [
+            28,
+            12,
+            16,
+            878
+        ],
+        "id": 324857,
+        "original_language": "en",
+        "original_title": "Spider-Man: Into the Spider-Verse",
+        "overview": "Struggling to find his place in the world while juggling school and family, Brooklyn teenager Miles Morales is unexpectedly bitten by a radioactive spider and develops unfathomable powers just like the one and only Spider-Man. While wrestling with the implications of his new abilities, Miles discovers a super collider created by the madman Wilson \"Kingpin\" Fisk, causing others from across the Spider-Verse to be inadvertently transported to his dimension.",
+        "popularity": 299.613,
+        "poster_path": "https://image.tmdb.org/t/p/w300/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+        "release_date": "2018-12-06",
+        "title": "Spider-Man: Into the Spider-Verse",
+        "video": false,
+        "vote_average": 8.403,
+        "vote_count": 13595,
+        "settings": {
+            "tags": [
+                "Animation"
+            ],
+            "dateAdd": "2023-07-25:08-33-41 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/nv5wwZou159v5OC61i4ElR7OqyY.jpg",
+        "genre_ids": [
+            14,
+            16,
+            12
+        ],
+        "id": 4935,
+        "original_language": "ja",
+        "original_title": "ハウルの動く城",
+        "overview": "Sophie, a young milliner, is turned into an elderly woman by a witch who enters her shop and curses her. She encounters a wizard named Howl and gets caught up in his resistance to fighting for the king.",
+        "popularity": 92.351,
+        "poster_path": "https://image.tmdb.org/t/p/w300/yeJ5Nj1k2NA0bBZjkZ10PvQKjTD.jpg",
+        "release_date": "2004-09-09",
+        "title": "Howl's Moving Castle",
+        "video": false,
+        "vote_average": 8.402,
+        "vote_count": 8470,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-33-54 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/tqj7NKj11keFuLzPsBDMUq2dOUO.jpg",
+        "genre_ids": [
+            12,
+            14,
+            28
+        ],
+        "id": 120,
+        "original_language": "en",
+        "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+        "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+        "popularity": 116.032,
+        "poster_path": "https://image.tmdb.org/t/p/w300/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+        "release_date": "2001-12-18",
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 22981,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-34-44 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/nS4picOwj15APKzJeBCk6EBcMG5.jpg",
+        "genre_ids": [
+            12,
+            14,
+            28
+        ],
+        "id": 121,
+        "original_language": "en",
+        "original_title": "The Lord of the Rings: The Two Towers",
+        "overview": "Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+        "popularity": 83.086,
+        "poster_path": "https://image.tmdb.org/t/p/w300/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+        "release_date": "2002-12-18",
+        "title": "The Lord of the Rings: The Two Towers",
+        "video": false,
+        "vote_average": 8.382,
+        "vote_count": 19970,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-34-55 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/vNXGrknx4GjWLgmuNTftWZluIUl.jpg",
+        "genre_ids": [
+            18,
+            10402
+        ],
+        "id": 244786,
+        "original_language": "en",
+        "original_title": "Whiplash",
+        "overview": "Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.",
+        "popularity": 68.45,
+        "poster_path": "https://image.tmdb.org/t/p/w300/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+        "release_date": "2014-10-10",
+        "title": "Whiplash",
+        "video": false,
+        "vote_average": 8.379,
+        "vote_count": 13659,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-35-17 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/dVr11o9or7AS8AMPfwjSpEU83iU.jpg",
+        "genre_ids": [
+            18,
+            10752
+        ],
+        "id": 423,
+        "original_language": "en",
+        "original_title": "The Pianist",
+        "overview": "The true story of pianist Władysław Szpilman's experiences in Warsaw during the Nazi occupation. When the Jews of the city find themselves forced into a ghetto, Szpilman finds work playing in a café; and when his family is deported in 1942, he stays behind, works for a while as a laborer, and eventually goes into hiding in the ruins of the war-torn city.",
+        "popularity": 39.353,
+        "poster_path": "https://image.tmdb.org/t/p/w300/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
+        "release_date": "2002-09-17",
+        "title": "The Pianist",
+        "video": false,
+        "vote_average": 8.381,
+        "vote_count": 8192,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-35-30 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/hh28CTWLdxTXA5yJgefZ6gUnFDo.jpg",
+        "genre_ids": [
+            80,
+            9648,
+            53
+        ],
+        "id": 807,
+        "original_language": "en",
+        "original_title": "Se7en",
+        "overview": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Sommerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+        "popularity": 72.796,
+        "poster_path": "https://image.tmdb.org/t/p/w300/6yoghtyTpznpBik8EngEmJskVUO.jpg",
+        "release_date": "1995-09-22",
+        "title": "Se7en",
+        "video": false,
+        "vote_average": 8.366,
+        "vote_count": 19074,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-35-39 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+        "genre_ids": [
+            18,
+            36
+        ],
+        "id": 872585,
+        "original_language": "en",
+        "original_title": "Oppenheimer",
+        "overview": "The story of J. Robert Oppenheimer’s role in the development of the atomic bomb during World War II.",
+        "popularity": 1607.943,
+        "poster_path": "https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "release_date": "2023-07-19",
+        "title": "Oppenheimer",
+        "video": false,
+        "vote_average": 8.387,
+        "vote_count": 595,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-07-25:08-35-56 PM"
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/dbrLfmFNFEJWv8rLnjpgCKlXWSy.jpg",
+        "genre_ids": [
+            878,
+            12,
+            28
+        ],
+        "id": 333339,
+        "original_language": "en",
+        "original_title": "Ready Player One",
+        "overview": "Действие фильма происходит в 2045 году, мир погружается в хаос и находится на грани коллапса. Люди ищут спасения в игре OASIS — огромной вселенной виртуальной реальности. Ее создатель, гениальный и эксцентричный Джеймс Холлидэй, оставляет уникальное завещание. Все его колоссальное состояние получит игрок, первым обнаруживший цифровое «пасхальное яйцо», которое миллиардер спрятал где-то на просторах OASISа. Запущенный им квест охватывает весь мир. Совершенно негероический парень по имени Уэйд Уоттс решает принять участие в состязании, с головой бросаясь в головокружительную, искажающую реальность погоню за сокровищами по фантастической вселенной, полной загадок, открытий и опасностей.",
+        "popularity": 76.59,
+        "poster_path": "https://image.tmdb.org/t/p/w300/eVvMjpcw2lkS1A7hTeOzZDk0Ocf.jpg",
+        "release_date": "2018-03-28",
+        "title": "Первому игроку приготовиться",
+        "video": false,
+        "vote_average": 7.61,
+        "vote_count": 14225,
+        "settings": {
+            "tags": [
+                "Fantasy",
+                "Action"
+            ],
+            "dateAdd": "2023-07-25:11-23-40 PM"
+        }
+    }
+]

@@ -67,6 +67,18 @@ export class ProfileService {
     return deletedMovie
   }
 
+  updateAllMovie(movies: MovieDto[]) {
+    fs.writeFile(dir, JSON.stringify(movies), 'utf-8', (error) => {
+      if (error) {
+        console.log(`WRITE ERROR: ${error}`)
+      } else {
+        console.log('FILE WRITTEN TO')
+      }
+    })
+
+    return 'movies updated successfully'
+  }
+
   updateMovie(movie: MovieDto) {
     const moviesDataJSON = fs.readFileSync(dir, 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
