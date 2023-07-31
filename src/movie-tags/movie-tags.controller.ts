@@ -1,7 +1,6 @@
 import {Body, Controller, Delete, Get, Post, Put} from '@nestjs/common'
 import {MovieTagsService} from './movie-tags.service'
 import {ApiBody, ApiTags} from '@nestjs/swagger'
-import {ProfileService} from 'src/profile/profile.service'
 import {UpdateTagDto} from './dto/update-tag.dto'
 import {TagsDto} from './dto/tags.dto'
 

@@ -48,7 +48,7 @@ export class ProfileController {
   }
 
   @ApiBody({type: DeleteMovieDto})
-  @Delete()
+  @Delete('delete_movie')
   async delete(
     @Body('id') id: string | number,
   ) {
