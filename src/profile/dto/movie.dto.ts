@@ -1,4 +1,5 @@
 import {ApiProperty} from '@nestjs/swagger'
+import {ITags} from '../types'
 
 export class MovieDto {
     @ApiProperty({
@@ -78,5 +79,8 @@ export class MovieDto {
     @ApiProperty({
         default: {}
     })
-    settings: any
+    settings: {
+        tags: ITags[],
+        dateAdd: string,
+    }
 }

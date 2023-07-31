@@ -3,6 +3,8 @@ import {ProfileService} from './profile.service'
 import {MovieDto} from './dto/movie.dto'
 import {ApiBody, ApiOkResponse, ApiTags} from '@nestjs/swagger'
 import {DeleteMovieDto} from './dto/delete-movie.dto'
+import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
+import {DeleteMovieTagsDto} from './dto/delete-movie-tags.dto'
 
 @Controller('profile')
 @ApiTags('profile')
@@ -25,6 +27,26 @@ export class ProfileController {
     return this.profileService.addMovie(body)
   }
 
+  @ApiBody({type: MovieDto})
+  @Put('update_movie')
+  async update(@Body() body: MovieDto) {
+    return this.profileService.updateMovie(body)
+  }
+
+  @ApiBody({type: UpdateTagDto})
+  @Put('update_movie_tags')
+  async updateMovieTags(@Body() body: UpdateTagDto) {
+    console.log('body', body)
+    const moviesWithNewTags = this.profileService.updateMovieTags(body)
+
+    return this.profileService.updateAllMovie(moviesWithNewTags)
+  }
+
+  @Put('update_movie_settings')
+  async updateMovieSettings() {
+    return this.profileService.updateMovieSettings()
+  }
+
   @ApiBody({type: DeleteMovieDto})
   @Delete()
   async delete(
@@ -33,14 +55,9 @@ export class ProfileController {
     return this.profileService.deleteMovie(+id)
   }
 
-  @ApiBody({type: MovieDto})
-  @Put('update_movie')
-  async update(@Body() body: MovieDto) {
-    return this.profileService.updateMovie(body)
-  }
-
-  @Put('update_movie_settings')
-  async updateMovieSettings() {
-    return this.profileService.updateMovieSettings()
+  @ApiBody({type: DeleteMovieTagsDto})
+  @Delete('delete_movie_tags')
+  async deleteTagFromMovies(@Body() {tagName}: DeleteMovieTagsDto) {
+    return this.profileService.deleteMovieTags(tagName)
   }
 }

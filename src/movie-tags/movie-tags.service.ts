@@ -30,37 +30,6 @@ export class MovieTagsService {
         return movieTagsData
     }
 
-    updateMovieTags(
-        {
-            oldTagName,
-            newTagName
-        }: UpdateTagDto,
-        movies: MovieDto[]
-    ) {
-        const updateMovieTags = movies.map(movie => {
-            const isOldTagExists = movie.settings.tags.find(tag => tag.tagName === oldTagName)
-
-            if (isOldTagExists) {
-                return {
-                    ...movie,
-                    settings: {
-                        ...movie.settings,
-                        tags: movie.settings.tags.map(tag => {
-                            if (tag.tagName === oldTagName) return {
-                                ...tag,
-                                tagName: newTagName,
-                            }
-                            return tag
-                        })
-                    }
-                }
-            }
-            return movie
-        })
-
-        return updateMovieTags
-    }
-
     updateTag({
         oldTagName,
         newTagName

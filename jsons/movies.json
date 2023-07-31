@@ -22,13 +22,36 @@
         "vote_count": 1305,
         "settings": {
             "tags": [
-                "Animation",
-                "Fantasy",
-                "I Have Seen"
+                {
+                    "tagName": "Animation",
+                    "color": ""
+                },
+                {
+                    "tagName": "Fantasy",
+                    "color": ""
+                },
+                {
+                    "tagName": "I Have Seen",
+                    "color": ""
+                },
+                {
+                    "tagName": "I Haven't Seen",
+                    "color": ""
+                },
+                {
+                    "tagName": "Comedy",
+                    "color": ""
+                },
+                {
+                    "tagName": "Horror",
+                    "color": ""
+                },
+                {
+                    "tagName": "Action",
+                    "color": ""
+                }
             ],
-            "date": {
-                "dateAdd": "2023-07-23:10-59-29 pm"
-            }
+            "dateAdd": "2023-07-25:06-46-27 PM"
         }
     },
     {
@@ -52,9 +75,18 @@
         "vote_count": 14575,
         "settings": {
             "tags": [
-                "Animation",
-                "Fantasy",
-                "I Have Seen"
+                {
+                    "tagName": "Animation",
+                    "color": ""
+                },
+                {
+                    "tagName": "Fantasy",
+                    "color": ""
+                },
+                {
+                    "tagName": "I Have Seen",
+                    "color": ""
+                }
             ],
             "dateAdd": "2023-07-25:06-33-37 PM"
         }
@@ -79,8 +111,18 @@
         "vote_count": 18278,
         "settings": {
             "tags": [
-                "I Have Seen",
-                "Crime"
+                {
+                    "tagName": "Crime",
+                    "color": ""
+                },
+                {
+                    "tagName": "Action",
+                    "color": ""
+                },
+                {
+                    "tagName": "Horror",
+                    "color": ""
+                }
             ],
             "dateAdd": "2023-07-25:06-46-27 PM"
         }
@@ -106,8 +148,14 @@
         "vote_count": 5524,
         "settings": {
             "tags": [
-                "I Have Seen",
-                "Crime"
+                {
+                    "tagName": "I Have Seen",
+                    "color": ""
+                },
+                {
+                    "tagName": "Crime",
+                    "color": ""
+                }
             ],
             "dateAdd": "2023-07-25:06-47-40 PM"
         }
@@ -131,7 +179,12 @@
         "vote_average": 8.7,
         "vote_count": 24188,
         "settings": {
-            "tags": [],
+            "tags": [
+                {
+                    "tagName": "Horror",
+                    "color": ""
+                }
+            ],
             "dateAdd": "2023-07-25:08-27-50 PM"
         }
     },
@@ -180,7 +233,10 @@
         "vote_count": 10057,
         "settings": {
             "tags": [
-                "Animation"
+                {
+                    "tagName": "Animation",
+                    "color": ""
+                }
             ],
             "dateAdd": "2023-07-25:08-28-56 PM"
         }
@@ -305,7 +361,10 @@
         "vote_count": 2442,
         "settings": {
             "tags": [
-                "Animation"
+                {
+                    "tagName": "Animation",
+                    "color": ""
+                }
             ],
             "dateAdd": "2023-07-25:08-29-59 PM"
         }
@@ -540,7 +599,10 @@
         "vote_count": 13595,
         "settings": {
             "tags": [
-                "Animation"
+                {
+                    "tagName": "Animation",
+                    "color": ""
+                }
             ],
             "dateAdd": "2023-07-25:08-33-41 PM"
         }
@@ -731,8 +793,14 @@
         "vote_count": 14225,
         "settings": {
             "tags": [
-                "Fantasy",
-                "Action"
+                {
+                    "tagName": "Fantasy",
+                    "color": ""
+                },
+                {
+                    "tagName": "Action",
+                    "color": ""
+                }
             ],
             "dateAdd": "2023-07-25:11-23-40 PM"
         }
