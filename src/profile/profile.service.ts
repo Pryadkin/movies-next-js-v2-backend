@@ -107,16 +107,40 @@ export class ProfileService {
 
   updateMovieSettings() {
     const movies = this.getMovies()
-    const updateMovies = movies.map(movie => {
+    const updateMovies = (movies as any).map(movie => {
+      const {
+        adult,
+        genre_ids,
+        id,
+        original_language,
+        original_title,
+        popularity,
+        release_date,
+        video,
+        vote_average,
+        vote_count,
+        settings,
+      } = movie
       return {
-        ...movie,
-        settings: {
-          tags: movie.settings.tags.map(tag => ({
-            tagName: tag,
-            color: ''
-          })),
-          dateAdd: movie.settings.dateAdd
-        }
+        adult,
+        backdrop_path_en: movie.backdrop_path,
+        backdrop_path_ru: '',
+        genre_ids,
+        id,
+        original_language,
+        original_title,
+        overview_en: movie.overview,
+        overview_ru: '',
+        popularity,
+        poster_path_en: movie.poster_path,
+        poster_path_ru: '',
+        release_date,
+        title_en: movie.title,
+        title_ru: '',
+        video,
+        vote_average,
+        vote_count,
+        settings,
       }
     })
 

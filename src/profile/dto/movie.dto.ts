@@ -25,7 +25,12 @@ export class MovieDto {
     @ApiProperty({
         default: 'https://image.tmdb.org/t/p/w300/mE24wUCfjK8AoBBjaMjho7Rczr7.jpg',
     })
-    poster_path: string | null
+    poster_path_en: string | null
+
+    @ApiProperty({
+        default: 'https://image.tmdb.org/t/p/w300/mE24wUCfjK8AoBBjaMjho7Rczr7.jpg',
+    })
+    poster_path_ru: string | null
 
     @ApiProperty({
         default: false,
@@ -35,7 +40,12 @@ export class MovieDto {
     @ApiProperty({
         default: '/o8dPH0ZSIyyViP6rjRX1djwCUwI.jpg',
     })
-    backdrop_path: string | null
+    backdrop_path_en: string | null
+
+    @ApiProperty({
+        default: '/o8dPH0ZSIyyViP6rjRX1djwCUwI.jpg',
+    })
+    backdrop_path_ru: string | null
 
     @ApiProperty({
         default: 'en',
@@ -59,7 +69,12 @@ export class MovieDto {
     @ApiProperty({
         default: 'Get Out',
     })
-    title: string
+    title_en: string
+
+    @ApiProperty({
+        default: 'Get Out',
+    })
+    title_ru: string
 
     @ApiProperty({
         default: 7.62,
@@ -69,7 +84,10 @@ export class MovieDto {
     @ApiProperty({
         default: 'Chris and his girlfriend Rose go upstate to visit her parents for the weekend. At first, Chris reads the family\'s overly accommodating behavior as nervous attempts to deal with their daughter\'s interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined',
     })
-    overview: string
+    overview_en: string
+
+    @ApiProperty()
+    overview_ru: string
 
     @ApiProperty({
         default: '2017-02-24',
@@ -82,5 +100,6 @@ export class MovieDto {
     settings: {
         tags: ITag[],
         dateAdd: string,
+        dateViewing: string[]
     }
 }
