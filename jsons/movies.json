@@ -1,7 +1,8 @@
 [
     {
         "adult": false,
-        "backdrop_path": "/d59cyYhl5xx4x4KQCY9JkwU8xRy.jpg",
+        "backdrop_path_en": "/d59cyYhl5xx4x4KQCY9JkwU8xRy.jpg",
+        "backdrop_path_ru": "/d59cyYhl5xx4x4KQCY9JkwU8xRy.jpg",
         "genre_ids": [
             16,
             10751,
@@ -12,11 +13,14 @@
         "id": 10228,
         "original_language": "ja",
         "original_title": "劇場版ポケットモンスター ミュウツーの逆襲",
-        "overview": "Determined to prove its superiority, a bio-engineered Pokémon called Mewtwo lures Ash, Pikachu and others into a Pokemon match like none before.",
+        "overview_en": "Determined to prove its superiority, a bio-engineered Pokémon called Mewtwo lures Ash, Pikachu and others into a Pokemon match like none before.",
+        "overview_ru": "Приключение перерастает в сражение: на сцену выходит Мьюту, покемон, созданный био-инженерией из ДНК Мью, редчайшего из всех покемонов. Стремясь доказать свое могущество, Мьюту заманивает Эша, Пикачу и остальных на невиданный в истории матч покемонов. Мьюту против Мью. Супер-клоны против покемонов. Это — решающее сражение… от его исхода зависит судьба мира!",
         "popularity": 33.379,
-        "poster_path": "https://image.tmdb.org/t/p/w300/6YPzBcMH0aPNTvdXNCDLY0zdE1g.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/6YPzBcMH0aPNTvdXNCDLY0zdE1g.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/6YPzBcMH0aPNTvdXNCDLY0zdE1g.jpg",
         "release_date": "1998-07-18",
-        "title": "Pokémon: The First Movie",
+        "title_en": "Pokémon: The First Movie",
+        "title_ru": "Покемон: Фильм первый",
         "video": false,
         "vote_average": 6.915,
         "vote_count": 1305,
@@ -30,7 +34,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/mSDsSDwaP3E7dEfUPWy4J0djt4O.jpg",
+        "backdrop_path_en": "/mSDsSDwaP3E7dEfUPWy4J0djt4O.jpg",
+        "backdrop_path_ru": "/mSDsSDwaP3E7dEfUPWy4J0djt4O.jpg",
         "genre_ids": [
             16,
             10751,
@@ -39,11 +44,14 @@
         "id": 129,
         "original_language": "ja",
         "original_title": "千と千尋の神隠し",
-        "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+        "overview_en": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+        "overview_ru": "Тихиро с мамой и папой переезжает в новый дом. Заблудившись по дороге, они оказываются в странном пустынном городе, где их ждет великолепный пир. Родители с жадностью набрасываются на еду и к ужасу девочки превращаются в свиней, став пленниками злой колдуньи Юбабы. Теперь, оказавшись одна среди волшебных существ и загадочных видений, Тихиро должна придумать, как избавить своих родителей от чар коварной старухи.",
         "popularity": 98.08,
-        "poster_path": "https://image.tmdb.org/t/p/w300/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/xV3zYcOA6xFjYwizIMDDkl2MGT7.jpg",
         "release_date": "2001-07-20",
-        "title": "Spirited Away",
+        "title_en": "Spirited Away",
+        "title_ru": "Унесённые призраками",
         "video": false,
         "vote_average": 8.54,
         "vote_count": 14575,
@@ -62,7 +70,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+        "backdrop_path_en": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+        "backdrop_path_ru": "/rSPw7tgCH9c6NqICZef4kZjFOQ5.jpg",
         "genre_ids": [
             18,
             80
@@ -70,11 +79,14 @@
         "id": 238,
         "original_language": "en",
         "original_title": "The Godfather",
-        "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+        "overview_en": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+        "overview_ru": "Криминальная сага, повествующая о нью-йоркской сицилийской мафиозной семье Корлеоне. Фильм охватывает период 1945-1955 годов. Глава семьи, Дон Вито Корлеоне, выдаёт замуж свою дочь. В это время со Второй мировой войны возвращается его любимый сын Майкл. Майкл, герой войны, гордость семьи, не выражает желания заняться жестоким семейным бизнесом. Дон Корлеоне ведёт дела по старым правилам, но наступают иные времена, и появляются люди, желающие изменить сложившиеся порядки. На Дона Корлеоне совершается покушение.",
         "popularity": 133.67,
-        "poster_path": "https://image.tmdb.org/t/p/w300/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/gZUc6DbAirZGWJL1685jsOd90Sf.jpg",
         "release_date": "1972-03-14",
-        "title": "The Godfather",
+        "title_en": "The Godfather",
+        "title_ru": "Крёстный отец",
         "video": false,
         "vote_average": 8.7,
         "vote_count": 18278,
@@ -88,7 +100,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/zNnjHLDtV8Ti3aworltaeaLMov4.jpg",
+        "backdrop_path_en": "/zNnjHLDtV8Ti3aworltaeaLMov4.jpg",
+        "backdrop_path_ru": "/zNnjHLDtV8Ti3aworltaeaLMov4.jpg",
         "genre_ids": [
             80,
             18,
@@ -97,11 +110,14 @@
         "id": 242,
         "original_language": "en",
         "original_title": "The Godfather Part III",
-        "overview": "In the midst of trying to legitimize his business dealings in 1979 New York and Italy, aging mafia don, Michael Corleone seeks forgiveness for his sins while taking a young protege under his wing.",
+        "overview_en": "In the midst of trying to legitimize his business dealings in 1979 New York and Italy, aging mafia don, Michael Corleone seeks forgiveness for his sins while taking a young protege under his wing.",
+        "overview_ru": "Заключительная часть знаменитой гангстерской эпопеи, в которой продолжается рассказ о делах «семьи» дона Корлеоне. Через двадцать лет после событий, описанных в предыдущей картине, Майкл Корлеоне решает заняться легальным бизнесом. Однако противодействие внутри клана заставляет его вспомнить об испытанных кровавых методах общения с противником, что приводит к трагическому итогу.",
         "popularity": 59.521,
-        "poster_path": "https://image.tmdb.org/t/p/w300/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/lm3pQ2QoQ16pextRsmnUbG2onES.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/cS4ZabUQXt7nr25fIqS3fvLSzSA.jpg",
         "release_date": "1990-12-25",
-        "title": "The Godfather Part III",
+        "title_en": "The Godfather Part III",
+        "title_ru": "Крёстный отец 3",
         "video": false,
         "vote_average": 7.417,
         "vote_count": 5524,
@@ -115,7 +131,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+        "backdrop_path_en": "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+        "backdrop_path_ru": "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
         "genre_ids": [
             18,
             80
@@ -123,11 +140,14 @@
         "id": 278,
         "original_language": "en",
         "original_title": "The Shawshank Redemption",
-        "overview": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+        "overview_en": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+        "overview_ru": "Фильм удостоен шести номинаций на «Оскар», в том числе и как лучший фильм года. Шоушенк — название тюрьмы. И если тебе нет еще 30-ти, а ты получаешь пожизненное, то приготовься к худшему: для тебя выхода из Шоушенка не будет! Актриса Рита Хэйворт — любимица всей Америки. Энди Дифрейну она тоже очень нравилась. Рита никогда не слышала о существовании Энди, однако жизнь Дифрейну, бывшему вице-президенту крупного банка, осужденному за убийство жены и ее любовника, Рита Хэйворт все-таки спасла.",
         "popularity": 111.88,
-        "poster_path": "https://image.tmdb.org/t/p/w300/lyQBXzOQSuE59IsHyhrp0qIiPAz.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/lyQBXzOQSuE59IsHyhrp0qIiPAz.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/yvmKPlTIi0xdcFQIFcQKQJcI63W.jpg",
         "release_date": "1994-09-23",
-        "title": "The Shawshank Redemption",
+        "title_en": "The Shawshank Redemption",
+        "title_ru": "Побег из Шоушенка",
         "video": false,
         "vote_average": 8.7,
         "vote_count": 24188,
@@ -146,7 +166,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
+        "backdrop_path_en": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
+        "backdrop_path_ru": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
         "genre_ids": [
             18,
             36,
@@ -155,11 +176,14 @@
         "id": 424,
         "original_language": "en",
         "original_title": "Schindler's List",
-        "overview": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+        "overview_en": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+        "overview_ru": "Лента рассказывает реальную историю загадочного Оскара Шиндлера, члена нацистской партии, преуспевающего фабриканта, спасшего во время Второй мировой войны более тысячи ста евреев. Это триумф одного человека, не похожего на других, и драма тех, кто, благодаря ему, выжил в ужасный период человеческой истории.",
         "popularity": 56.31,
-        "poster_path": "https://image.tmdb.org/t/p/w300/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/4K8fGGcJP2EoGDucILnaJcOJhZl.jpg",
         "release_date": "1993-12-15",
-        "title": "Schindler's List",
+        "title_en": "Schindler's List",
+        "title_ru": "Список Шиндлера",
         "video": false,
         "vote_average": 8.571,
         "vote_count": 14298,
@@ -173,7 +197,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/dIWwZW7dJJtqC6CgWzYkNVKIUm8.jpg",
+        "backdrop_path_en": "/dIWwZW7dJJtqC6CgWzYkNVKIUm8.jpg",
+        "backdrop_path_ru": "/dIWwZW7dJJtqC6CgWzYkNVKIUm8.jpg",
         "genre_ids": [
             10749,
             16,
@@ -182,11 +207,14 @@
         "id": 372058,
         "original_language": "ja",
         "original_title": "君の名は。",
-        "overview": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
+        "overview_en": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
+        "overview_ru": "Токийский парень Таки и провинциальная девушка Мицуха обнаруживают, что между ними существует странная связь. Во сне они меняются телами и проживают жизни друг друга. Но однажды эта способность исчезает так же внезапно, как появилась. Таки решает во что бы то ни стало отыскать Мицуху.",
         "popularity": 102.823,
-        "poster_path": "https://image.tmdb.org/t/p/w300/q719jXXEzOoYaps6babgKnONONX.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/q719jXXEzOoYaps6babgKnONONX.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/iUQlwEFo90cUHD3MINhbhz3V8cR.jpg",
         "release_date": "2016-08-26",
-        "title": "Your Name.",
+        "title_en": "Your Name.",
+        "title_ru": "Твоё имя",
         "video": false,
         "vote_average": 8.519,
         "vote_count": 10057,
@@ -200,7 +228,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
+        "backdrop_path_en": "/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
+        "backdrop_path_ru": "/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
         "genre_ids": [
             35,
             53,
@@ -209,11 +238,14 @@
         "id": 496243,
         "original_language": "ko",
         "original_title": "기생충",
-        "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+        "overview_en": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+        "overview_ru": "Обычное корейское семейство жизнь не балует. Приходится жить в сыром грязном полуподвале, воровать интернет у соседей и перебиваться случайными подработками. Однажды друг сына семейства, уезжая на стажировку за границу, предлагает тому заменить его и поработать репетитором у старшеклассницы в богатой семье Пак. Подделав диплом о высшем образовании, парень отправляется в шикарный дизайнерский особняк и производит на хозяйку дома хорошее впечатление. Тут же ему в голову приходит необычный план по трудоустройству сестры.",
         "popularity": 76.253,
-        "poster_path": "https://image.tmdb.org/t/p/w300/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/zg3lUyLTnpbS5N29G6B3a63O7uP.jpg",
         "release_date": "2019-05-30",
-        "title": "Parasite",
+        "title_en": "Parasite",
+        "title_ru": "Паразиты",
         "video": false,
         "vote_average": 8.515,
         "vote_count": 16042,
@@ -227,7 +259,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
+        "backdrop_path_en": "/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
+        "backdrop_path_ru": "/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
         "genre_ids": [
             18,
             28,
@@ -237,11 +270,14 @@
         "id": 155,
         "original_language": "en",
         "original_title": "The Dark Knight",
-        "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+        "overview_en": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+        "overview_ru": "Бэтмен поднимает ставки в войне с криминалом. С помощью лейтенанта Джима Гордона и прокурора Харви Дента он намерен очистить улицы от преступности, отравляющей город. Сотрудничество оказывается эффективным, но скоро они обнаружат себя посреди хаоса, развязанного восходящим криминальным гением, известным испуганным горожанам под именем Джокер.",
         "popularity": 119.463,
-        "poster_path": "https://image.tmdb.org/t/p/w300/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/dxWaYQtgpLbycqUpHzkqqYkT5I3.jpg",
         "release_date": "2008-07-14",
-        "title": "The Dark Knight",
+        "title_en": "The Dark Knight",
+        "title_ru": "Тёмный рыцарь",
         "video": false,
         "vote_average": 8.5,
         "vote_count": 30102,
@@ -261,7 +297,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/Yrpb32j3eMpMVX7ND3TnOkHnbl.jpg",
+        "backdrop_path_en": "/Yrpb32j3eMpMVX7ND3TnOkHnbl.jpg",
+        "backdrop_path_ru": "/Yrpb32j3eMpMVX7ND3TnOkHnbl.jpg",
         "genre_ids": [
             28,
             80,
@@ -271,11 +308,14 @@
         "id": 49026,
         "original_language": "en",
         "original_title": "The Dark Knight Rises",
-        "overview": "Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Department. Eight years later, Batman encounters the mysterious Selina Kyle and the villainous Bane, a new terrorist leader who overwhelms Gotham's finest. The Dark Knight resurfaces to protect a city that has branded him an enemy.",
+        "overview_en": "Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Department. Eight years later, Batman encounters the mysterious Selina Kyle and the villainous Bane, a new terrorist leader who overwhelms Gotham's finest. The Dark Knight resurfaces to protect a city that has branded him an enemy.",
+        "overview_ru": "Восемь лет назад Бэтмен растворился в ночи, превратившись из героя в беглеца. Приняв на себя вину за смерть прокурора Харви Дента, Тёмный рыцарь пожертвовал всем. Вместе с комиссаром Гордоном они решили, что так будет лучше для всех. Пока преступность была раздавлена антикриминальным актом Дента, ложь действовала.\r Но с появлением хитрой воровки с загадочным прошлым всё меняется. Тем не менее, ещё опаснее становится появление террориста Бэйна, чьё лицо закрыто маской. Он разворачивает в Готэме чудовищную деятельность, вынуждая Брюса Уэйна выйти из импровизированного изгнания. Однако даже надев свой костюм, Бэтмен может проиграть Бэйну.",
         "popularity": 106.091,
-        "poster_path": "https://image.tmdb.org/t/p/w300/85cWkCVftiVs0BVey6pxX8uNmLt.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/85cWkCVftiVs0BVey6pxX8uNmLt.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/9LfroB8zJD7HqP5hsxeDPHrzbw0.jpg",
         "release_date": "2012-07-16",
-        "title": "The Dark Knight Rises",
+        "title_en": "The Dark Knight Rises",
+        "title_ru": "Тёмный рыцарь: Возрождение легенды",
         "video": false,
         "vote_average": 7.778,
         "vote_count": 21048,
@@ -295,7 +335,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/l6hQWH9eDksNJNiXWYRkWqikOdu.jpg",
+        "backdrop_path_en": "/l6hQWH9eDksNJNiXWYRkWqikOdu.jpg",
+        "backdrop_path_ru": "/l6hQWH9eDksNJNiXWYRkWqikOdu.jpg",
         "genre_ids": [
             14,
             18,
@@ -304,11 +345,14 @@
         "id": 497,
         "original_language": "en",
         "original_title": "The Green Mile",
-        "overview": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
+        "overview_en": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
+        "overview_ru": "Пол Эджкомб — начальник блока смертников в тюрьме «Холодная гора», каждый из узников которого однажды проходит «зеленую милю» по пути к месту казни. Пол повидал много заключённых и надзирателей за время работы. Однако гигант Джон Коффи, обвинённый в страшном преступлении, стал одним из самых необычных обитателей блока.",
         "popularity": 75.787,
-        "poster_path": "https://image.tmdb.org/t/p/w300/o0lO84GI7qrG6XFvtsPOSV7CTNa.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/o0lO84GI7qrG6XFvtsPOSV7CTNa.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/8bYlpXaF1VgPTA4JRYZGRxmXU45.jpg",
         "release_date": "1999-12-10",
-        "title": "The Green Mile",
+        "title_en": "The Green Mile",
+        "title_ru": "Зелёная миля",
         "video": false,
         "vote_average": 8.509,
         "vote_count": 15643,
@@ -328,7 +372,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
+        "backdrop_path_en": "/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
+        "backdrop_path_ru": "/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
         "genre_ids": [
             28,
             12,
@@ -338,11 +383,14 @@
         "id": 569094,
         "original_language": "en",
         "original_title": "Spider-Man: Across the Spider-Verse",
-        "overview": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
+        "overview_en": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
+        "overview_ru": "Майлз Моралес отправляется в приключение по мультивселенной вместе с Гвен Стейси и новой командой Людей-пауков, которым предстоит столкнуться с могущественным злодеем.",
         "popularity": 1239.773,
-        "poster_path": "https://image.tmdb.org/t/p/w300/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/7fNjczb3059gNOzyoeYAWoDmYPr.jpg",
         "release_date": "2023-05-31",
-        "title": "Spider-Man: Across the Spider-Verse",
+        "title_en": "Spider-Man: Across the Spider-Verse",
+        "title_ru": "Человек-паук: Паутина вселенных",
         "video": false,
         "vote_average": 8.49,
         "vote_count": 2442,
@@ -350,6 +398,10 @@
             "tags": [
                 {
                     "tagName": "I have seen",
+                    "color": ""
+                },
+                {
+                    "tagName": "favorite",
                     "color": ""
                 }
             ],
@@ -359,7 +411,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+        "backdrop_path_en": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+        "backdrop_path_ru": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
         "genre_ids": [
             53,
             80
@@ -367,11 +420,14 @@
         "id": 680,
         "original_language": "en",
         "original_title": "Pulp Fiction",
-        "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+        "overview_en": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+        "overview_ru": "Двое бандитов Винсент Вега и Джулс Винфилд проводят время в философских беседах в перерыве между разборками и «решением проблем» с должниками своего криминального босса Марселласа Уоллеса. Параллельно разворачивается три истории. В первой из них Винсент присматривает за женой Марселласа Мией и спасает ее от передозировки наркотиков. Во второй рассказывается о Бутче Кулидже, боксере, нанятом Уоллесом, чтобы сдать бой, но обманувшим его.",
         "popularity": 87.651,
-        "poster_path": "https://image.tmdb.org/t/p/w300/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/7FaHjGa4RvKJZHzY7c9UgTTH9KN.jpg",
         "release_date": "1994-09-10",
-        "title": "Pulp Fiction",
+        "title_en": "Pulp Fiction",
+        "title_ru": "Криминальное чтиво",
         "video": false,
         "vote_average": 8.489,
         "vote_count": 25494,
@@ -392,7 +448,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/qdIMHd4sEfJSckfVJfKQvisL02a.jpg",
+        "backdrop_path_en": "/qdIMHd4sEfJSckfVJfKQvisL02a.jpg",
+        "backdrop_path_ru": "/qdIMHd4sEfJSckfVJfKQvisL02a.jpg",
         "genre_ids": [
             35,
             18,
@@ -401,11 +458,14 @@
         "id": 13,
         "original_language": "en",
         "original_title": "Forrest Gump",
-        "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+        "overview_en": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+        "overview_ru": "Сидя на автобусной остановке, Форрест Гамп — не очень умный, но добрый и открытый парень — рассказывает случайным встречным историю своей необыкновенной жизни. С самого малолетства парень страдал от заболевания ног, соседские мальчишки дразнили его, но в один прекрасный день Форрест открыл в себе невероятные способности к бегу. Подруга детства Дженни всегда его поддерживала и защищала, но вскоре дороги их разошлись.",
         "popularity": 77.517,
-        "poster_path": "https://image.tmdb.org/t/p/w300/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/oTiRsQCIHJPUR7wA1chpTf8j9go.jpg",
         "release_date": "1994-06-23",
-        "title": "Forrest Gump",
+        "title_en": "Forrest Gump",
+        "title_ru": "Форрест Гамп",
         "video": false,
         "vote_average": 8.479,
         "vote_count": 24997,
@@ -426,7 +486,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
+        "backdrop_path_en": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
+        "backdrop_path_ru": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
         "genre_ids": [
             12,
             14,
@@ -435,11 +496,14 @@
         "id": 122,
         "original_language": "en",
         "original_title": "The Lord of the Rings: The Return of the King",
-        "overview": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm.",
+        "overview_en": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm.",
+        "overview_ru": "Последняя часть трилогии о Кольце Всевластия и о героях, взявших на себя бремя спасения Средиземья. Повелитель сил Тьмы Саурон направляет свои бесчисленные рати под стены Минас-Тирита, крепости Последней Надежды. Он предвкушает близкую победу, но именно это и мешает ему заметить две крохотные фигурки — хоббитов, приближающихся к Роковой Горе, где им предстоит уничтожить Кольцо Всевластия. Улыбнется ли им счастье?",
         "popularity": 92.386,
-        "poster_path": "https://image.tmdb.org/t/p/w300/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/60q19ii6RRIWHzVREeLtXUEM42B.jpg",
         "release_date": "2003-12-01",
-        "title": "The Lord of the Rings: The Return of the King",
+        "title_en": "The Lord of the Rings: The Return of the King",
+        "title_ru": "Властелин колец: Возвращение короля",
         "video": false,
         "vote_average": 8.478,
         "vote_count": 21875,
@@ -455,18 +519,22 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/eoCSp75lxatmIa6aGqfnzwtbttd.jpg",
+        "backdrop_path_en": "/eoCSp75lxatmIa6aGqfnzwtbttd.jpg",
+        "backdrop_path_ru": "/eoCSp75lxatmIa6aGqfnzwtbttd.jpg",
         "genre_ids": [
             37
         ],
         "id": 429,
         "original_language": "it",
         "original_title": "Il buono, il brutto, il cattivo",
-        "overview": "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
+        "overview_en": "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
+        "overview_ru": "В разгар гражданской войны таинственный стрелок скитается по просторам Дикого Запада. У него нет ни дома, ни друзей, ни компаньонов, пока он не встречает двоих незнакомцев, таких же безжалостных и циничных. По воле судьбы трое мужчин вынуждены объединить свои усилия в поисках украденного золота. Но совместная работа — не самое подходящее занятие для таких отъявленных бандитов, как они. Компаньоны вскоре понимают, что в их дерзком и опасном путешествии по разорённой войной стране самое важное — никому не доверять и держать пистолет наготове, если хочешь остаться в живых.",
         "popularity": 70.291,
-        "poster_path": "https://image.tmdb.org/t/p/w300/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/fGDK72duT0YbdORyNo1QVuzDYzE.jpg",
         "release_date": "1966-12-23",
-        "title": "The Good, the Bad and the Ugly",
+        "title_en": "The Good, the Bad and the Ugly",
+        "title_ru": "Хороший, плохой, злой",
         "video": false,
         "vote_average": 8.5,
         "vote_count": 7543,
@@ -483,7 +551,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/gavyCu1UaTaTNPsVaGXT6pe5u24.jpg",
+        "backdrop_path_en": "/gavyCu1UaTaTNPsVaGXT6pe5u24.jpg",
+        "backdrop_path_ru": "/gavyCu1UaTaTNPsVaGXT6pe5u24.jpg",
         "genre_ids": [
             35,
             18
@@ -491,11 +560,14 @@
         "id": 637,
         "original_language": "it",
         "original_title": "La vita è bella",
-        "overview": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
+        "overview_en": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
+        "overview_ru": "Во время II Мировой войны в Италии в концлагерь были отправлены евреи, отец и его маленький сын. Жена, итальянка, добровольно последовала вслед за ними. В лагере отец сказал сыну, что все происходящее вокруг является очень большой игрой за приз в настоящий танк, который достанется тому мальчику, который сможет не попасться на глаза надзирателям. Он сделал все, чтобы сын поверил в игру и остался жив, прячась в бараке.",
         "popularity": 49.301,
-        "poster_path": "https://image.tmdb.org/t/p/w300/mfnkSeeVOBVheuyn2lo4tfmOPQb.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/mfnkSeeVOBVheuyn2lo4tfmOPQb.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/4CfBbnmjyXANupnKmC0OimKhiQI.jpg",
         "release_date": "1997-12-20",
-        "title": "Life Is Beautiful",
+        "title_en": "Life Is Beautiful",
+        "title_ru": "Жизнь прекрасна",
         "video": false,
         "vote_average": 8.455,
         "vote_count": 12020,
@@ -509,18 +581,22 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+        "backdrop_path_en": "/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+        "backdrop_path_ru": "/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
         "genre_ids": [
             18
         ],
         "id": 550,
         "original_language": "en",
         "original_title": "Fight Club",
-        "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+        "overview_en": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+        "overview_ru": "Терзаемый хронической бессонницей и отчаянно пытающийся вырваться из мучительно скучной жизни клерк встречает некоего Тайлера Дардена, харизматического торговца мылом с извращённой философией. Тайлер уверен, что самосовершенствование — удел слабых, а саморазрушение — единственное, ради чего стоит жить.",
         "popularity": 81.744,
-        "poster_path": "https://image.tmdb.org/t/p/w300/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/66RvLrRJTm4J8l3uHXWF09AICol.jpg",
         "release_date": "1999-10-15",
-        "title": "Fight Club",
+        "title_en": "Fight Club",
+        "title_ru": "Бойцовский клуб",
         "video": false,
         "vote_average": 8.436,
         "vote_count": 26794,
@@ -535,18 +611,22 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/qUq3QTr2KLvGIcN0GaaaYx9bbyH.jpg",
+        "backdrop_path_en": "/qUq3QTr2KLvGIcN0GaaaYx9bbyH.jpg",
+        "backdrop_path_ru": "/qUq3QTr2KLvGIcN0GaaaYx9bbyH.jpg",
         "genre_ids": [
             18
         ],
         "id": 510,
         "original_language": "en",
         "original_title": "One Flew Over the Cuckoo's Nest",
-        "overview": "A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward.",
+        "overview_en": "A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward.",
+        "overview_ru": "Рэндла Патрика Макмёрфи, патологического преступника и бунтаря, переводят из колонии в психиатрическую клинику, чтобы установить, является он душевнобольным или нет. В клинике он обнаруживает, что отделение контролирует хладнокровная, строгая и одержимая распорядком старшая медсестра Милдред Рэтчед. Макмёрфи намерен не подчиняться абсурдным, на его взгляд, правилам и одновременно повеселиться от души. Его бунтарская натура заражает других пациентов, но сестра Рэтчед решительно настроена пресечь это.",
         "popularity": 37.216,
-        "poster_path": "https://image.tmdb.org/t/p/w300/3jcbDmRFiQ83drXNOvRDeKHxS0C.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/3jcbDmRFiQ83drXNOvRDeKHxS0C.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/zu8ytydlKyIpTeYfNs2VHvj9XCx.jpg",
         "release_date": "1975-11-19",
-        "title": "One Flew Over the Cuckoo's Nest",
+        "title_en": "One Flew Over the Cuckoo's Nest",
+        "title_ru": "Пролетая над гнездом кукушки",
         "video": false,
         "vote_average": 8.421,
         "vote_count": 9499,
@@ -560,7 +640,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/8RKBHHRqOMOLh5qW3sS6TSFTd8h.jpg",
+        "backdrop_path_en": "/8RKBHHRqOMOLh5qW3sS6TSFTd8h.jpg",
+        "backdrop_path_ru": "/8RKBHHRqOMOLh5qW3sS6TSFTd8h.jpg",
         "genre_ids": [
             28,
             878,
@@ -569,11 +650,14 @@
         "id": 399579,
         "original_language": "en",
         "original_title": "Alita: Battle Angel",
-        "overview": "When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.",
+        "overview_en": "When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.",
+        "overview_ru": "XXVI век. На планете Земля богачи живут в Небесном городе, беднота довольствуется жизнью в Нижнем городе, куда сбрасываются все отходы и мусор. Однажды в куче металлолома Нижнего города учёный находит части женщины-киборга и возвращает её к жизни. Придя в сознание, киборг обнаруживает, что из ее памяти стерто все, кроме боевых приемов. Теперь она должна обрести утерянные воспоминания и выяснить, кто её отправил на свалку.",
         "popularity": 103.701,
-        "poster_path": "https://image.tmdb.org/t/p/w300/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/1zw24g2m08p9oBxMtfJrNmSxqbR.jpg",
         "release_date": "2019-01-31",
-        "title": "Alita: Battle Angel",
+        "title_en": "Alita: Battle Angel",
+        "title_ru": "Алита: Боевой Ангел",
         "video": false,
         "vote_average": 7.217,
         "vote_count": 8327,
@@ -593,7 +677,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+        "backdrop_path_en": "/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+        "backdrop_path_ru": "/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
         "genre_ids": [
             12,
             18,
@@ -602,11 +687,14 @@
         "id": 157336,
         "original_language": "en",
         "original_title": "Interstellar",
-        "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+        "overview_en": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+        "overview_ru": "Наше время на Земле подошло к концу, команда исследователей берёт на себя самую важную миссию в истории человечества — путешествие за пределы нашей галактики, чтобы узнать есть ли у человечества будущее среди звёзд.",
         "popularity": 177.602,
-        "poster_path": "https://image.tmdb.org/t/p/w300/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/rPrqBqZLl8m6sUQmZCchqW7IEYo.jpg",
         "release_date": "2014-11-05",
-        "title": "Interstellar",
+        "title_en": "Interstellar",
+        "title_ru": "Интерстеллар",
         "video": false,
         "vote_average": 8.4,
         "vote_count": 31914,
@@ -621,7 +709,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/qGQf2OHIkoh89K8XeKQzhxczf96.jpg",
+        "backdrop_path_en": "/qGQf2OHIkoh89K8XeKQzhxczf96.jpg",
+        "backdrop_path_ru": "/qGQf2OHIkoh89K8XeKQzhxczf96.jpg",
         "genre_ids": [
             28,
             12,
@@ -631,11 +720,14 @@
         "id": 324857,
         "original_language": "en",
         "original_title": "Spider-Man: Into the Spider-Verse",
-        "overview": "Struggling to find his place in the world while juggling school and family, Brooklyn teenager Miles Morales is unexpectedly bitten by a radioactive spider and develops unfathomable powers just like the one and only Spider-Man. While wrestling with the implications of his new abilities, Miles discovers a super collider created by the madman Wilson \"Kingpin\" Fisk, causing others from across the Spider-Verse to be inadvertently transported to his dimension.",
+        "overview_en": "Struggling to find his place in the world while juggling school and family, Brooklyn teenager Miles Morales is unexpectedly bitten by a radioactive spider and develops unfathomable powers just like the one and only Spider-Man. While wrestling with the implications of his new abilities, Miles discovers a super collider created by the madman Wilson \"Kingpin\" Fisk, causing others from across the Spider-Verse to be inadvertently transported to his dimension.",
+        "overview_ru": "В центре сюжета уникальной и инновационной в визуальном плане картины подросток из Нью-Йорка Майлз Моралес, который живет в мире безграничных возможностей вселенных Человека-паука, где костюм супергероя носит не только он.",
         "popularity": 299.613,
-        "poster_path": "https://image.tmdb.org/t/p/w300/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/wmEKJr81CABBU68Qy2wYPwQHn0L.jpg",
         "release_date": "2018-12-06",
-        "title": "Spider-Man: Into the Spider-Verse",
+        "title_en": "Spider-Man: Into the Spider-Verse",
+        "title_ru": "Человек-паук: Через вселенные",
         "video": false,
         "vote_average": 8.403,
         "vote_count": 13595,
@@ -649,7 +741,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/nv5wwZou159v5OC61i4ElR7OqyY.jpg",
+        "backdrop_path_en": "/nv5wwZou159v5OC61i4ElR7OqyY.jpg",
+        "backdrop_path_ru": "/nv5wwZou159v5OC61i4ElR7OqyY.jpg",
         "genre_ids": [
             14,
             16,
@@ -658,11 +751,14 @@
         "id": 4935,
         "original_language": "ja",
         "original_title": "ハウルの動く城",
-        "overview": "Sophie, a young milliner, is turned into an elderly woman by a witch who enters her shop and curses her. She encounters a wizard named Howl and gets caught up in his resistance to fighting for the king.",
+        "overview_en": "Sophie, a young milliner, is turned into an elderly woman by a witch who enters her shop and curses her. She encounters a wizard named Howl and gets caught up in his resistance to fighting for the king.",
+        "overview_ru": "Злая ведьма заточила 18-летнюю Софи в тело старухи. Девушка-бабушка бежит из города куда глаза глядят и встречает удивительный дом на ножках, где знакомится с могущественным волшебником Хаулом и демоном Кальцифером. Кальцифер должен служить Хаулу по договору, условия которого он не может разглашать. Девушка и демон решают помочь друг другу избавиться от злых чар.",
         "popularity": 92.351,
-        "poster_path": "https://image.tmdb.org/t/p/w300/yeJ5Nj1k2NA0bBZjkZ10PvQKjTD.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/yeJ5Nj1k2NA0bBZjkZ10PvQKjTD.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/g34ZOU0iKL7lFPSeAhxpCP6v5g8.jpg",
         "release_date": "2004-09-09",
-        "title": "Howl's Moving Castle",
+        "title_en": "Howl's Moving Castle",
+        "title_ru": "Ходячий замок",
         "video": false,
         "vote_average": 8.402,
         "vote_count": 8470,
@@ -677,7 +773,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/tqj7NKj11keFuLzPsBDMUq2dOUO.jpg",
+        "backdrop_path_en": "/tqj7NKj11keFuLzPsBDMUq2dOUO.jpg",
+        "backdrop_path_ru": "/tqj7NKj11keFuLzPsBDMUq2dOUO.jpg",
         "genre_ids": [
             12,
             14,
@@ -686,11 +783,14 @@
         "id": 120,
         "original_language": "en",
         "original_title": "The Lord of the Rings: The Fellowship of the Ring",
-        "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+        "overview_en": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+        "overview_ru": "Сказания о Средиземье — это хроника Великой войны за Кольцо, войны, длившейся не одну тысячу лет. Тот, кто владел Кольцом, получал власть над всеми живыми тварями, но был обязан служить злу. Тихая деревня, где живут хоббиты. Волшебник Гэндальф, придя на 111-й день рождения к своему старому другу Бильбо Бэггинсу, начинает вести разговор о кольце, которое Бильбо нашёл много лет назад. Это кольцо принадлежало когда-то тёмному властителю Средиземья Саурону, и оно даёт большую власть своему обладателю. Теперь Саурон хочет вернуть себе власть над Средиземьем. Бильбо отдаёт найденное кольцо своему племяннику Фродо, который пытается научиться справляться с тем страшным могуществом, которое даёт ему кольцо…",
         "popularity": 116.032,
-        "poster_path": "https://image.tmdb.org/t/p/w300/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/xGeAWst9lwoJj7ldCWerBjAyUNk.jpg",
         "release_date": "2001-12-18",
-        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "title_en": "The Lord of the Rings: The Fellowship of the Ring",
+        "title_ru": "Властелин колец: Братство кольца",
         "video": false,
         "vote_average": 8.4,
         "vote_count": 22981,
@@ -706,7 +806,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/nS4picOwj15APKzJeBCk6EBcMG5.jpg",
+        "backdrop_path_en": "/nS4picOwj15APKzJeBCk6EBcMG5.jpg",
+        "backdrop_path_ru": "/nS4picOwj15APKzJeBCk6EBcMG5.jpg",
         "genre_ids": [
             12,
             14,
@@ -715,11 +816,14 @@
         "id": 121,
         "original_language": "en",
         "original_title": "The Lord of the Rings: The Two Towers",
-        "overview": "Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+        "overview_en": "Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+        "overview_ru": "Братство распалось, но Кольцо Всевластья должно быть уничтожено. Фродо и Сэм вынуждены доверить свои жизни Голлуму, который взялся провести их к вратам Мордора. Громадная Армия Сарумана приближается: члены братства и их союзники готовы принять бой. Битва за Средиземье продолжается.",
         "popularity": 83.086,
-        "poster_path": "https://image.tmdb.org/t/p/w300/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/fl7QZlAoZ4MLcxvgOaBjeUxlpQt.jpg",
         "release_date": "2002-12-18",
-        "title": "The Lord of the Rings: The Two Towers",
+        "title_en": "The Lord of the Rings: The Two Towers",
+        "title_ru": "Властелин колец: Две крепости",
         "video": false,
         "vote_average": 8.382,
         "vote_count": 19970,
@@ -734,7 +838,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/vNXGrknx4GjWLgmuNTftWZluIUl.jpg",
+        "backdrop_path_en": "/vNXGrknx4GjWLgmuNTftWZluIUl.jpg",
+        "backdrop_path_ru": "/vNXGrknx4GjWLgmuNTftWZluIUl.jpg",
         "genre_ids": [
             18,
             10402
@@ -742,11 +847,14 @@
         "id": 244786,
         "original_language": "en",
         "original_title": "Whiplash",
-        "overview": "Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.",
+        "overview_en": "Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.",
+        "overview_ru": "Эндрю мечтает стать великим. Казалось бы, вот-вот его мечта осуществится. Юношу замечает настоящий гений, дирижер лучшего в стране оркестра. Желание Эндрю добиться успеха быстро становится одержимостью, а безжалостный наставник продолжает подталкивать его все дальше и дальше — за пределы человеческих возможностей. Кто выйдет победителем из этой схватки?",
         "popularity": 68.45,
-        "poster_path": "https://image.tmdb.org/t/p/w300/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/nq3mYsTXx6086nFXxzDReQI0J1S.jpg",
         "release_date": "2014-10-10",
-        "title": "Whiplash",
+        "title_en": "Whiplash",
+        "title_ru": "Одержимость",
         "video": false,
         "vote_average": 8.379,
         "vote_count": 13659,
@@ -760,7 +868,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/dVr11o9or7AS8AMPfwjSpEU83iU.jpg",
+        "backdrop_path_en": "/dVr11o9or7AS8AMPfwjSpEU83iU.jpg",
+        "backdrop_path_ru": "/dVr11o9or7AS8AMPfwjSpEU83iU.jpg",
         "genre_ids": [
             18,
             10752
@@ -768,11 +877,14 @@
         "id": 423,
         "original_language": "en",
         "original_title": "The Pianist",
-        "overview": "The true story of pianist Władysław Szpilman's experiences in Warsaw during the Nazi occupation. When the Jews of the city find themselves forced into a ghetto, Szpilman finds work playing in a café; and when his family is deported in 1942, he stays behind, works for a while as a laborer, and eventually goes into hiding in the ruins of the war-torn city.",
+        "overview_en": "The true story of pianist Władysław Szpilman's experiences in Warsaw during the Nazi occupation. When the Jews of the city find themselves forced into a ghetto, Szpilman finds work playing in a café; and when his family is deported in 1942, he stays behind, works for a while as a laborer, and eventually goes into hiding in the ruins of the war-torn city.",
+        "overview_ru": "Фильм повествует о судьбе Владислава Шпильмана — выдающегося польского пианиста, еврея по национальности. Вынужденный жить в Варшавском гетто во время Второй мировой войны, он сполна познает вкус унижений, страдания и борьбы. Один из офицеров отступающей немецкой армии обнаруживает его среди руин разрушенного бомбежками города и помогает ему выжить.",
         "popularity": 39.353,
-        "poster_path": "https://image.tmdb.org/t/p/w300/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/lIAJmJK9MWYQnZVtBOG207BS4u8.jpg",
         "release_date": "2002-09-17",
-        "title": "The Pianist",
+        "title_en": "The Pianist",
+        "title_ru": "Пианист",
         "video": false,
         "vote_average": 8.381,
         "vote_count": 8192,
@@ -787,7 +899,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/hh28CTWLdxTXA5yJgefZ6gUnFDo.jpg",
+        "backdrop_path_en": "/hh28CTWLdxTXA5yJgefZ6gUnFDo.jpg",
+        "backdrop_path_ru": "/hh28CTWLdxTXA5yJgefZ6gUnFDo.jpg",
         "genre_ids": [
             80,
             9648,
@@ -796,11 +909,14 @@
         "id": 807,
         "original_language": "en",
         "original_title": "Se7en",
-        "overview": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Sommerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+        "overview_en": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Sommerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+        "overview_ru": "Детектив Уильям Сомерсет — ветеран уголовного сыска, мечтающий уйти на пенсию и уехать подальше от города и грешных обитателей. За 7 дней до пенсии на Сомерсета сваливаются две неприятности: молодой напарник Миллс и особо изощрённое убийство. Острый ум опытного сыщика сразу определяет, что за этим преступлением, скорее всего, последуют другие. Новости подтверждают его догадку.",
         "popularity": 72.796,
-        "poster_path": "https://image.tmdb.org/t/p/w300/6yoghtyTpznpBik8EngEmJskVUO.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/6yoghtyTpznpBik8EngEmJskVUO.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/4YZrNmoVVgs5i1OCbQiT9TLKBrJ.jpg",
         "release_date": "1995-09-22",
-        "title": "Se7en",
+        "title_en": "Se7en",
+        "title_ru": "Семь",
         "video": false,
         "vote_average": 8.366,
         "vote_count": 19074,
@@ -817,7 +933,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+        "backdrop_path_en": "/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+        "backdrop_path_ru": "/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
         "genre_ids": [
             18,
             36
@@ -825,11 +942,14 @@
         "id": 872585,
         "original_language": "en",
         "original_title": "Oppenheimer",
-        "overview": "The story of J. Robert Oppenheimer’s role in the development of the atomic bomb during World War II.",
+        "overview_en": "The story of J. Robert Oppenheimer’s role in the development of the atomic bomb during World War II.",
+        "overview_ru": "История о жизни физика-теоретика Роберта Оппенгеймера во время Второй мировой войны и разработке им атомной бомбы.",
         "popularity": 1607.943,
-        "poster_path": "https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/3ZsKFl9BX8bmOoGw2lVmVMHuqdh.jpg",
         "release_date": "2023-07-19",
-        "title": "Oppenheimer",
+        "title_en": "Oppenheimer",
+        "title_ru": "Оппенгеймер",
         "video": false,
         "vote_average": 8.387,
         "vote_count": 595,
@@ -846,7 +966,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/dbrLfmFNFEJWv8rLnjpgCKlXWSy.jpg",
+        "backdrop_path_en": "/dbrLfmFNFEJWv8rLnjpgCKlXWSy.jpg",
+        "backdrop_path_ru": "/dbrLfmFNFEJWv8rLnjpgCKlXWSy.jpg",
         "genre_ids": [
             878,
             12,
@@ -855,11 +976,14 @@
         "id": 333339,
         "original_language": "en",
         "original_title": "Ready Player One",
-        "overview": "Действие фильма происходит в 2045 году, мир погружается в хаос и находится на грани коллапса. Люди ищут спасения в игре OASIS — огромной вселенной виртуальной реальности. Ее создатель, гениальный и эксцентричный Джеймс Холлидэй, оставляет уникальное завещание. Все его колоссальное состояние получит игрок, первым обнаруживший цифровое «пасхальное яйцо», которое миллиардер спрятал где-то на просторах OASISа. Запущенный им квест охватывает весь мир. Совершенно негероический парень по имени Уэйд Уоттс решает принять участие в состязании, с головой бросаясь в головокружительную, искажающую реальность погоню за сокровищами по фантастической вселенной, полной загадок, открытий и опасностей.",
+        "overview_en": "Действие фильма происходит в 2045 году, мир погружается в хаос и находится на грани коллапса. Люди ищут спасения в игре OASIS — огромной вселенной виртуальной реальности. Ее создатель, гениальный и эксцентричный Джеймс Холлидэй, оставляет уникальное завещание. Все его колоссальное состояние получит игрок, первым обнаруживший цифровое «пасхальное яйцо», которое миллиардер спрятал где-то на просторах OASISа. Запущенный им квест охватывает весь мир. Совершенно негероический парень по имени Уэйд Уоттс решает принять участие в состязании, с головой бросаясь в головокружительную, искажающую реальность погоню за сокровищами по фантастической вселенной, полной загадок, открытий и опасностей.",
+        "overview_ru": "Действие фильма происходит в 2045 году, мир погружается в хаос и находится на грани коллапса. Люди ищут спасения в игре OASIS — огромной вселенной виртуальной реальности. Ее создатель, гениальный и эксцентричный Джеймс Холлидэй, оставляет уникальное завещание. Все его колоссальное состояние получит игрок, первым обнаруживший цифровое «пасхальное яйцо», которое миллиардер спрятал где-то на просторах OASISа. Запущенный им квест охватывает весь мир. Совершенно негероический парень по имени Уэйд Уоттс решает принять участие в состязании, с головой бросаясь в головокружительную, искажающую реальность погоню за сокровищами по фантастической вселенной, полной загадок, открытий и опасностей.",
         "popularity": 76.59,
-        "poster_path": "https://image.tmdb.org/t/p/w300/eVvMjpcw2lkS1A7hTeOzZDk0Ocf.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/eVvMjpcw2lkS1A7hTeOzZDk0Ocf.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/eVvMjpcw2lkS1A7hTeOzZDk0Ocf.jpg",
         "release_date": "2018-03-28",
-        "title": "Первому игроку приготовиться",
+        "title_en": "Первому игроку приготовиться",
+        "title_ru": "Первому игроку приготовиться",
         "video": false,
         "vote_average": 7.61,
         "vote_count": 14225,
@@ -880,7 +1004,8 @@
     },
     {
         "adult": false,
-        "backdrop_path": "/lh5lbisD4oDbEKgUxoRaZU8HVrk.jpg",
+        "backdrop_path_en": "/lh5lbisD4oDbEKgUxoRaZU8HVrk.jpg",
+        "backdrop_path_ru": "/lh5lbisD4oDbEKgUxoRaZU8HVrk.jpg",
         "genre_ids": [
             28,
             80,
@@ -889,11 +1014,14 @@
         "id": 272,
         "original_language": "en",
         "original_title": "Batman Begins",
-        "overview": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
+        "overview_en": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
+        "overview_ru": "Это иной Бэтмэн. Это новое начало. История о происхождении легенды Брюса Уэйна, юного наследника огромного состояния, потерявшего своих родителей. Покинув родной Готэм, он отправляется в путешествие по миру. Многочисленные преграды и лишения закаляют его характер, а мудрый наставник помогает вновь обрести смысл жизни. Легендарный герой, защитник слабых, борец с несправедливостью преображается у тебя на глазах. Вернувшись в Готэм, Бэтмэн становится единственной преградой на пути у сил зла, готовых ввергнуть город во мрак беззакония.",
         "popularity": 65.503,
-        "poster_path": "https://image.tmdb.org/t/p/w300/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/4MpN4kIEqUjW8OPtOQJXlTdHiJV.jpg",
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/fIfmG3EaIy3eqebyq7hXjl1ymQW.jpg",
         "release_date": "2005-06-10",
-        "title": "Batman Begins",
+        "title_en": "Batman Begins",
+        "title_ru": "Бэтмен: Начало",
         "video": false,
         "vote_average": 7.697,
         "vote_count": 19302,
@@ -904,6 +1032,1030 @@
                 "2010.05.06",
                 "2016.05.18",
                 "2023.06.07"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/7py8kUCYaOdFn1TfVS87BDBySOz.jpg",
+        "backdrop_path_en": "/7py8kUCYaOdFn1TfVS87BDBySOz.jpg",
+        "genre_ids": [
+            35,
+            12,
+            878
+        ],
+        "id": 550988,
+        "original_language": "en",
+        "original_title": "Free Guy",
+        "overview_ru": "У сотрудника крупного банка всё идёт по накатанной, пока однажды он не выясняет, что окружающий его мир — это часть огромной видеоигры, а сам он в ней — всего лишь второстепенный персонаж. Хватит ли у него духу переписать свой код, обратить на себя внимание прекрасной девушки и, наконец, спасти мир? Одним словом, получится ли из него главный герой?",
+        "overview_en": "A bank teller discovers he is actually a background player in an open-world video game, and decides to become the hero of his own story. Now, in a world where there are no limits, he is determined to be the guy who saves his world his way before it's too late.",
+        "popularity": 77.01,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/qJZ3UeKAOgz2kFVJPZZFzLtn1Qk.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg",
+        "release_date": "2021-08-11",
+        "title_ru": "Главный герой",
+        "title_en": "Free Guy",
+        "video": false,
+        "vote_average": 7.559,
+        "vote_count": 7452,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-02:05-42-41 PM",
+            "dateViewing": [
+                "2021.10.16"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/eTvN54pd83TrSEOz6wbsXEJktCV.jpg",
+        "backdrop_path_en": "/eTvN54pd83TrSEOz6wbsXEJktCV.jpg",
+        "genre_ids": [
+            10752,
+            28,
+            53
+        ],
+        "id": 882569,
+        "original_language": "en",
+        "original_title": "Guy Ritchie's The Covenant",
+        "overview_ru": "Джон Кинли не помнит, как выжил, попав в окружение врага в Афганистане, но понимает, что обязан жизнью местному переводчику по имени Ахмед. Именно ему удалось отбить раненого Кинли и на себе вытащить через опасную территорию. Теперь чувство долга не даёт Джону покоя и он решает рискнуть всем, чтобы вернуться за Ахмедом и его семьёй. На обоих объявлена охота, действовать приходится в одиночку, но он понимает, что не может бросить своего товарища в беде...",
+        "overview_en": "During the war in Afghanistan, a local interpreter risks his own life to carry an injured sergeant across miles of grueling terrain.",
+        "popularity": 409.025,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/Acxw9ik5MIodpsmLKTC2t8x5TtC.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/kVG8zFFYrpyYLoHChuEeOGAd6Ru.jpg",
+        "release_date": "2023-04-19",
+        "title_ru": "Переводчик",
+        "title_en": "Guy Ritchie's The Covenant",
+        "video": false,
+        "vote_average": 7.809,
+        "vote_count": 1250,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "I have seen",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-02:05-42-59 PM",
+            "dateViewing": []
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/nHyri67CN6juBR6hmOefCn9oGf8.jpg",
+        "backdrop_path_en": "/nHyri67CN6juBR6hmOefCn9oGf8.jpg",
+        "genre_ids": [
+            28,
+            35,
+            80
+        ],
+        "id": 27581,
+        "original_language": "en",
+        "original_title": "The Other Guys",
+        "overview_ru": "Нью-Йоркские детективы Аллен Гэмбл и Терри Хойтз ведут полицейскую бухгалтерию. Гэмблу такая работа в радость, Хойтзу — наказание. Когда напарникам представится шанс выйти из тени — прийти на помощь своим кумирам, детективам Дэнсону и Манцетти — станет ясно, что в бухгалтерию Гэмбла и Хойтза сослали не зря…",
+        "overview_en": "Unlike their heroic counterparts on the force, desk-bound NYPD detectives Gamble and Hoitz garner no headlines as they work day to day. When a seemingly minor case turns out to be a big deal, the two cops get the opportunity to finally prove to their comrades that they have the right stuff.",
+        "popularity": 26.856,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/nBDNDn3B3kfJn79V3vEZHWsXIEU.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/wNEHNqo3MgHmj3BUiPSqqq5czcm.jpg",
+        "release_date": "2010-08-06",
+        "title_ru": "Копы в глубоком запасе",
+        "title_en": "The Other Guys",
+        "video": false,
+        "vote_average": 6.289,
+        "vote_count": 3771,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-02:05-43-13 PM",
+            "dateViewing": [
+                "2021.08.12"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/oLp6ueqQXNWvWCFwrb6tXDnH0Ye.jpg",
+        "backdrop_path_en": "/oLp6ueqQXNWvWCFwrb6tXDnH0Ye.jpg",
+        "genre_ids": [
+            35,
+            80,
+            28
+        ],
+        "id": 290250,
+        "original_language": "en",
+        "original_title": "The Nice Guys",
+        "overview_ru": "Что бывает, когда напарником брутального костолома становится субтильный лопух? Наемный охранник Джексон Хили и частный детектив Холланд Марч вынуждены работать в паре, чтобы распутать плевое дело о пропавшей девушке, которое оборачивается преступлением века.  Смогут ли парни разгадать сложный ребус, если у каждого из них — свои, весьма индивидуальные, методы…",
+        "overview_en": "A private eye investigates the apparent suicide of a fading porn star in 1970s Los Angeles and uncovers a conspiracy.",
+        "popularity": 23.815,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/u0yfPtY92y2atwJwJIILUFLQ7EA.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/clq4So9spa9cXk3MZy2iMdqkxP2.jpg",
+        "release_date": "2016-05-15",
+        "title_ru": "Славные парни",
+        "title_en": "The Nice Guys",
+        "video": false,
+        "vote_average": 7.109,
+        "vote_count": 7118,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-02:05-43-19 PM",
+            "dateViewing": [
+                "2021.07.05"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/1EKPfRFMl9rV55gcXP8wWfOC5YP.jpg",
+        "backdrop_path_en": "/1EKPfRFMl9rV55gcXP8wWfOC5YP.jpg",
+        "genre_ids": [
+            35,
+            18,
+            10749,
+            14
+        ],
+        "id": 5994,
+        "original_language": "en",
+        "original_title": "The Family Man",
+        "overview_ru": "Чтобы вы предпочли: быть президентом крупной инвестиционной компании, жить в роскошной квартире с видом на миллиард долларов, раскатывать на последней модели «Феррари» и при этом оставаться холостяком или работать продавцом автопокрышек у «Большого Эда», покупать одежду в супермаркете и передвигаться по родному пригороду на вместительном и еще не очень старом минивене?Не спешите с ответом, ведь недаром судьба, в виде «обдолбанного» чернокожего деда мороза, преподносит Джеку шанс попробовать оба варианта. И поверьте, несмотря на обилие комичных ситуаций, которые теперь являются неотъемлемой частью его жизни, Джеку предстоит непростой выбор.",
+        "overview_en": "Jack's lavish, fast-paced lifestyle changes one Christmas night when he stumbles into a grocery store holdup and disarms the gunman. The next morning he wakes up in bed lying next to Kate, his college sweetheart he left in order to pursue his career, and to the horrifying discovery that his former life no longer exists. As he stumbles through this alternate suburban universe, Jack finds himself at a crossroad where he must choose between his high-power career and the woman he loves.",
+        "popularity": 19.08,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/aovA4X2y1u3hu48VsnekNsmgWz7.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/zsedbiD7i2SepxIxb0F3U95mqyH.jpg",
+        "release_date": "2000-12-12",
+        "title_ru": "Семьянин",
+        "title_en": "The Family Man",
+        "video": false,
+        "vote_average": 6.765,
+        "vote_count": 1711,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "favorite",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-02:06-45-53 PM",
+            "dateViewing": [
+                "2020.08.10"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/nHf61UzkfFno5X1ofIhugCPus2R.jpg",
+        "backdrop_path_en": "/nHf61UzkfFno5X1ofIhugCPus2R.jpg",
+        "genre_ids": [
+            35,
+            12,
+            14
+        ],
+        "id": 346698,
+        "original_language": "en",
+        "original_title": "Barbie",
+        "overview_ru": "Барбилэнд — идеальное место для всех, кто идеален. Но что делать, если у тебя случился экзистенциальный кризис? Барби и Кен отправляются навстречу приключениям в реальный мир.",
+        "overview_en": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+        "popularity": 3545.441,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/qqwqW8jWjZ6iaLRU98z3fdghwRn.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+        "release_date": "2023-07-19",
+        "title_ru": "Барби",
+        "title_en": "Barbie",
+        "video": false,
+        "vote_average": 7.541,
+        "vote_count": 2049,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "I have seen",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-02:06-50-39 PM",
+            "dateViewing": []
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/ipikQozG6cAtLqhaFqRneA0LI4o.jpg",
+        "backdrop_path_en": "/ipikQozG6cAtLqhaFqRneA0LI4o.jpg",
+        "genre_ids": [
+            28,
+            12,
+            878
+        ],
+        "id": 157350,
+        "original_language": "en",
+        "original_title": "Divergent",
+        "overview_ru": "Действие развивается на Земле в будущем, в деспотичном Чикаго. Все подростки, достигшие 16 лет, обязаны выбрать одну из пяти фракций и присоединиться к ней на всю оставшуюся жизнь. Каждая фракция представляет определенное качество: Искренность, Отречение, Бесстрашие, Дружелюбие и Эрудиция.",
+        "overview_en": "In a world divided into factions based on personality types, Tris learns that she's been classified as Divergent and won't fit in. When she discovers a plot to destroy Divergents, Tris and the mysterious Four must find out what makes Divergents dangerous before it's too late.",
+        "popularity": 39.018,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/4GxZw9ADsIPAcpebbrm053DPa18.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/aNh4Q3iuPKDMPi2SL7GgOpiLukX.jpg",
+        "release_date": "2014-03-14",
+        "title_ru": "Дивергент",
+        "title_en": "Divergent",
+        "video": false,
+        "vote_average": 6.921,
+        "vote_count": 12033,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-02:06-53-36 PM",
+            "dateViewing": [
+                "2023.07.07"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/8YNNyQiPZlF9qv5EGOUK20mnXVk.jpg",
+        "backdrop_path_en": "/8YNNyQiPZlF9qv5EGOUK20mnXVk.jpg",
+        "genre_ids": [
+            28,
+            12,
+            878,
+            53
+        ],
+        "id": 262500,
+        "original_language": "en",
+        "original_title": "Insurgent",
+        "overview_ru": "В новой главе антиутопии об обществе, где все расставлено по полочкам, а любая индивидуальность подлежит искоренению, Трис должна найти способ борьбы со страшной системой, уничтожающей ее близких. Кто из них на очереди? Она узнает все больше страшных подробностей, стоящих за кажущимся порядком, и уже не может не видеть, что в ее мире пора что-то менять. Но главное в этой борьбе — справиться с расколом, который враг порождает в ее собственной душе.",
+        "overview_en": "Beatrice Prior must confront her inner demons and continue her fight against a powerful alliance which threatens to tear her society apart.",
+        "popularity": 47.97,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/i3v2kcuvjoT35rnddLu7dl5B81o.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/dP5Fb6YRfzmCQtRbHOr2kO7tJW9.jpg",
+        "release_date": "2015-03-18",
+        "title_ru": "Дивергент, глава 2: Инсургент",
+        "title_en": "Insurgent",
+        "video": false,
+        "vote_average": 6.364,
+        "vote_count": 9427,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-02:06-54-34 PM",
+            "dateViewing": [
+                "2023.07.29"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/kJohXCyGaCh95ZRJ8q7mny3J1JN.jpg",
+        "backdrop_path_en": "/kJohXCyGaCh95ZRJ8q7mny3J1JN.jpg",
+        "genre_ids": [
+            12,
+            878,
+            28,
+            9648
+        ],
+        "id": 262504,
+        "original_language": "en",
+        "original_title": "Allegiant",
+        "overview_ru": "Трис и Тобиас вместе с компанией друзей выбираются за пределы родного дома. Они хотят узнать правду и обрести свободу. Но попадают прямиком в Бюро Генетической Защиты. Оказывается, в прошлом разгорелась генетическая война за чистоту. В результате мир поделили на «генетически чистых» и «генетически поврежденных» особей. А ученые превратились в одержимых чудовищ и принялись экспериментировать: создавать искусственные поселения и внедрять в них своих агентов. Главная цель подопытных — служить расходным материалом и давать «генетически чистое» потомство. Трис возмущена до глубины души, Тобиас мечется в поисках самого себя и вляпывается в очередную переделку. А ученые из Бюро опять недовольны. Они намерены устроить «перезагрузку», то есть стереть память всех жителей города. Трис решает предотвратить катастрофу.",
+        "overview_en": "Beatrice Prior and Tobias Eaton venture into the world outside of the fence and are taken into protective custody by a mysterious agency known as the Bureau of Genetic Welfare.",
+        "popularity": 30.525,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/afn26Axrs3We3bQMfH8Gyaxjd6i.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/ijpRQOwZzGy0vb3Uqmk2Naug1C0.jpg",
+        "release_date": "2016-03-09",
+        "title_ru": "Дивергент, глава 3: За стеной",
+        "title_en": "Allegiant",
+        "video": false,
+        "vote_average": 6.102,
+        "vote_count": 6181,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-02:06-55-28 PM",
+            "dateViewing": [
+                "2023.07.28"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/vHJlbhsXrZ5yrO2KqCbGSIU6fRX.jpg",
+        "backdrop_path_en": "/vHJlbhsXrZ5yrO2KqCbGSIU6fRX.jpg",
+        "genre_ids": [
+            28,
+            9648,
+            878,
+            53
+        ],
+        "id": 198663,
+        "original_language": "en",
+        "original_title": "The Maze Runner",
+        "overview_ru": "Главный герой - подросток Томас, который просыпается в лифте, но ничего не помнит, кроме своего имени. Он оказывается среди 60 подростков, научившихся выживать в замкнутом пространстве. Раз в 30 дней прибывает новый мальчик. Группа ребят проживает в «Приюте» уже два года. Они кормятся тем, что удается вырастить на земле, и пытаются найти выход из лабиринта, окружающего их место жительства. Когда герои уже начинают терять надежду, появляется девочка в состоянии комы, но со странной запиской. Мир героев начинает меняться.",
+        "overview_en": "Set in a post-apocalyptic world, young Thomas is deposited in a community of boys after his memory is erased, soon learning they're all trapped in a maze that will require him to join forces with fellow “runners” for a shot at escape.",
+        "popularity": 99.794,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/efJw8TfM6V4VQ8KUpqpohu1bVim.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/ode14q7WtDugFDp78fo9lCsmay9.jpg",
+        "release_date": "2014-09-10",
+        "title_ru": "Бегущий в лабиринте",
+        "title_en": "The Maze Runner",
+        "video": false,
+        "vote_average": 7.174,
+        "vote_count": 15750,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-02:07-18-46 PM",
+            "dateViewing": [
+                "2023.06.30"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/wsE1ScIiFdKl9RLuaI8pTn4rjxR.jpg",
+        "backdrop_path_en": "/wsE1ScIiFdKl9RLuaI8pTn4rjxR.jpg",
+        "genre_ids": [
+            10770,
+            80,
+            18,
+            14,
+            53,
+            16
+        ],
+        "id": 51482,
+        "original_language": "ja",
+        "original_title": "Death Note: デスノート",
+        "overview_ru": "Ягами Лайт - очень способный ученик японского университета. \"Волею случая\" к нему попадает могущественный артефакт - \"Тетрадь Смерти\", вписав туда имя человека (которого нужно ясно представлять себе внешне) запускается механизм, приводящий к смерти вписанного. Оценив масштаб попавшего к нему артефакта, Ягами Лайт становится \"Кирой\" - хладнокровным убийцей убийц, наказателем проступившихся, влекомый идеей чистого мира, мира без преступлений, в котором видит себя ни мало ни много - Богом нового мира.  Противостоять хладнокровному разуму малолетнего правотворца будет японский отдел полиции, возглавляемый его отцом и таинственный L, гениальный следователь, посланный раскрыть загадку Киры.  Этот фильм является переосмыслением оригинального аниме-сериала, тщательно отобранный в полнометражную ленту.",
+        "overview_en": "Yagami Light is an ace student with great prospects, who's bored out of his mind. One day he finds the \"Death Note\": a notebook from the realm of the Death Gods, with the power to kill people in any way he desires. With the Death Note in hand, Light decides to create his perfect world, without crime or criminals. However, when criminals start dropping dead one by one, the authorites send the legendary detective L to track down the killer, and a battle of wits, deception and logic ensues...this was aired on Japanese tv shortly after the death note anime was completed, this special basically re-cuts the first 26 episodes of the series into a two hour movie with some new scenes and dialogue added and the story is seen from ryuk's viewpoint.",
+        "popularity": 19.235,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/bB22CJM8arCCRvjFedmH5qtsbHb.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/bB22CJM8arCCRvjFedmH5qtsbHb.jpg",
+        "release_date": "2007-08-31",
+        "title_ru": "Тетрадь Смерти: Фильм",
+        "title_en": "Death Note Relight 1: Visions of a God",
+        "video": false,
+        "vote_average": 8.076,
+        "vote_count": 256,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-03:02-27-07 AM",
+            "dateViewing": [
+                "2023.01.13"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/xMPpi0sw1g027ZbzZpHTKweyZw6.jpg",
+        "backdrop_path_en": "/xMPpi0sw1g027ZbzZpHTKweyZw6.jpg",
+        "genre_ids": [
+            16,
+            28,
+            14,
+            12
+        ],
+        "id": 714194,
+        "original_language": "ja",
+        "original_title": "『進撃の巨人』〜クロニクル〜",
+        "overview_ru": "Краткий пересказ первых трёх сезонов аниме-сериала «Атака титанов», повествующий о невероятном противостоянии людей и огромных человекоподобных монстров.",
+        "overview_en": "In the fourth recap movie, episodes 1-59 of the anime are retold, compiling the first three seasons of the anime into one two hour event.",
+        "popularity": 24.337,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/8SZIfE7BggKn2VIOhArx5F5xiY6.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/10mGHIWt8TkMvnmSlqCChzigwFl.jpg",
+        "release_date": "2020-07-17",
+        "title_ru": "Атака титанов: Хроника",
+        "title_en": "Attack on Titan: Chronicle",
+        "video": true,
+        "vote_average": 7.6,
+        "vote_count": 165,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-03:02-37-42 AM",
+            "dateViewing": [
+                "2022.02.26"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
+        "backdrop_path_en": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
+        "genre_ids": [
+            14,
+            28,
+            35
+        ],
+        "id": 616037,
+        "original_language": "en",
+        "original_title": "Thor: Love and Thunder",
+        "overview_ru": "Тор  отправляется в путешествие, не похожее ни на что из того, с чем он когда-либо сталкивался, — в поисках внутреннего спокойствия. Но его выход на пенсию прерывается Горром Убийцей богов, который стремится уничтожить богов. Чтобы справиться с угрозой, Тор обращается за помощью к Валькирии, Коргу и бывшей подруге Джейн Фостер, которая, к удивлению Тора, необъяснимым образом владеет своим волшебным молотом Мьёльниром. Вместе они отправляются в душераздирающее космическое приключение, чтобы раскрыть тайну Горра и остановить его, пока не стало слишком поздно.",
+        "overview_en": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+        "popularity": 163.404,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/80ekusNlTdZO5hb9fKsFSCA7k4X.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+        "release_date": "2022-07-06",
+        "title_ru": "Тор: Любовь и гром",
+        "title_en": "Thor: Love and Thunder",
+        "video": false,
+        "vote_average": 6.539,
+        "vote_count": 6278,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "Тор",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-42-18 AM",
+            "dateViewing": [
+                "2023.07.17"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/4zTsF0RtO0av3YX1NaKDqGKPxYF.jpg",
+        "backdrop_path_en": "/4zTsF0RtO0av3YX1NaKDqGKPxYF.jpg",
+        "genre_ids": [
+            28,
+            12,
+            14
+        ],
+        "id": 76338,
+        "original_language": "en",
+        "original_title": "Thor: The Dark World",
+        "overview_ru": "Тору предстоит сразиться за спасение Земли и Девяти Миров от таинственного врага из времен, предшествовавших возникновению вселенной. После событий «Тора» и «Мстителей» главный герой борется за восстановление порядка в космосе, но древняя раса во главе с мстительным Малекитом возвращается, чтобы погрузить вселенную обратно во тьму. Столкнувшись с врагом, которому не способен противостоять ни Один, ни весь Асгард, Тор отправляется в самое рискованное путешествие, которое воссоединит его с Джейн Фостер с Земли и заставит пожертвовать всем ради спасения вселенной.",
+        "overview_en": "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
+        "popularity": 55.79,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/rmII9fsUpfRmuNBhzHtarBOtHnQ.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg",
+        "release_date": "2013-10-30",
+        "title_ru": "Тор 2: Царство тьмы",
+        "title_en": "Thor: The Dark World",
+        "video": false,
+        "vote_average": 6.541,
+        "vote_count": 16203,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "Тор",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-42-55 AM",
+            "dateViewing": [
+                "2016.05.15"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/1wOu8rdvPxU1ObHi20VcRhfNpbo.jpg",
+        "backdrop_path_en": "/1wOu8rdvPxU1ObHi20VcRhfNpbo.jpg",
+        "genre_ids": [
+            12,
+            14,
+            28
+        ],
+        "id": 10195,
+        "original_language": "en",
+        "original_title": "Thor",
+        "overview_ru": "Эпическое приключение происходит как на нашей планете Земля, так и в вымышленном королевстве богов Асгарде. В центре истории — Могучий Тор, сильный, но высокомерный воин, чьи безрассудные поступки возрождают древнюю войну в Асгарде. Тора отправляют в ссылку на Землю, лишают сил и заставляют жить среди обычных людей в качестве наказания. Тор узнает, сколько требуется сил, чтобы стать настоящим героем, когда самый опасный злодей его мира направляет темные силы поглотить Землю.",
+        "overview_en": "Against his father Odin's will, The Mighty Thor - a powerful but arrogant warrior god - recklessly reignites an ancient war. Thor is cast down to Earth and forced to live among humans as punishment. Once here, Thor learns what it takes to be a true hero when the most dangerous villain of his world sends the darkest forces of Asgard to invade Earth.",
+        "popularity": 64.226,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/9VnGpd2rXHikIwznL9I5r9i8TQJ.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
+        "release_date": "2011-04-21",
+        "title_ru": "Тор",
+        "title_en": "Thor",
+        "video": false,
+        "vote_average": 6.768,
+        "vote_count": 19852,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "Тор",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-44-03 AM",
+            "dateViewing": [
+                "2014.04.14"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg",
+        "backdrop_path_en": "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg",
+        "genre_ids": [
+            28,
+            12,
+            878
+        ],
+        "id": 284053,
+        "original_language": "en",
+        "original_title": "Thor: Ragnarok",
+        "overview_ru": "Вернувшись в Асгард в поисках таинственного врага, ведущего охоту на Камни Бесконечности, Тор обнаруживает, что действия его брата Локи, захватившего трон Асгарда, привели к приближению наиболее страшного события — Рагнарёка. По легенде, это ознаменует последнюю битву Асгарда, последствием которой станет его полное уничтожение. В попытке предотвратить это событие, Тору предстоит прибегнуть к помощи своего товарища из Мстителей — Халка. Вместе, им предстоит столкнуться лицом к лицу со злейшим врагом всех девяти миров — огненным демоном Суртуром, целью которого является исполнение пророчества о Рагнарёке и уничтожение девяти миров.",
+        "overview_en": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of a powerful new threat, the ruthless Hela.",
+        "popularity": 73.034,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/aOiiA0caj2bUgBv68mwjSPi6Oug.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+        "release_date": "2017-10-02",
+        "title_ru": "Тор: Рагнарёк",
+        "title_en": "Thor: Ragnarok",
+        "video": false,
+        "vote_average": 7.596,
+        "vote_count": 19347,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "Тор",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-45-06 AM",
+            "dateViewing": [
+                "2022.03.29"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/wmsePXV2z1b6ecXuKKrFbG0Q92P.jpg",
+        "backdrop_path_en": "/wmsePXV2z1b6ecXuKKrFbG0Q92P.jpg",
+        "genre_ids": [
+            18
+        ],
+        "id": 13223,
+        "original_language": "en",
+        "original_title": "Gran Torino",
+        "overview_ru": "Вышедший на пенсию автомеханик Уолт Ковальски проводит дни, починяя что-то по дому, попивая пиво и раз в месяц заходя к парикмахеру. И хотя последним желанием его недавно почившей жены было совершение им исповеди, Уолту — ожесточившемуся ветерану Корейской войны, всегда держащему свою винтовку наготове, — признаваться в общем-то не в чем. Да и нет того, кому он доверял бы в той полной мере, в какой доверяет своей собаке Дейзи.",
+        "overview_en": "Disgruntled Korean War veteran Walt Kowalski sets out to reform his neighbor, Thao Lor, a Hmong teenager who tried to steal Kowalski's prized possession: a 1972 Gran Torino.",
+        "popularity": 26.075,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/k4SlXMkoosIiWC8toXywDqpVOSW.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/zUybYvxWdAJy5hhYovsXtHSWI1l.jpg",
+        "release_date": "2008-12-09",
+        "title_ru": "Гран Торино",
+        "title_en": "Gran Torino",
+        "video": false,
+        "vote_average": 8,
+        "vote_count": 9871,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "I have seen",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-45-53 AM",
+            "dateViewing": []
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/ic16B2KUfEFicIB3eiBUAYqrwz7.jpg",
+        "backdrop_path_en": "/ic16B2KUfEFicIB3eiBUAYqrwz7.jpg",
+        "genre_ids": [
+            16,
+            10751,
+            12,
+            35
+        ],
+        "id": 326359,
+        "original_language": "en",
+        "original_title": "Frozen Fever",
+        "overview_ru": "В день рождения Анны, Эльза и Кристофф полны решимости подарить ей лучший праздник, сделанный когда-либо, но ледяные силы Эльзы могут принести больше вреда, чем организация праздника.",
+        "overview_en": "On Anna's birthday, Elsa and Kristoff are determined to give her the best celebration ever, but Elsa's icy powers may put more than just the party at risk.",
+        "popularity": 24.858,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/e8vuHYw00RRitCIkb4HcwKwls0Z.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/mPrDJ7puYzPLG5kPM96iNszF2sM.jpg",
+        "release_date": "2015-03-09",
+        "title_ru": "Холодное торжество",
+        "title_en": "Frozen Fever",
+        "video": false,
+        "vote_average": 6.833,
+        "vote_count": 1721,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "I have seen",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-46-36 AM",
+            "dateViewing": []
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/6mJrgL7Mi13XjJeGYJFlD6UEVQw.jpg",
+        "backdrop_path_en": "/6mJrgL7Mi13XjJeGYJFlD6UEVQw.jpg",
+        "genre_ids": [
+            16,
+            10751
+        ],
+        "id": 438695,
+        "original_language": "en",
+        "original_title": "Sing 2",
+        "overview_ru": "Тяжело быть продюсером, когда ты коала и у тебя лапки. Еще сложнее, когда твоя верная помощница древнее печатной машинки. И совсем весело, когда твоя труппа — это танцующий без остановки пухляш, колючая девочка-панк, застенчивая школьница, верзила-гангстер и многодетная мама, чьи дети — поросята в прямом смысле слова. Рецепт успеха прост — рвануть в мировую столицу развлечений, завербовать легендарного рок-музыканта и взорвать сцену новым шоу.",
+        "overview_en": "Buster and his new cast now have their sights set on debuting a new show at the Crystal Tower Theater in glamorous Redshore City. But with no connections, he and his singers must sneak into the Crystal Entertainment offices, run by the ruthless wolf mogul Jimmy Crystal, where the gang pitches the ridiculous idea of casting the lion rock legend Clay Calloway in their show. Buster must embark on a quest to find the now-isolated Clay and persuade him to return to the stage.",
+        "popularity": 126.723,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/fIFZukiqny826L7N6zGDtPeySO6.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
+        "release_date": "2021-12-01",
+        "title_ru": "Зверопой 2",
+        "title_en": "Sing 2",
+        "video": false,
+        "vote_average": 7.929,
+        "vote_count": 3828,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-03:02-47-25 AM",
+            "dateViewing": [
+                "2023.07.22"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/59CCw4EtiahW0E5cfTrvdbqPQTo.jpg",
+        "backdrop_path_en": "/59CCw4EtiahW0E5cfTrvdbqPQTo.jpg",
+        "genre_ids": [
+            16,
+            35,
+            10751,
+            10402
+        ],
+        "id": 335797,
+        "original_language": "en",
+        "original_title": "Sing",
+        "overview_ru": "Неважно кто ты: грабитель банков или домохозяйка - все рвутся к славе. Овца, горилла, бык или даже свинья - каждое животное мечтает стать звездой. Всё как у людей.",
+        "overview_en": "A koala named Buster recruits his best friend to help him drum up business for his theater by hosting a singing competition.",
+        "popularity": 53.63,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/ysHyAwh0ZjdhBZdEPUS8X14Uqe4.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/b8UiFXwMrSXVTHM0fb2twl8uE8a.jpg",
+        "release_date": "2016-11-23",
+        "title_ru": "Зверопой",
+        "title_en": "Sing",
+        "video": false,
+        "vote_average": 7.113,
+        "vote_count": 7378,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-03:02-48-16 AM",
+            "dateViewing": [
+                "2016.05.03"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/p2fRZzxla6NoRbIH2KOZq0gHb5S.jpg",
+        "backdrop_path_en": "/p2fRZzxla6NoRbIH2KOZq0gHb5S.jpg",
+        "genre_ids": [
+            16,
+            12,
+            10751,
+            35
+        ],
+        "id": 269149,
+        "original_language": "en",
+        "original_title": "Zootopia",
+        "overview_ru": "Добро пожаловать в Зверополис — современный город, населенный самыми разными животными, от огромных слонов до крошечных мышек. Зверополис разделен на районы, полностью повторяющие естественную среду обитания разных жителей — здесь есть и элитный район Площадь Сахары и неприветливый Тундратаун. В этом городе появляется новый офицер полиции, жизнерадостная зайчиха Джуди Хоппс, которая с первых дней работы понимает, как сложно быть маленькой и пушистой среди больших и сильных полицейских. Джуди хватается за первую же возможность проявить себя, несмотря на то, что ее партнером будет болтливый хитрый лис Ник Уайлд. Вдвоем им предстоит раскрыть сложное дело, от которого будет зависеть судьба всех обитателей Зверополиса.",
+        "overview_en": "Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.",
+        "popularity": 65.041,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/rcjkUzpZuEpCwqdlbR1VDcSciiS.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg",
+        "release_date": "2016-02-11",
+        "title_ru": "Зверополис",
+        "title_en": "Zootopia",
+        "video": false,
+        "vote_average": 7.747,
+        "vote_count": 15074,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-03:02-48-58 AM",
+            "dateViewing": [
+                "2016.06.18"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
+        "backdrop_path_en": "/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
+        "genre_ids": [
+            16,
+            12,
+            10751,
+            35
+        ],
+        "id": 862,
+        "original_language": "en",
+        "original_title": "Toy Story",
+        "overview_ru": "Каждый ребёнок верит, что когда он оставляет свои игрушки одни, они начинают заниматься своими делами. Этот мультипликационный фильм позволяет убедиться им в своей правоте. Основная идея фильма — каждая игрушка боится надоесть, стать забытой, заменённой другой, так как весь смысл их существования доставлять счастье своим хозяевам.",
+        "overview_en": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences.",
+        "popularity": 109.505,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/phl71RCOMfNA5uu1GIYeVxKBYzJ.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+        "release_date": "1995-10-30",
+        "title_ru": "История игрушек",
+        "title_en": "Toy Story",
+        "video": false,
+        "vote_average": 7.968,
+        "vote_count": 16949,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "История игрушек",
+                    "color": ""
+                },
+                {
+                    "tagName": "I have seen",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-51-49 AM",
+            "dateViewing": [
+                "2023.07.14"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/91qfG6VaxRsCh1SbIi1w2vxknsL.jpg",
+        "backdrop_path_en": "/91qfG6VaxRsCh1SbIi1w2vxknsL.jpg",
+        "genre_ids": [
+            16,
+            35,
+            10751
+        ],
+        "id": 863,
+        "original_language": "en",
+        "original_title": "Toy Story 2",
+        "overview_ru": "Ковбой Вуди и другие игрушки мальчика по имени Энди продолжают жить, радуясь каждому дню. Но неожиданно всё меняется, когда Вуди похищает коварный коллекционер. Оказывается, что Вуди — очень ценная игрушка из коллекции, за которую японский музей игрушек готов заплатить огромную сумму. В доме коллекционера он находит своих родственников. В это время игрушки во главе с Баззом Лайтером отправляются на помощь. Вуди узнаёт о своём знаменитом прошлом, и перед ним встаёт непростой выбор. Блистать в витрине музея или же вернуться к любимому хозяину?",
+        "overview_en": "Andy heads off to Cowboy Camp, leaving his toys to their own devices. Things shift into high gear when an obsessive toy collector named Al McWhiggen, owner of Al's Toy Barn kidnaps Woody. Andy's toys mount a daring rescue mission, Buzz Lightyear meets his match and Woody has to decide where he and his heart truly belong.",
+        "popularity": 82.32,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/49nYtKeJp4MqGZM9BO5BQyXTUp9.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/2MFIhZAW0CVlEQrFyqwa4U6zqJP.jpg",
+        "release_date": "1999-10-30",
+        "title_ru": "История игрушек 2",
+        "title_en": "Toy Story 2",
+        "video": false,
+        "vote_average": 7.587,
+        "vote_count": 12751,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "История игрушек",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-52-24 AM",
+            "dateViewing": [
+                "2023.07.15"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/uAfhsySkr1UzQg1zdg3dZQRz9Fd.jpg",
+        "backdrop_path_en": "/uAfhsySkr1UzQg1zdg3dZQRz9Fd.jpg",
+        "genre_ids": [
+            16,
+            10751,
+            35
+        ],
+        "id": 10193,
+        "original_language": "en",
+        "original_title": "Toy Story 3",
+        "overview_ru": "Энди почти 18 лет, ему остаётся 3 дня до отправки в колледж, в то время как его игрушки, в том числе Вуди и Базз Лайтер, гадают о своём будущем. Куда забросит их судьба? На чердак, на свалку или, может быть, в детский сад «Солнышко»? События развиваются в самом неожиданном направлении, и приключения полюбившихся героев продолжаются!",
+        "overview_en": "Woody, Buzz, and the rest of Andy's toys haven't been played with in years. With Andy about to go to college, the gang find themselves accidentally left at a nefarious day care center. The toys must band together to escape and return home to Andy.",
+        "popularity": 71.996,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/58DWp1eMPYOjmMusIfQC1OALvKf.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg",
+        "release_date": "2010-06-16",
+        "title_ru": "История игрушек: Большой побег",
+        "title_en": "Toy Story 3",
+        "video": false,
+        "vote_average": 7.79,
+        "vote_count": 13632,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "I have seen",
+                    "color": ""
+                },
+                {
+                    "tagName": "История игрушек",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-53-03 AM",
+            "dateViewing": []
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/q62bpQ67qaXY0u6b2wFEnQYIbPd.jpg",
+        "backdrop_path_en": "/q62bpQ67qaXY0u6b2wFEnQYIbPd.jpg",
+        "genre_ids": [
+            10751,
+            12,
+            16,
+            35,
+            14
+        ],
+        "id": 301528,
+        "original_language": "en",
+        "original_title": "Toy Story 4",
+        "overview_ru": "Космический рейнджер Баз Лайтер, ковбой Вуди, собака Спиралька, тиранозавр Рекс и вся команда игрушек снова вместе, и они как никогда готовы к приключениям. С тех пор как Энди поступил в колледж, игрушки поселились в доме своей новой хозяйки Бонни. В свой первый день в школе Бонни смастерила себе из отходов новую игрушку Вилкинса, что положит начало череде событий, в которой найдётся место и путешествиям с погонями, и знакомству с новыми игрушками, и встречам с некоторыми из старых друзей, и даже романтической истории.",
+        "overview_en": "Woody has always been confident about his place in the world and that his priority is taking care of his kid, whether that's Andy or Bonnie. But when Bonnie adds a reluctant new toy called \"Forky\" to her room, a road trip adventure alongside old and new friends will show Woody how big the world can be for a toy.",
+        "popularity": 71.552,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/lQBF6jzW2gsk3Kr7dMdqrkGaukV.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg",
+        "release_date": "2019-06-19",
+        "title_ru": "История игрушек 4",
+        "title_en": "Toy Story 4",
+        "video": false,
+        "vote_average": 7.522,
+        "vote_count": 8970,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "История игрушек",
+                    "color": ""
+                },
+                {
+                    "tagName": "I have seen",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-53-13 AM",
+            "dateViewing": []
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/wSYtLAK3gQ4VSJGmREevFQhwxB8.jpg",
+        "backdrop_path_en": "/wSYtLAK3gQ4VSJGmREevFQhwxB8.jpg",
+        "genre_ids": [
+            16,
+            10751,
+            12,
+            35
+        ],
+        "id": 256835,
+        "original_language": "en",
+        "original_title": "Toy Story That Time Forgot",
+        "overview_ru": "Рождество подошло к концу, подарки уже подарены, и Бони, захватив с собой рюкзак с любимыми игрушками, отправился в гости к мальчику, живущему в соседнем доме. Застала она его не в комнате с любимыми игрушками, а за игрой в компьютерную игру, подаренную парой дней назад, и, с размаху швырнув рюкзак в кучу других игрушек, присоединилась к нему. Выбравшись после не самой мягкой посадки из рюкзака, Вуди и компанию ждала встреча с новыми боевыми динозаврами, которые устроили далеко не теплый прием своим гостям…",
+        "overview_en": "During a post-Christmas play date, the gang find themselves in uncharted territory when the coolest set of action figures ever turn out to be dangerously delusional. It's all up to Trixie, the triceratops, if the gang hopes to return to Bonnie's room in this Toy Story That Time Forgot.",
+        "popularity": 26.052,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/pw1YgzcBw4GmwylrFlXMzLdELRo.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/pw1YgzcBw4GmwylrFlXMzLdELRo.jpg",
+        "release_date": "2014-12-02",
+        "title_ru": "История игрушек, забытая временем",
+        "title_en": "Toy Story That Time Forgot",
+        "video": false,
+        "vote_average": 7.026,
+        "vote_count": 894,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "История игрушек",
+                    "color": ""
+                },
+                {
+                    "tagName": "I have seen",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-53-26 AM",
+            "dateViewing": []
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/9S2Id7rzj5B9MEI1CnpUHnf24cS.jpg",
+        "backdrop_path_en": "/9S2Id7rzj5B9MEI1CnpUHnf24cS.jpg",
+        "genre_ids": [
+            12,
+            16,
+            35,
+            10751
+        ],
+        "id": 213121,
+        "original_language": "en",
+        "original_title": "Toy Story of Terror!",
+        "overview_ru": "Вуди, Джесси, Баз, Рекс и другие знакомые и незнакомые персонажи проведут ночь в мотеле. Им придется столкнуться с настоящим чудовищем и другими опасностями в ожидании рассвета.",
+        "overview_en": "What starts out as a fun road trip for the Toy Story gang takes an unexpected turn for the worse when the trip detours to a roadside motel. After one of the toys goes missing, the others find themselves caught up in a mysterious sequence of events that must be solved before they all suffer the same fate in this Toy Story of Terror.",
+        "popularity": 1.007,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/7x31AeQYJ2LXxWhtmtItS46lidK.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/oPBEnNP4Fg4gv9c0KBhchmtoG4H.jpg",
+        "release_date": "2013-10-16",
+        "title_ru": "История игрушек и ужасов!",
+        "title_en": "Toy Story of Terror!",
+        "video": false,
+        "vote_average": 7.194,
+        "vote_count": 833,
+        "settings": {
+            "tags": [
+                {
+                    "tagName": "История игрушек",
+                    "color": ""
+                },
+                {
+                    "tagName": "I have seen",
+                    "color": ""
+                }
+            ],
+            "dateAdd": "2023-08-03:02-53-35 AM",
+            "dateViewing": []
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/zgcL0xaHxXVvrV1Fu1ZSKoTk0MH.jpg",
+        "backdrop_path_en": "/zgcL0xaHxXVvrV1Fu1ZSKoTk0MH.jpg",
+        "genre_ids": [
+            878,
+            28,
+            12,
+            53
+        ],
+        "id": 336843,
+        "original_language": "en",
+        "original_title": "Maze Runner: The Death Cure",
+        "overview_ru": "Томас возглавляет отряд выживших глейдеров, чтобы выполнить последнюю и самую опасную миссию. Ради спасения своих друзей они должны проникнуть в легендарный Последний город, смертоносный лабиринт, контролируемый ПОРОКом. Каждый, кто выживет там, наконец-то получит ответы на все вопросы, которые мучили глейдеров с момента попадания в лабиринт.",
+        "overview_en": "Thomas leads his group of escaped Gladers on their final and most dangerous mission yet. To save their friends, they must break into the legendary Last City, a WCKD-controlled labyrinth that may turn out to be the deadliest maze of all. Anyone who makes it out alive will get answers to the questions the Gladers have been asking since they first arrived in the maze.",
+        "popularity": 48.622,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/6ps20wVKQghAx0KBTQvPcLPdLlc.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/2zYfzA3TBwrMC8tfFbpiTLODde0.jpg",
+        "release_date": "2018-01-10",
+        "title_ru": "Бегущий в лабиринте: Лекарство от смерти",
+        "title_en": "Maze Runner: The Death Cure",
+        "video": false,
+        "vote_average": 7.111,
+        "vote_count": 7047,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-03:02-59-27 AM",
+            "dateViewing": [
+                "2023.07.01"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/4mcOCiR06dqQ5eoEJcG3zvonjOa.jpg",
+        "backdrop_path_en": "/4mcOCiR06dqQ5eoEJcG3zvonjOa.jpg",
+        "genre_ids": [
+            878,
+            28,
+            53,
+            12
+        ],
+        "id": 294254,
+        "original_language": "en",
+        "original_title": "Maze Runner: The Scorch Trials",
+        "overview_ru": "Лабиринт пройден, но Томасу, Терезе, Минхо и прочим глэйдерам не приходится расслабляться. Таинственное руководство ПОРОКА — секретной организации, устроившей гонки на выживание — назначает ребятам новые, смертельно опасные испытания. На сей раз их ждет переход по раскаленной пустыне и встреча с жертвами неизлечимой болезни, которые отличаются буйным нравом и непредсказуемым поведением.",
+        "overview_en": "Thomas and his fellow Gladers face their greatest challenge yet: searching for clues about the mysterious and powerful organization known as WCKD. Their journey takes them to the Scorch, a desolate landscape filled with unimaginable obstacles. Teaming up with resistance fighters, the Gladers take on WCKD’s vastly superior forces and uncover its shocking plans for them all.",
+        "popularity": 54.926,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/esy2FngWhKfNANeD983xJ7k5fhg.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/2TZJ7sZd0thhXHvkPJGoPTtM8Bq.jpg",
+        "release_date": "2015-09-09",
+        "title_ru": "Бегущий в лабиринте: Испытание огнём",
+        "title_en": "Maze Runner: The Scorch Trials",
+        "video": false,
+        "vote_average": 6.724,
+        "vote_count": 9580,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-03:02-59-40 AM",
+            "dateViewing": [
+                "2023.07.07"
+            ]
+        }
+    },
+    {
+        "adult": false,
+        "backdrop_path_ru": "/pVVobDO8cezhVPvwD6EBUN0g3mt.jpg",
+        "backdrop_path_en": "/pVVobDO8cezhVPvwD6EBUN0g3mt.jpg",
+        "genre_ids": [
+            14,
+            28,
+            878
+        ],
+        "id": 353491,
+        "original_language": "en",
+        "original_title": "The Dark Tower",
+        "overview_ru": "Наш мир – не единственный из существующих. Заклятые враги Роланд Дискейн (Идрис Эльба), последний из ордена стрелков, и Уолтер О’Дим (Мэттью МаКонахи), известный также как Человек в черном, ведут извечную борьбу. На кону – мифическая Темная Башня, последний оплот и надежда вселенной, без которой мир будет повержен в полный хаос и разрушение. Силам добра и зла суждено столкнуться в последней схватке, ведь Роланд Дискейн – единственный, кому под силу остановить Человека в черном, прежде чем тот разрушит Темную Башню. Основано на знаменитом бестселлере мастера ужасов и фэнтези Стивена Кинга.",
+        "overview_en": "A boy haunted by visions of a parallel world aids its disillusioned guardian in preventing the destruction of the nexus of universes known as the Dark Tower.",
+        "popularity": 21.96,
+        "poster_path_ru": "https://image.tmdb.org/t/p/w300/R0DUaCH6EPVtovZejwRU0k27k1.jpg",
+        "poster_path_en": "https://image.tmdb.org/t/p/w300/i9GUSgddIqrroubiLsvvMRYyRy0.jpg",
+        "release_date": "2017-08-03",
+        "title_ru": "Тёмная башня",
+        "title_en": "The Dark Tower",
+        "video": false,
+        "vote_average": 5.673,
+        "vote_count": 4619,
+        "settings": {
+            "tags": [],
+            "dateAdd": "2023-08-03:03-01-30 AM",
+            "dateViewing": [
+                "2022.05.14"
             ]
         }
     }
