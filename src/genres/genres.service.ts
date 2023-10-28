@@ -13,11 +13,11 @@ export class GenresService {
     }
 
     readGenres() {
-        try {
-            const genresDataJSON = fs.readFileSync(dirGenres, 'utf-8')
-            const res: GenresDto[] = JSON.parse(genresDataJSON)
+        const genresUrl = `${dirGenres.slice(0, -24)}/jsons/genres.json`
 
-            console.log('res', res)
+        try {
+            const genresDataJSON = fs.readFileSync(genresUrl, 'utf-8')
+            const res: GenresDto[] = JSON.parse(genresDataJSON)
 
             return res
         } catch (error) {

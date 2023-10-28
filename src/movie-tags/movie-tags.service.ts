@@ -2,7 +2,6 @@ import {Injectable, NotFoundException} from '@nestjs/common'
 import fs = require('fs')
 import path = require('path')
 import {TagsDto} from './dto/tags.dto'
-import {MovieDto} from 'src/profile/dto/movie.dto'
 import {UpdateTagDto} from './dto/update-tag.dto'
 const dirMovieTags = path.resolve(__dirname, 'movie-tags.json')
 
