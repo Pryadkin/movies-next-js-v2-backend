@@ -14,7 +14,6 @@ export class MovieTagsService {
     }
 
     addTag(value: TagsDto) {
-        console.log('value', value)
         const movieTagsData = this.readTags()
         const isTagExists = movieTagsData.find(tag => tag.tagName === value.tagName)
 
