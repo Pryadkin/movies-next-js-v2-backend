@@ -36,7 +36,6 @@ export class ProfileController {
   @ApiBody({type: UpdateTagDto})
   @Put('update_movie_tags')
   async updateMovieTags(@Body() body: UpdateTagDto) {
-    console.log('body', body)
     const moviesWithNewTags = this.profileService.updateMovieTags(body)
 
     return this.profileService.updateAllMovie(moviesWithNewTags)
