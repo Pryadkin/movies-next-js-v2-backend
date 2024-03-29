@@ -26,6 +26,27 @@ export class ProfileService {
     }
   }
 
+  getMoviesByPagination(
+    numberPage: number,
+    limit: number
+  ): {
+    moviesPerPage: MovieDto[],
+    total: number
+  } {
+    try {
+      const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+      const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
+      const startMovie = (numberPage - 1) * limit
+      const lastMovie = (numberPage - 1) * limit + limit
+      const moviesPerPage = moviesData.slice(startMovie, lastMovie)
+      const total = moviesData.length
+
+      return {moviesPerPage, total}
+    } catch (err) {
+      return err
+    }
+  }
+
   addMovie(movie: MovieDto) {
     const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)

@@ -1,4 +1,4 @@
-import {Controller, Post, Body, Get, Delete, Put, } from '@nestjs/common'
+import {Controller, Post, Body, Get, Delete, Put, Param, Query, } from '@nestjs/common'
 import {ProfileService} from './profile.service'
 import {MovieDto} from './dto/movie.dto'
 import {ApiBody, ApiOkResponse, ApiTags} from '@nestjs/swagger'
@@ -11,14 +11,24 @@ import {DeleteMovieTagsDto} from './dto/delete-movie-tags.dto'
 export class ProfileController {
   constructor(private readonly profileService: ProfileService) { }
 
+  // @ApiOkResponse({
+  //   description: 'The movies list',
+  //   type: MovieDto,
+  //   isArray: true
+  // })
+  // @Get('get_movies')
+  // async getMovies() {
+  //   return this.profileService.getMovies()
+  // }
+
   @ApiOkResponse({
     description: 'The movies list',
     type: MovieDto,
     isArray: true
   })
   @Get('get_movies')
-  async getMovies() {
-    return this.profileService.getMovies()
+  async getMoviesByPagination(@Query() query: any) {
+    return this.profileService.getMoviesByPagination(Number(query.numberPage), Number(query.limit))
   }
 
   @ApiBody({type: MovieDto})
