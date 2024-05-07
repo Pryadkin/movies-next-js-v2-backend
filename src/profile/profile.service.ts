@@ -1,42 +1,284 @@
-import { Injectable } from '@nestjs/common'
-import { MovieDto } from './dto/add-movie.dto'
+import {
+  BadRequestException,
+  ConflictException,
+  Injectable,
+  NotFoundException
+} from '@nestjs/common'
+import {MovieDto} from './dto/movie.dto'
 import fs = require('fs')
 import path = require('path')
-
-const dir = path.resolve(__dirname, 'movies.json')
+import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
+import {TSortItem} from './dto/get-movie.dto'
+import dayjs = require('dayjs')
 
 @Injectable()
 export class ProfileService {
+  getDir(name: string) {
+    const updateSrc = `${__dirname.slice(0, -13)}/src`
+    return path.resolve(updateSrc, `${name}.json`)
+  }
+
+  getMovies(): MovieDto[] {
+    try {
+      const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+      const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
+      return moviesData
+    } catch (err) {
+      new Error('Failed to get movies')
+    }
+    return []
+  }
+
+  getSortMovies(movies: MovieDto[], sortType: TSortItem) {
+    const getSorted = (
+      a: string,
+      b: string,
+      sortT: string
+    ) => {
+        const updateLastA = dayjs(a)
+            .valueOf()
+        const updateLastB = dayjs(b)
+            .valueOf()
+
+        return sortT.slice(0 , 3) === 'asc' ? updateLastB - updateLastA : updateLastA - updateLastB
+    }
+
+    return [...movies].sort((a, b) => {
+        if (sortType.slice(-11) === 'ReleaseDate') {
+            const lastDateA = a.release_date
+            const lastDateB = b.release_date
+
+            return getSorted(lastDateA, lastDateB, sortType)
+        } else {
+            const lastDateA = a.settings.dateViewing.slice(-1)[0]
+            const lastDateB = b.settings.dateViewing.slice(-1)[0]
+
+            return getSorted(lastDateA, lastDateB, sortType)
+        }
+    })
+  }
+
+  getMovieByFilter(movies: MovieDto[], filterByMovieName: string) {
+    const filterIsEmpty = filterByMovieName.length === 0 ? true : false
+      if(filterIsEmpty) return movies
+
+      return movies.filter(movie => {
+        const enMovie = movie.title_en?.toLowerCase().includes(filterByMovieName.toLowerCase())
+
+        if (enMovie) return enMovie
+
+        const ruMovie = movie.title_ru?.toLowerCase().includes(filterByMovieName.toLowerCase())
+
+        return ruMovie
+      })
+  }
+
+  getFilterByMovieWithoutDate(movies: MovieDto[], filterByMovieWithoutDate: string) {
+    const isMovieWithoutDate = filterByMovieWithoutDate === 'true' ? true : false
+    const movieWithoutEmptyDate = movies.filter(movie => {
+      const withoutDate = movie.settings.dateViewing.length === 0
+
+      return isMovieWithoutDate ? !withoutDate : withoutDate
+    })
+
+    return movieWithoutEmptyDate
+  }
+
+  getMoviesByPagination(
+    movies: MovieDto[],
+    numberPage: number,
+    limit: number,
+  ){
+    try {
+      const startMovie = (numberPage - 1) * limit
+      const lastMovie = (numberPage - 1) * limit + limit
+      const moviesPerPage = movies.slice(startMovie, lastMovie)
+      const total = movies.length
+
+      return {moviesPerPage, total}
+    } catch (err) {
+      return err
+    }
+  }
+
   addMovie(movie: MovieDto) {
-    const moviesDataJSON = fs.readFileSync(dir, 'utf-8')
+    const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
 
-    moviesData.push(movie) 
+    const isExistMovie = moviesData.find(item => item.id === movie.id)
 
-    fs.writeFile(dir, JSON.stringify(moviesData), 'utf-8', (error) => {
+    if (isExistMovie) {
+      throw new ConflictException('Movie already exist')
+    } else {
+      moviesData.push(movie)
+
+      fs.writeFile(this.getDir('movie'), JSON.stringify(moviesData), 'utf-8', (error) => {
+        if (error) {
+          console.log(`WRITE ERROR: ${error}`)
+        } else {
+          console.log('FILE WRITTEN TO movies.json')
+        }
+      })
+    }
+
+    return movie
+  }
+
+  updateAllMovie(movies: MovieDto[]) {
+    this.writeMovies(movies)
+
+    return 'movies updated successfully'
+  }
+
+  updateMovie(movie: MovieDto) {
+    const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+    const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
+
+    const currentMovie = moviesData.find(item => item.id === movie.id)
+
+    if (currentMovie) {
+      const updateMovies = moviesData.map(item => {
+        if (item.id === movie.id) {
+          return movie
+        }
+        return item
+      })
+
+      this.writeMovies(updateMovies)
+
+      return movie
+    } else {
+      throw new NotFoundException('The movie was not found')
+    }
+  }
+
+  updateMovieTags(
+    {
+      oldTagName,
+      newTagName
+    }: UpdateTagDto
+  ) {
+    const movies = this.getMovies()
+    const updateMovieTags = movies.map(movie => {
+      const isOldTagExists = movie.settings.tags.find(tag => tag.tagName === oldTagName)
+
+      if (isOldTagExists) {
+        return {
+          ...movie,
+          settings: {
+            ...movie.settings,
+            tags: movie.settings.tags.map(tag => {
+              if (tag.tagName === oldTagName) return {
+                ...tag,
+                tagName: newTagName,
+              }
+              return tag
+            })
+          }
+        }
+      }
+      return movie
+    })
+
+    return updateMovieTags
+  }
+
+  updateMovieSettings() {
+    const movies = this.getMovies()
+    const updateMovies = (movies as any).map(movie => {
+      const {
+        adult,
+        genre_ids,
+        id,
+        original_language,
+        original_title,
+        popularity,
+        release_date,
+        video,
+        vote_average,
+        vote_count,
+        settings,
+      } = movie
+      return {
+        adult,
+        backdrop_path_en: movie.backdrop_path,
+        backdrop_path_ru: '',
+        genre_ids,
+        id,
+        original_language,
+        original_title,
+        overview_en: movie.overview,
+        overview_ru: '',
+        popularity,
+        poster_path_en: movie.poster_path,
+        poster_path_ru: '',
+        release_date,
+        title_en: movie.title,
+        title_ru: '',
+        video,
+        vote_average,
+        vote_count,
+        settings,
+      }
+    })
+
+    this.writeMovies((updateMovies as any))
+
+    return updateMovies
+  }
+
+  deleteMovie(id: number) {
+    const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+    const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
+
+    const deletedMovie = moviesData.find(movie => movie.id === id)
+
+    const updateMovies = moviesData.filter(movie => movie.id !== id)
+
+    if (!deletedMovie) {
+      throw new NotFoundException('The movie was not found')
+    } else {
+      fs.writeFile(this.getDir('movie'), JSON.stringify(updateMovies), 'utf-8', (error) => {
+        if (error) {
+          console.log(`WRITE ERROR: ${error}`)
+        } else {
+          console.log('FILE WRITTEN TO')
+        }
+      })
+    }
+
+    return deletedMovie
+  }
+
+  deleteMovieTags(tagName: string) {
+    const movies = this.getMovies()
+    const updateMovies = movies.map(movie => {
+      return {
+        ...movie,
+        settings: {
+          ...movie.settings,
+          tags: movie.settings.tags.filter(tag => tag.tagName !== tagName),
+        }
+      }
+    })
+
+    this.writeMovies((updateMovies as any))
+
+    return 'movies updated successfully'
+  }
+
+  writeMovies(movies: MovieDto[]) {
+    fs.writeFile(this.getDir('movie'), JSON.stringify(movies), 'utf-8', (error) => {
       if (error) {
         console.log(`WRITE ERROR: ${error}`)
+
+        throw new BadRequestException('Something bad happened', {
+          cause: new Error(),
+          description: 'Some error description'
+        })
       } else {
         console.log('FILE WRITTEN TO')
       }
     })
-
-    return 'Movie added successfully'
   }
-
-  // findAll() {
-  //   return `This action returns all profile`;
-  // }
-
-  // findOne(id: number) {
-  //   return `This action returns a #${id} profile`;
-  // }
-
-  // update(id: number, updateProfileDto: UpdateProfileDto) {
-  //   return `This action updates a #${id} profile`;
-  // }
-
-  // remove(id: number) {
-  //   return `This action removes a #${id} profile`;
-  // }
 }

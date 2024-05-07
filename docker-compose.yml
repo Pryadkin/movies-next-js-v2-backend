@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  movies_db:
+    container_name: "movies_db"
+    image: postgres:14.3-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: root
+    volumes:
+      - ./postgres:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5433:5432"

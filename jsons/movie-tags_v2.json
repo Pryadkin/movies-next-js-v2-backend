@@ -1,0 +1,82 @@
+[
+    {
+        "tagName": "I Have Seen",
+        "color": ""
+    },
+    {
+        "tagName": "I Haven't Seen",
+        "color": ""
+    },
+    {
+        "tagName": "Horror",
+        "color": ""
+    },
+    {
+        "tagName": "Comedy",
+        "color": ""
+    },
+    {
+        "tagName": "Action",
+        "color": ""
+    },
+    {
+        "tagName": "Adventure",
+        "color": ""
+    },
+    {
+        "tagName": "Animation",
+        "color": ""
+    },
+    {
+        "tagName": "Crime",
+        "color": ""
+    },
+    {
+        "tagName": "Documentary",
+        "color": ""
+    },
+    {
+        "tagName": "Family",
+        "color": ""
+    },
+    {
+        "tagName": "Fantasy",
+        "color": ""
+    },
+    {
+        "tagName": "History",
+        "color": ""
+    },
+    {
+        "tagName": "Music",
+        "color": ""
+    },
+    {
+        "tagName": "Mystery",
+        "color": ""
+    },
+    {
+        "tagName": "Romance",
+        "color": ""
+    },
+    {
+        "tagName": "Science Fiction",
+        "color": ""
+    },
+    {
+        "tagName": "TV Movie",
+        "color": ""
+    },
+    {
+        "tagName": "Thriller",
+        "color": ""
+    },
+    {
+        "tagName": "War",
+        "color": ""
+    },
+    {
+        "tagName": "Western",
+        "color": ""
+    }
+]
