@@ -1,10 +1,11 @@
-import {Controller, Post, Body, Get, Delete, Put, Param, Query, } from '@nestjs/common'
+import {Controller, Post, Body, Get, Delete, Put, Query, } from '@nestjs/common'
 import {ProfileService} from './profile.service'
 import {MovieDto} from './dto/movie.dto'
 import {ApiBody, ApiOkResponse, ApiTags} from '@nestjs/swagger'
 import {DeleteMovieDto} from './dto/delete-movie.dto'
 import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
 import {DeleteMovieTagsDto} from './dto/delete-movie-tags.dto'
+import {GetMovieDto} from './dto/get-movie.dto'
 
 @Controller('profile')
 @ApiTags('profile')
@@ -27,8 +28,24 @@ export class ProfileController {
     isArray: true
   })
   @Get('get_movies')
-  async getMoviesByPagination(@Query() query: any) {
-    return this.profileService.getMoviesByPagination(Number(query.numberPage), Number(query.limit))
+  async getMoviesByPagination(@Query() {
+    numberPage,
+    limit,
+    filterByMovieName,
+    sortItem,
+    filterByMovieWithoutDate,
+  }: GetMovieDto) {
+    const allMovies = this.profileService.getMovies()
+
+    const moviesByFilter = filterByMovieName ? this.profileService.getMovieByFilter(allMovies, filterByMovieName) : allMovies
+
+    const movieWithoutDate = filterByMovieWithoutDate ? this.profileService.getFilterByMovieWithoutDate(moviesByFilter, filterByMovieWithoutDate) : moviesByFilter
+
+    const moviesBySort = sortItem ? this.profileService.getSortMovies(movieWithoutDate, sortItem) : moviesByFilter
+
+    const moviesByPage =  this.profileService.getMoviesByPagination(moviesBySort, Number(numberPage), Number(limit))
+
+    return moviesByPage
   }
 
   @ApiBody({type: MovieDto})

@@ -22,6 +22,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/swagger": "^6.1.4",
     "@prisma/client": "5.11.0",
+    "dayjs": "^1.11.11",
     "fs": "^0.0.1-security",
     "helmet": "^7.1.0",
     "path": "^0.12.7",

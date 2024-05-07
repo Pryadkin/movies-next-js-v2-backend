@@ -8,6 +8,8 @@ import {MovieDto} from './dto/movie.dto'
 import fs = require('fs')
 import path = require('path')
 import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
+import {TSortItem} from './dto/get-movie.dto'
+import dayjs = require('dayjs')
 
 @Injectable()
 export class ProfileService {
@@ -22,24 +24,76 @@ export class ProfileService {
       const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
       return moviesData
     } catch (err) {
-      return err
+      new Error('Failed to get movies')
     }
+    return []
+  }
+
+  getSortMovies(movies: MovieDto[], sortType: TSortItem) {
+    const getSorted = (
+      a: string,
+      b: string,
+      sortT: string
+    ) => {
+        const updateLastA = dayjs(a)
+            .valueOf()
+        const updateLastB = dayjs(b)
+            .valueOf()
+
+        return sortT.slice(0 , 3) === 'asc' ? updateLastB - updateLastA : updateLastA - updateLastB
+    }
+
+    return [...movies].sort((a, b) => {
+        if (sortType.slice(-11) === 'ReleaseDate') {
+            const lastDateA = a.release_date
+            const lastDateB = b.release_date
+
+            return getSorted(lastDateA, lastDateB, sortType)
+        } else {
+            const lastDateA = a.settings.dateViewing.slice(-1)[0]
+            const lastDateB = b.settings.dateViewing.slice(-1)[0]
+
+            return getSorted(lastDateA, lastDateB, sortType)
+        }
+    })
+  }
+
+  getMovieByFilter(movies: MovieDto[], filterByMovieName: string) {
+    const filterIsEmpty = filterByMovieName.length === 0 ? true : false
+      if(filterIsEmpty) return movies
+
+      return movies.filter(movie => {
+        const enMovie = movie.title_en?.toLowerCase().includes(filterByMovieName.toLowerCase())
+
+        if (enMovie) return enMovie
+
+        const ruMovie = movie.title_ru?.toLowerCase().includes(filterByMovieName.toLowerCase())
+
+        return ruMovie
+      })
+  }
+
+  getFilterByMovieWithoutDate(movies: MovieDto[], filterByMovieWithoutDate: string) {
+    const isMovieWithoutDate = filterByMovieWithoutDate === 'true' ? true : false
+    const movieWithoutEmptyDate = movies.filter(movie => {
+      const withoutDate = movie.settings.dateViewing.length === 0
+
+      return isMovieWithoutDate ? !withoutDate : withoutDate
+    })
+
+    return movieWithoutEmptyDate
   }
 
   getMoviesByPagination(
+    movies: MovieDto[],
     numberPage: number,
-    limit: number
-  ): {
-    moviesPerPage: MovieDto[],
-    total: number
-  } {
+    limit: number,
+  ){
     try {
-      const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
-      const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
       const startMovie = (numberPage - 1) * limit
       const lastMovie = (numberPage - 1) * limit + limit
-      const moviesPerPage = moviesData.slice(startMovie, lastMovie)
-      const total = moviesData.length
+      const moviesPerPage = movies.slice(startMovie, lastMovie)
+      const total = movies.length
 
       return {moviesPerPage, total}
     } catch (err) {
