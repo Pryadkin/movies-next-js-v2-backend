@@ -35,11 +35,17 @@ export class ProfileController {
     sortItem,
     filterByMovieWithoutDate,
   }: GetMovieDto) {
+    const isFilterByMovieWithoutDate = filterByMovieWithoutDate === 'true' ? true : false
+
     const allMovies = this.profileService.getMovies()
 
-    const moviesByFilter = filterByMovieName ? this.profileService.getMovieByFilter(allMovies, filterByMovieName) : allMovies
+    const moviesByFilter = filterByMovieName
+      ? this.profileService.getMovieByFilter(allMovies, filterByMovieName)
+      : allMovies
 
-    const movieWithoutDate = filterByMovieWithoutDate ? this.profileService.getFilterByMovieWithoutDate(moviesByFilter, filterByMovieWithoutDate) : moviesByFilter
+    const movieWithoutDate = isFilterByMovieWithoutDate
+      ? this.profileService.getFilterByMovieWithoutDate(moviesByFilter)
+      : moviesByFilter
 
     const moviesBySort = sortItem ? this.profileService.getSortMovies(movieWithoutDate, sortItem) : moviesByFilter
 

@@ -73,15 +73,8 @@ export class ProfileService {
       })
   }
 
-  getFilterByMovieWithoutDate(movies: MovieDto[], filterByMovieWithoutDate: string) {
-    const isMovieWithoutDate = filterByMovieWithoutDate === 'true' ? true : false
-    const movieWithoutEmptyDate = movies.filter(movie => {
-      const withoutDate = movie.settings.dateViewing.length === 0
-
-      return isMovieWithoutDate ? !withoutDate : withoutDate
-    })
-
-    return movieWithoutEmptyDate
+  getFilterByMovieWithoutDate(movies: MovieDto[],) {
+    return movies.filter(movie => movie.settings.dateViewing.length !== 0)
   }
 
   getMoviesByPagination(
