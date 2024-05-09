@@ -2,7 +2,7 @@ import {ApiProperty} from '@nestjs/swagger'
 
 export class GenresDto {
     @ApiProperty()
-    id: number
+    genreId: number
 
     @ApiProperty()
     name: string

@@ -12,16 +12,6 @@ import {GetMovieDto} from './dto/get-movie.dto'
 export class ProfileController {
   constructor(private readonly profileService: ProfileService) { }
 
-  // @ApiOkResponse({
-  //   description: 'The movies list',
-  //   type: MovieDto,
-  //   isArray: true
-  // })
-  // @Get('get_movies')
-  // async getMovies() {
-  //   return this.profileService.getMovies()
-  // }
-
   @ApiOkResponse({
     description: 'The movies list',
     type: MovieDto,
@@ -39,15 +29,17 @@ export class ProfileController {
 
     const allMovies = this.profileService.getMovies()
 
-    const moviesByFilter = filterByMovieName
-      ? this.profileService.getMovieByFilter(allMovies, filterByMovieName)
-      : allMovies
+    const filteredMoviesByGenre = await this.profileService.filterMovieByGenres(allMovies)
+
+    const filteredMovieByName = filterByMovieName
+      ? this.profileService.filterByMovieName( filteredMoviesByGenre, filterByMovieName)
+      : filteredMoviesByGenre
 
     const movieWithoutDate = isFilterByMovieWithoutDate
-      ? this.profileService.getFilterByMovieWithoutDate(moviesByFilter)
-      : moviesByFilter
+      ? this.profileService.getFilterByMovieWithoutDate(filteredMovieByName)
+      : filteredMovieByName
 
-    const moviesBySort = sortItem ? this.profileService.getSortMovies(movieWithoutDate, sortItem) : moviesByFilter
+    const moviesBySort = sortItem ? this.profileService.getSortMovies(movieWithoutDate, sortItem) : filteredMovieByName
 
     const moviesByPage =  this.profileService.getMoviesByPagination(moviesBySort, Number(numberPage), Number(limit))
 

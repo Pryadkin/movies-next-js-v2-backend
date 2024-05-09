@@ -100,6 +100,7 @@ export class MovieDto {
     settings: {
         tags: ITag[],
         dateAdd: string,
-        dateViewing: string[]
+        dateViewing: string[],
+        isTv?: boolean
     }
 }

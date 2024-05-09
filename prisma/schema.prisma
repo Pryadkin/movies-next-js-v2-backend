@@ -19,3 +19,18 @@ model User {
   lastName String
   email String @unique
 }
+
+model Filters {
+  id        Int       @id @default(autoincrement())
+  title     String    @default("Filters")
+  genres    Genre[]
+}
+
+model Genre {
+  id        Int     @id @default(autoincrement())
+  genreId   Int     @unique
+  name      String  @unique
+
+  filters   Filters? @relation(fields: [filtersId], references: [id])
+  filtersId Int?
+}

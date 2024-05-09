@@ -2,7 +2,6 @@ import {Injectable, NotFoundException} from '@nestjs/common'
 import fs = require('fs')
 import path = require('path')
 import {GenresDto} from './dto/genres.dto'
-import {SetGenreDto} from './dto/set-genre.dto'
 const dirGenres = path.resolve(__dirname, 'genres.json')
 
 @Injectable()
@@ -38,10 +37,4 @@ export class GenresService {
             }
         })
     }
-
-    setGenre(genre: SetGenreDto) {
-        console.log('genre', genre)
-    }
-
-
 }

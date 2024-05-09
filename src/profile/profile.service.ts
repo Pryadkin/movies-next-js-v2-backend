@@ -10,9 +10,14 @@ import path = require('path')
 import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
 import {TSortItem} from './dto/get-movie.dto'
 import dayjs = require('dayjs')
+import {FilterService} from 'src/filters/filters.service'
 
 @Injectable()
 export class ProfileService {
+  constructor(
+    private readonly filtersService: FilterService,
+  ) { }
+
   getDir(name: string) {
     const updateSrc = `${__dirname.slice(0, -13)}/src`
     return path.resolve(updateSrc, `${name}.json`)
@@ -58,7 +63,8 @@ export class ProfileService {
     })
   }
 
-  getMovieByFilter(movies: MovieDto[], filterByMovieName: string) {
+
+  filterByMovieName(movies: MovieDto[], filterByMovieName: string) {
     const filterIsEmpty = filterByMovieName.length === 0 ? true : false
       if(filterIsEmpty) return movies
 
@@ -73,7 +79,35 @@ export class ProfileService {
       })
   }
 
-  getFilterByMovieWithoutDate(movies: MovieDto[],) {
+  async filterMovieByGenres(movies: MovieDto[]) {
+    let filteredMovies = movies
+    const genres = await this.filtersService.findMany()
+
+    for (let i = 0; i < genres.length; i++) {
+      const genre = genres[i]
+
+      for (let i = 0; i < genres.length; i++) {
+        if (genre.genreId === 0) {
+            filteredMovies = filteredMovies.filter(movie => {
+                return movie.settings.isTv
+            })
+        }
+
+        filteredMovies = filteredMovies.filter(movie => {
+            return movie.genre_ids?.find(genreId => {
+                if (genre.genreId !== 0) {
+                    return genreId === genre.genreId
+                }
+                return true
+            })
+        })
+      }
+    }
+
+    return filteredMovies
+  }
+
+  getFilterByMovieWithoutDate(movies: MovieDto[]) {
     return movies.filter(movie => movie.settings.dateViewing.length !== 0)
   }
 
