@@ -22,14 +22,24 @@ model User {
 
 model Filters {
   id        Int       @id @default(autoincrement())
-  title     String    @default("Filters")
   genres    Genre[]
+  tags      Tag[]
 }
 
 model Genre {
   id        Int     @id @default(autoincrement())
   genreId   Int     @unique
   name      String  @unique
+
+  filters   Filters? @relation(fields: [filtersId], references: [id])
+  filtersId Int?
+}
+
+model Tag {
+  id        Int     @id @default(autoincrement())
+  color     String     @unique
+  tagName   String  @unique
+  isGroup   Boolean?
 
   filters   Filters? @relation(fields: [filtersId], references: [id])
   filtersId Int?

@@ -81,7 +81,19 @@ export class ProfileService {
 
   async filterMovieByGenres(movies: MovieDto[]) {
     let filteredMovies = movies
-    const genres = await this.filtersService.findMany()
+    const genres = await this.filtersService.findManyGenre()
+    const tags = await this.filtersService.findManyTag()
+    const isExact = false
+
+    for (let i = 0; i < tags.length; i++) {
+      const isExist = null
+      filteredMovies = filteredMovies.filter(movie => {
+          const findMovie = movie.settings?.tags.find(tag => tag.tagName === tags[i].tagName)
+
+          return findMovie
+      })
+      if (!isExact && isExist) break
+  }
 
     for (let i = 0; i < genres.length; i++) {
       const genre = genres[i]

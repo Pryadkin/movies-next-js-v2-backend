@@ -2,6 +2,7 @@ import {Body, Controller, Post} from '@nestjs/common'
 import {ApiTags} from '@nestjs/swagger'
 import {SetGenreDto} from './dto/set-genre.dto'
 import {FilterService} from './filters.service'
+import {SetTagDto} from './dto/set-tag.dto'
 
 @ApiTags('filters')
 @Controller('filters')
@@ -12,7 +13,7 @@ export class FilterController {
 
   @Post('by-genre')
   async byGenre(@Body() genre: SetGenreDto) {
-    const isExistGenre = await this.filterService.findOne(genre.genreId)
+    const isExistGenre = await this.filterService.findOneGenre(genre.genreId)
 
     if (!isExistGenre) {
       await this.filterService.createGenre(genre.genreId, genre.name)
@@ -20,6 +21,19 @@ export class FilterController {
       await this.filterService.deleteGenre(genre.genreId)
     }
 
-    return await this.filterService.findMany()
+    return await this.filterService.findManyGenre()
+  }
+
+  @Post('by-tag')
+  async byTag(@Body() tag: SetTagDto) {
+    const isExistTag = await this.filterService.findOneTag(tag.tagName)
+
+    if (!isExistTag) {
+      await this.filterService.createTag(tag.tagName, tag.isGroup, tag.color)
+    } else {
+      await this.filterService.deleteTag(tag.tagName)
+    }
+
+    return await this.filterService.findManyTag()
   }
 }
