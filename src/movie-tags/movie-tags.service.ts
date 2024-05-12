@@ -1,12 +1,15 @@
 import {Injectable, NotFoundException} from '@nestjs/common'
 import fs = require('fs')
-import path = require('path')
 import {TagsDto} from './dto/tags.dto'
 import {UpdateTagDto} from './dto/update-tag.dto'
-const dirMovieTags = path.resolve(__dirname, 'movie-tags.json')
+import {DirService} from 'src/dir/dir.service'
 
 @Injectable()
 export class MovieTagsService {
+    constructor(
+        private readonly dirService: DirService,
+    ) { }
+
     getTags(): TagsDto[] {
         const movieTagsData = this.readTags()
 
@@ -67,7 +70,8 @@ export class MovieTagsService {
 
     readTags() {
         try {
-            const movieTagsDataJSON = fs.readFileSync(dirMovieTags, 'utf-8')
+            const movieTagsUrl = this.dirService.getDir('jsons','movie-tags.json')
+            const movieTagsDataJSON = fs.readFileSync(movieTagsUrl, 'utf-8')
             const res: TagsDto[] = JSON.parse(movieTagsDataJSON)
 
             return res
@@ -79,7 +83,9 @@ export class MovieTagsService {
     }
 
     writeTags(file: TagsDto[]) {
-        fs.writeFile(dirMovieTags, JSON.stringify(file), 'utf-8', (error) => {
+        const movieTagsUrl = this.dirService.getDir('jsons','movie-tags.json')
+
+        fs.writeFile(movieTagsUrl, JSON.stringify(file), 'utf-8', (error) => {
             if (error) {
                 console.log(`WRITE ERROR: ${error}`)
                 throw new NotFoundException(`WRITE ERROR: ${error}`)

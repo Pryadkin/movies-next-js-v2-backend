@@ -6,26 +6,23 @@ import {
 } from '@nestjs/common'
 import {MovieDto} from './dto/movie.dto'
 import fs = require('fs')
-import path = require('path')
 import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
 import {TSortItem} from './dto/get-movie.dto'
 import dayjs = require('dayjs')
 import {FilterService} from 'src/filters/filters.service'
+import {DirService} from 'src/dir/dir.service'
 
 @Injectable()
 export class ProfileService {
   constructor(
     private readonly filtersService: FilterService,
+    private readonly dirService: DirService,
   ) { }
-
-  getDir(name: string) {
-    const updateSrc = `${__dirname.slice(0, -13)}/src`
-    return path.resolve(updateSrc, `${name}.json`)
-  }
 
   getMovies(): MovieDto[] {
     try {
-      const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+      const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+      const moviesDataJSON = fs.readFileSync(moviesUrl, 'utf-8')
       const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
       return moviesData
     } catch (err) {
@@ -141,7 +138,8 @@ export class ProfileService {
   }
 
   addMovie(movie: MovieDto) {
-    const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+    const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+    const moviesDataJSON = fs.readFileSync(moviesUrl, 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
 
     const isExistMovie = moviesData.find(item => item.id === movie.id)
@@ -151,7 +149,7 @@ export class ProfileService {
     } else {
       moviesData.push(movie)
 
-      fs.writeFile(this.getDir('movie'), JSON.stringify(moviesData), 'utf-8', (error) => {
+      fs.writeFile(moviesUrl, JSON.stringify(moviesData), 'utf-8', (error) => {
         if (error) {
           console.log(`WRITE ERROR: ${error}`)
         } else {
@@ -170,7 +168,8 @@ export class ProfileService {
   }
 
   updateMovie(movie: MovieDto) {
-    const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+    const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+    const moviesDataJSON = fs.readFileSync(moviesUrl, 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
 
     const currentMovie = moviesData.find(item => item.id === movie.id)
@@ -267,7 +266,8 @@ export class ProfileService {
   }
 
   deleteMovie(id: number) {
-    const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+    const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+    const moviesDataJSON = fs.readFileSync(moviesUrl, 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
 
     const deletedMovie = moviesData.find(movie => movie.id === id)
@@ -277,7 +277,7 @@ export class ProfileService {
     if (!deletedMovie) {
       throw new NotFoundException('The movie was not found')
     } else {
-      fs.writeFile(this.getDir('movie'), JSON.stringify(updateMovies), 'utf-8', (error) => {
+      fs.writeFile(moviesUrl, JSON.stringify(updateMovies), 'utf-8', (error) => {
         if (error) {
           console.log(`WRITE ERROR: ${error}`)
         } else {
@@ -307,7 +307,9 @@ export class ProfileService {
   }
 
   writeMovies(movies: MovieDto[]) {
-    fs.writeFile(this.getDir('movie'), JSON.stringify(movies), 'utf-8', (error) => {
+    const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+
+    fs.writeFile(moviesUrl, JSON.stringify(movies), 'utf-8', (error) => {
       if (error) {
         console.log(`WRITE ERROR: ${error}`)
 
