@@ -1,4 +1,4 @@
-import {Body, Controller, Post} from '@nestjs/common'
+import {Body, Controller, Get, Post} from '@nestjs/common'
 import {ApiTags} from '@nestjs/swagger'
 import {SetGenreDto} from './dto/set-genre.dto'
 import {FilterService} from './filters.service'
@@ -11,14 +11,19 @@ export class FilterController {
     private readonly filterService: FilterService,
   ) { }
 
+  @Get('get-select-genres')
+  async getGenres() {
+    return await this.filterService.getGenres()
+  }
+
   @Post('by-genre')
   async byGenre(@Body() genre: SetGenreDto) {
     const isExistGenre = await this.filterService.findOneGenre(genre.genreId)
 
     if (!isExistGenre) {
-      await this.filterService.createGenre(genre.genreId, genre.name)
+      await this.filterService.addGenreToFilter(genre.genreId, genre.name)
     } else {
-      await this.filterService.deleteGenre(genre.genreId)
+      await this.filterService.deleteGenreFromFilter(genre.genreId)
     }
 
     return await this.filterService.findManyGenre()
@@ -29,9 +34,9 @@ export class FilterController {
     const isExistTag = await this.filterService.findOneTag(tag.tagName)
 
     if (!isExistTag) {
-      await this.filterService.createTag(tag.tagName, tag.isGroup, tag.color)
+      await this.filterService.addTagToFilter(tag.tagName, tag.isGroup, tag.color)
     } else {
-      await this.filterService.deleteTag(tag.tagName)
+      await this.filterService.deleteTagFromFilter(tag.tagName)
     }
 
     return await this.filterService.findManyTag()

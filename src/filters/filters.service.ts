@@ -17,9 +17,9 @@ export class FilterService {
     const isExistGenre = await this.findOneGenre(genreId)
 
     if (!isExistGenre) {
-      await this.createGenre(genreId, genreName)
+      await this.addGenreToFilter(genreId, genreName)
     } else {
-      await this.deleteGenre(genreId)
+      await this.deleteGenreFromFilter(genreId)
     }
 
     return await this.findManyGenre()
@@ -68,7 +68,16 @@ export class FilterService {
     })
   }
 
-  createGenre(genreId: number, name: string) {
+  getGenres() {
+    return this.dbService.genre.findMany({
+      select: {
+        genreId: true,
+        name: true,
+      },
+    })
+  }
+
+  addGenreToFilter(genreId: number, name: string) {
     return this.dbService.filters.create({
       data: {
         genres: {
@@ -83,7 +92,7 @@ export class FilterService {
     })
   }
 
-  createTag(tagName: string, isGroup: boolean, color: string) {
+  addTagToFilter(tagName: string, isGroup: boolean, color: string) {
     return this.dbService.filters.create({
       data: {
         tags: {
@@ -99,7 +108,7 @@ export class FilterService {
     })
   }
 
-  deleteGenre(genreId: number) {
+  deleteGenreFromFilter(genreId: number) {
     return this.dbService.genre.delete({
       where: {
         genreId,
@@ -107,7 +116,7 @@ export class FilterService {
     })
   }
 
-  deleteTag(tagName: string) {
+  deleteTagFromFilter(tagName: string) {
     return this.dbService.tag.delete({
       where: {
         tagName,
