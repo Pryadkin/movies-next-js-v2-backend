@@ -16,6 +16,11 @@ export class FilterController {
     return await this.filterService.getGenres()
   }
 
+  @Get('get-select-tags')
+  async getTags() {
+    return await this.filterService.getTags()
+  }
+
   @Post('by-genre')
   async byGenre(@Body() genre: SetGenreDto) {
     const isExistGenre = await this.filterService.findOneGenre(genre.genreId)
@@ -33,7 +38,7 @@ export class FilterController {
   async byTag(@Body() tag: SetTagDto) {
     const isExistTag = await this.filterService.findOneTag(tag.tagName)
 
-    if (!isExistTag) {
+    if (!isExistTag?.id) {
       await this.filterService.addTagToFilter(tag.tagName, tag.isGroup, tag.color)
     } else {
       await this.filterService.deleteTagFromFilter(tag.tagName)

@@ -77,6 +77,14 @@ export class FilterService {
     })
   }
 
+  getTags() {
+    return this.dbService.tag.findMany({
+      select: {
+        tagName: true,
+      },
+    })
+  }
+
   addGenreToFilter(genreId: number, name: string) {
     return this.dbService.filters.create({
       data: {
