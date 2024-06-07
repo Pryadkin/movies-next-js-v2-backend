@@ -144,7 +144,7 @@ export class ProfileService {
 
     const isExistMovie = moviesData.find(item => {
       const isExist = item.id === movie.id
-      const isEqualType = item.settings.isTv === item.settings.isTv
+      const isEqualType = item.settings.isTv === movie.settings.isTv
 
       return isExist ? isEqualType && true : false
     })
