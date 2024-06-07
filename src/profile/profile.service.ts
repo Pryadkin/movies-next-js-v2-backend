@@ -142,7 +142,12 @@ export class ProfileService {
     const moviesDataJSON = fs.readFileSync(moviesUrl, 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
 
-    const isExistMovie = moviesData.find(item => item.id === movie.id)
+    const isExistMovie = moviesData.find(item => {
+      const isExist = item.id === movie.id
+      const isEqualType = item.settings.isTv === item.settings.isTv
+
+      return isExist ? isEqualType && true : false
+    })
 
     if (isExistMovie) {
       throw new ConflictException('Movie already exist')
