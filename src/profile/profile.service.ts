@@ -11,6 +11,7 @@ import {TSortItem} from './dto/get-movie.dto'
 import dayjs = require('dayjs')
 import {FilterService} from 'src/filters/filters.service'
 import {DirService} from 'src/dir/dir.service'
+import {PersonDto} from './dto/person.dto'
 
 @Injectable()
 export class ProfileService {
@@ -164,6 +165,30 @@ export class ProfileService {
     }
 
     return movie
+  }
+
+  addPerson(person: PersonDto) {
+    const personUrl = this.dirService.getDir('jsons', 'persons.json')
+    const personDataJSON = fs.readFileSync(personUrl, 'utf-8')
+    const personData: PersonDto[] = JSON.parse(personDataJSON)
+
+    const isExistPerson = personData.find(item => item.id === person.id)
+
+    if (isExistPerson) {
+      throw new ConflictException('Person already exist')
+    } else {
+      personData.push(person)
+
+      fs.writeFile(personUrl, JSON.stringify(personData), 'utf-8', (error) => {
+        if (error) {
+          console.log(`WRITE ERROR: ${error}`)
+        } else {
+          console.log('FILE WRITTEN TO person.json')
+        }
+      })
+    }
+
+    return person
   }
 
   updateAllMovie(movies: MovieDto[]) {

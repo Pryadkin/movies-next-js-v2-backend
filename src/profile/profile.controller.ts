@@ -6,6 +6,7 @@ import {DeleteMovieDto} from './dto/delete-movie.dto'
 import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
 import {DeleteMovieTagsDto} from './dto/delete-movie-tags.dto'
 import {GetMovieDto} from './dto/get-movie.dto'
+import {PersonDto} from './dto/person.dto'
 
 @Controller('profile')
 @ApiTags('profile')
@@ -50,6 +51,12 @@ export class ProfileController {
   @Post('add_movie')
   async addMovie(@Body() body: MovieDto) {
     return this.profileService.addMovie(body)
+  }
+
+  @ApiBody({type: MovieDto})
+  @Post('add_person')
+  async addPerson(@Body() body: PersonDto) {
+    return this.profileService.addPerson(body)
   }
 
   @ApiBody({type: MovieDto})
