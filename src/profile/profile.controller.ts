@@ -47,6 +47,16 @@ export class ProfileController {
     return moviesByPage
   }
 
+  @ApiOkResponse({
+    description: 'The persons list',
+    type: PersonDto,
+    isArray: true
+  })
+  @Get('get_persons')
+  async getPersons() {
+    return this.profileService.getPersons()
+  }
+
   @ApiBody({type: MovieDto})
   @Post('add_movie')
   async addMovie(@Body() body: MovieDto) {

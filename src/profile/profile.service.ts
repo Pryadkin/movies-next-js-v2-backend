@@ -32,6 +32,18 @@ export class ProfileService {
     return []
   }
 
+  getPersons(): PersonDto[] {
+    try {
+      const personsUrl = this.dirService.getDir('jsons', 'persons.json')
+      const personsDataJSON = fs.readFileSync(personsUrl, 'utf-8')
+      const personsData: PersonDto[] = JSON.parse(personsDataJSON)
+      return personsData
+    } catch (err) {
+      new Error('Failed to get movies')
+    }
+    return []
+  }
+
   getSortMovies(movies: MovieDto[], sortType: TSortItem) {
     const getSorted = (
       a: string,
