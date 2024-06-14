@@ -7,6 +7,7 @@ import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
 import {DeleteMovieTagsDto} from './dto/delete-movie-tags.dto'
 import {GetMovieDto} from './dto/get-movie.dto'
 import {PersonDto} from './dto/person.dto'
+import {IPersonQuary} from './personType'
 
 @Controller('profile')
 @ApiTags('profile')
@@ -33,7 +34,7 @@ export class ProfileController {
     const filteredMoviesByGenre = await this.profileService.filterMovieByGenres(allMovies)
 
     const filteredMovieByName = filterByMovieName
-      ? this.profileService.filterByMovieName( filteredMoviesByGenre, filterByMovieName)
+      ? this.profileService.filterByMovieName(filteredMoviesByGenre, filterByMovieName)
       : filteredMoviesByGenre
 
     const movieWithoutDate = isFilterByMovieWithoutDate
@@ -53,8 +54,21 @@ export class ProfileController {
     isArray: true
   })
   @Get('get_persons')
-  async getPersons() {
-    return this.profileService.getPersons()
+  async getPersons(@Query() {
+    popularitySort,
+    filterByGender,
+    knownDepartmentFilter
+  }: IPersonQuary) {
+    const allPersons = this.profileService.getPersons()
+
+    console.log('filterByKnownDepartment', knownDepartmentFilter)
+
+    const personsFilterByGender = this.profileService.filterByGender(allPersons, filterByGender)
+
+    const personsFilterByKnownDepartment = this.profileService.filterByKnownDepartment(personsFilterByGender, knownDepartmentFilter)
+
+    const sortPersons = this.profileService.getSortPersons(personsFilterByKnownDepartment, popularitySort)
+    return sortPersons
   }
 
   @ApiBody({type: MovieDto})

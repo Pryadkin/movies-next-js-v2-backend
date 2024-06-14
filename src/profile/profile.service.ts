@@ -1,8 +1,8 @@
 import {
-  BadRequestException,
-  ConflictException,
-  Injectable,
-  NotFoundException
+    BadRequestException,
+    ConflictException,
+    Injectable,
+    NotFoundException
 } from '@nestjs/common'
 import {MovieDto} from './dto/movie.dto'
 import fs = require('fs')
@@ -12,6 +12,7 @@ import dayjs = require('dayjs')
 import {FilterService} from 'src/filters/filters.service'
 import {DirService} from 'src/dir/dir.service'
 import {PersonDto} from './dto/person.dto'
+import {TGender, TPersonKnownDepartment, TPersonPopularitySort} from './personType'
 
 @Injectable()
 export class ProfileService {
@@ -34,21 +35,22 @@ export class ProfileService {
 
   getPersons(): PersonDto[] {
     try {
-      const personsUrl = this.dirService.getDir('jsons', 'persons.json')
-      const personsDataJSON = fs.readFileSync(personsUrl, 'utf-8')
-      const personsData: PersonDto[] = JSON.parse(personsDataJSON)
-      return personsData
+        const personsUrl = this.dirService.getDir('jsons', 'persons.json')
+        const personsDataJSON = fs.readFileSync(personsUrl, 'utf-8')
+        const personsData: PersonDto[] = JSON.parse(personsDataJSON)
+
+        return personsData
     } catch (err) {
-      new Error('Failed to get movies')
+        new Error('Failed to get movies')
     }
     return []
-  }
+    }
 
   getSortMovies(movies: MovieDto[], sortType: TSortItem) {
     const getSorted = (
-      a: string,
-      b: string,
-      sortT: string
+        a: string,
+        b: string,
+        sortT: string
     ) => {
         const updateLastA = dayjs(a)
             .valueOf()
@@ -73,6 +75,42 @@ export class ProfileService {
     })
   }
 
+  getSortPersons(persons: PersonDto[], personPopularitySort: TPersonPopularitySort) {
+    return [...persons].sort((a, b) => {
+        const lastDateA = a.popularity
+        const lastDateB = b.popularity
+        if (personPopularitySort === 'asc') {
+            return lastDateB - lastDateA
+        } else {
+            return lastDateA - lastDateB
+        }
+    })
+  }
+
+  filterByGender(persons: PersonDto[], filterByGender: TGender = '0') {
+    const byGender = Number(filterByGender)
+
+    const filtersPersons = persons.filter(person => {
+      if (byGender === 0) return true
+
+      return person.gender === byGender
+    })
+
+    return filtersPersons
+  }
+
+  filterByKnownDepartment(
+    persons: PersonDto[],
+    personsFilterByGender: TPersonKnownDepartment
+  ) {
+    const filtersPersons = persons.filter(person => {
+      if (personsFilterByGender === 'All') return true
+
+      return person.known_for_department === personsFilterByGender
+    })
+
+    return filtersPersons
+  }
 
   filterByMovieName(movies: MovieDto[], filterByMovieName: string) {
     const filterIsEmpty = filterByMovieName.length === 0 ? true : false
