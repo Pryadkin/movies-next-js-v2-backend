@@ -61,8 +61,6 @@ export class ProfileController {
   }: IPersonQuary) {
     const allPersons = this.profileService.getPersons()
 
-    console.log('filterByKnownDepartment', knownDepartmentFilter)
-
     const personsFilterByGender = this.profileService.filterByGender(allPersons, filterByGender)
 
     const personsFilterByKnownDepartment = this.profileService.filterByKnownDepartment(personsFilterByGender, knownDepartmentFilter)
@@ -74,6 +72,7 @@ export class ProfileController {
   @ApiBody({type: MovieDto})
   @Post('add_movie')
   async addMovie(@Body() body: MovieDto) {
+    this.profileService.saveMovieId(body.id)
     return this.profileService.addMovie(body)
   }
 
@@ -114,5 +113,10 @@ export class ProfileController {
   @Delete('delete_movie_tags')
   async deleteTagFromMovies(@Body() {tagName}: DeleteMovieTagsDto) {
     return this.profileService.deleteMovieTags(tagName)
+  }
+
+  @Get('get_movie_ids')
+  async getMovieIds() {
+    return this.profileService.getMovieIds()
   }
 }
