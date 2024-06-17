@@ -1,26 +1,30 @@
 import {
-  BadRequestException,
-  ConflictException,
-  Injectable,
-  NotFoundException
+    BadRequestException,
+    ConflictException,
+    Injectable,
+    NotFoundException
 } from '@nestjs/common'
 import {MovieDto} from './dto/movie.dto'
 import fs = require('fs')
-import path = require('path')
 import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
 import {TSortItem} from './dto/get-movie.dto'
 import dayjs = require('dayjs')
+import {FilterService} from 'src/filters/filters.service'
+import {DirService} from 'src/dir/dir.service'
+import {PersonDto} from './dto/person.dto'
+import {TGender, TPersonKnownDepartment, TPersonPopularitySort} from './personType'
 
 @Injectable()
 export class ProfileService {
-  getDir(name: string) {
-    const updateSrc = `${__dirname.slice(0, -13)}/src`
-    return path.resolve(updateSrc, `${name}.json`)
-  }
+  constructor(
+    private readonly filtersService: FilterService,
+    private readonly dirService: DirService,
+  ) { }
 
   getMovies(): MovieDto[] {
     try {
-      const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+      const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+      const moviesDataJSON = fs.readFileSync(moviesUrl, 'utf-8')
       const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
       return moviesData
     } catch (err) {
@@ -29,11 +33,24 @@ export class ProfileService {
     return []
   }
 
+  getPersons(): PersonDto[] {
+    try {
+        const personsUrl = this.dirService.getDir('jsons', 'persons.json')
+        const personsDataJSON = fs.readFileSync(personsUrl, 'utf-8')
+        const personsData: PersonDto[] = JSON.parse(personsDataJSON)
+
+        return personsData
+    } catch (err) {
+        new Error('Failed to get movies')
+    }
+    return []
+    }
+
   getSortMovies(movies: MovieDto[], sortType: TSortItem) {
     const getSorted = (
-      a: string,
-      b: string,
-      sortT: string
+        a: string,
+        b: string,
+        sortT: string
     ) => {
         const updateLastA = dayjs(a)
             .valueOf()
@@ -58,7 +75,44 @@ export class ProfileService {
     })
   }
 
-  getMovieByFilter(movies: MovieDto[], filterByMovieName: string) {
+  getSortPersons(persons: PersonDto[], personPopularitySort: TPersonPopularitySort) {
+    return [...persons].sort((a, b) => {
+        const lastDateA = a.popularity
+        const lastDateB = b.popularity
+        if (personPopularitySort === 'asc') {
+            return lastDateB - lastDateA
+        } else {
+            return lastDateA - lastDateB
+        }
+    })
+  }
+
+  filterByGender(persons: PersonDto[], filterByGender: TGender = '0') {
+    const byGender = Number(filterByGender)
+
+    const filtersPersons = persons.filter(person => {
+      if (byGender === 0) return true
+
+      return person.gender === byGender
+    })
+
+    return filtersPersons
+  }
+
+  filterByKnownDepartment(
+    persons: PersonDto[],
+    personsFilterByGender: TPersonKnownDepartment
+  ) {
+    const filtersPersons = persons.filter(person => {
+      if (personsFilterByGender === 'All') return true
+
+      return person.known_for_department === personsFilterByGender
+    })
+
+    return filtersPersons
+  }
+
+  filterByMovieName(movies: MovieDto[], filterByMovieName: string) {
     const filterIsEmpty = filterByMovieName.length === 0 ? true : false
       if(filterIsEmpty) return movies
 
@@ -73,15 +127,48 @@ export class ProfileService {
       })
   }
 
-  getFilterByMovieWithoutDate(movies: MovieDto[], filterByMovieWithoutDate: string) {
-    const isMovieWithoutDate = filterByMovieWithoutDate === 'true' ? true : false
-    const movieWithoutEmptyDate = movies.filter(movie => {
-      const withoutDate = movie.settings.dateViewing.length === 0
+  async filterMovieByGenres(movies: MovieDto[]) {
+    let filteredMovies = movies
+    const genres = await this.filtersService.findManyGenre()
+    const tags = await this.filtersService.findManyTag()
+    const isExact = false
 
-      return isMovieWithoutDate ? !withoutDate : withoutDate
-    })
+    for (let i = 0; i < tags.length; i++) {
+      const isExist = null
+      filteredMovies = filteredMovies.filter(movie => {
+          const findMovie = movie.settings?.tags.find(tag => tag.tagName === tags[i].tagName)
 
-    return movieWithoutEmptyDate
+          return findMovie
+      })
+      if (!isExact && isExist) break
+  }
+
+    for (let i = 0; i < genres.length; i++) {
+      const genre = genres[i]
+
+      for (let i = 0; i < genres.length; i++) {
+        if (genre.genreId === 0) {
+            filteredMovies = filteredMovies.filter(movie => {
+                return movie.settings.isTv
+            })
+        }
+
+        filteredMovies = filteredMovies.filter(movie => {
+            return movie.genre_ids?.find(genreId => {
+                if (genre.genreId !== 0) {
+                    return genreId === genre.genreId
+                }
+                return true
+            })
+        })
+      }
+    }
+
+    return filteredMovies
+  }
+
+  getFilterByMovieWithoutDate(movies: MovieDto[]) {
+    return movies.filter(movie => movie.settings.dateViewing.length !== 0)
   }
 
   getMoviesByPagination(
@@ -102,17 +189,23 @@ export class ProfileService {
   }
 
   addMovie(movie: MovieDto) {
-    const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+    const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+    const moviesDataJSON = fs.readFileSync(moviesUrl, 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
 
-    const isExistMovie = moviesData.find(item => item.id === movie.id)
+    const isExistMovie = moviesData.find(item => {
+      const isExist = item.id === movie.id
+      const isEqualType = item.settings.isTv === movie.settings.isTv
+
+      return isExist ? isEqualType && true : false
+    })
 
     if (isExistMovie) {
       throw new ConflictException('Movie already exist')
     } else {
       moviesData.push(movie)
 
-      fs.writeFile(this.getDir('movie'), JSON.stringify(moviesData), 'utf-8', (error) => {
+      fs.writeFile(moviesUrl, JSON.stringify(moviesData), 'utf-8', (error) => {
         if (error) {
           console.log(`WRITE ERROR: ${error}`)
         } else {
@@ -124,6 +217,30 @@ export class ProfileService {
     return movie
   }
 
+  addPerson(person: PersonDto) {
+    const personUrl = this.dirService.getDir('jsons', 'persons.json')
+    const personDataJSON = fs.readFileSync(personUrl, 'utf-8')
+    const personData: PersonDto[] = JSON.parse(personDataJSON)
+
+    const isExistPerson = personData.find(item => item.id === person.id)
+
+    if (isExistPerson) {
+      throw new ConflictException('Person already exist')
+    } else {
+      personData.push(person)
+
+      fs.writeFile(personUrl, JSON.stringify(personData), 'utf-8', (error) => {
+        if (error) {
+          console.log(`WRITE ERROR: ${error}`)
+        } else {
+          console.log('FILE WRITTEN TO person.json')
+        }
+      })
+    }
+
+    return person
+  }
+
   updateAllMovie(movies: MovieDto[]) {
     this.writeMovies(movies)
 
@@ -131,7 +248,8 @@ export class ProfileService {
   }
 
   updateMovie(movie: MovieDto) {
-    const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+    const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+    const moviesDataJSON = fs.readFileSync(moviesUrl, 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
 
     const currentMovie = moviesData.find(item => item.id === movie.id)
@@ -228,7 +346,8 @@ export class ProfileService {
   }
 
   deleteMovie(id: number) {
-    const moviesDataJSON = fs.readFileSync(this.getDir('movie'), 'utf-8')
+    const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+    const moviesDataJSON = fs.readFileSync(moviesUrl, 'utf-8')
     const moviesData: MovieDto[] = JSON.parse(moviesDataJSON)
 
     const deletedMovie = moviesData.find(movie => movie.id === id)
@@ -238,7 +357,7 @@ export class ProfileService {
     if (!deletedMovie) {
       throw new NotFoundException('The movie was not found')
     } else {
-      fs.writeFile(this.getDir('movie'), JSON.stringify(updateMovies), 'utf-8', (error) => {
+      fs.writeFile(moviesUrl, JSON.stringify(updateMovies), 'utf-8', (error) => {
         if (error) {
           console.log(`WRITE ERROR: ${error}`)
         } else {
@@ -267,8 +386,39 @@ export class ProfileService {
     return 'movies updated successfully'
   }
 
+  saveMovieId(movieId: number) {
+    const movieIdsUrl = this.dirService.getDir('jsons', 'movieIds.json')
+    const movieIdsDataJSON = fs.readFileSync(movieIdsUrl, 'utf-8')
+    const movieIdsData: number[] = JSON.parse(movieIdsDataJSON)
+
+    movieIdsData.push(movieId)
+
+    fs.writeFile(movieIdsUrl, JSON.stringify(movieIdsData), 'utf-8', (error) => {
+      if (error) {
+        console.log(`WRITE ERROR: ${error}`)
+
+        throw new BadRequestException('Something bad happened', {
+          cause: new Error(),
+          description: 'Some error description'
+        })
+      } else {
+        console.log('FILE WRITTEN TO')
+      }
+    })
+  }
+
+  getMovieIds() {
+    const movieIdsUrl = this.dirService.getDir('jsons', 'movieIds.json')
+    const movieIdsDataJSON = fs.readFileSync(movieIdsUrl, 'utf-8')
+    const movieIdsData: number[] = JSON.parse(movieIdsDataJSON)
+
+    return movieIdsData
+  }
+
   writeMovies(movies: MovieDto[]) {
-    fs.writeFile(this.getDir('movie'), JSON.stringify(movies), 'utf-8', (error) => {
+    const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
+
+    fs.writeFile(moviesUrl, JSON.stringify(movies), 'utf-8', (error) => {
       if (error) {
         console.log(`WRITE ERROR: ${error}`)
 

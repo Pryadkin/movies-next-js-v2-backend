@@ -19,3 +19,28 @@ model User {
   lastName String
   email String @unique
 }
+
+model Filters {
+  id        Int       @id @default(autoincrement())
+  genres    Genre[]
+  tags      Tag[]
+}
+
+model Genre {
+  id        Int     @id @default(autoincrement())
+  genreId   Int     @unique
+  name      String  @unique
+
+  filters   Filters? @relation(fields: [filtersId], references: [id])
+  filtersId Int?
+}
+
+model Tag {
+  id        Int     @id @default(autoincrement())
+  color     String
+  tagName   String  @unique
+  isGroup   Boolean?
+
+  filters   Filters? @relation(fields: [filtersId], references: [id])
+  filtersId Int?
+}

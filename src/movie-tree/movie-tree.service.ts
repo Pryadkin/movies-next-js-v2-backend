@@ -1,10 +1,12 @@
 import {Injectable} from '@nestjs/common'
 import fs = require('fs')
-import path = require('path')
-const dirMovieTree = path.resolve(__dirname, 'movies-tree.json')
+import {DirService} from 'src/dir/dir.service'
 
 @Injectable()
 export class MovieTreeService {
+    constructor(
+        private readonly dirService: DirService,
+    ) { }
 
     getMovieTreeData() {
         const movieTreeData = this.readMovieTree()
@@ -19,8 +21,10 @@ export class MovieTreeService {
     }
 
     readMovieTree() {
+        const movieTreeUrl = this.dirService.getDir('jsons','movies-tree.json')
+
         try {
-            const movieTreeDataJSON = fs.readFileSync(dirMovieTree, 'utf-8')
+            const movieTreeDataJSON = fs.readFileSync(movieTreeUrl, 'utf-8')
 
             return JSON.parse(movieTreeDataJSON)
         } catch (error) {
@@ -29,7 +33,9 @@ export class MovieTreeService {
     }
 
     writeMovieTree(file: any) {
-        fs.writeFile(dirMovieTree, JSON.stringify(file), 'utf-8', (error) => {
+        const movieTreeUrl = this.dirService.getDir('jsons','movies-tree.json')
+
+        fs.writeFile(movieTreeUrl, JSON.stringify(file), 'utf-8', (error) => {
             if (error) {
                 console.log(`WRITE ERROR: ${error}`)
             } else {

@@ -1,11 +1,14 @@
 import {Injectable, NotFoundException} from '@nestjs/common'
 import fs = require('fs')
-import path = require('path')
 import {GenresDto} from './dto/genres.dto'
-const dirGenres = path.resolve(__dirname, 'genres.json')
+import {DirService} from '../dir/dir.service'
 
 @Injectable()
 export class GenresService {
+    constructor(
+        private readonly dirService: DirService,
+    ) { }
+
     getGenres(): GenresDto[] {
         const genresData = this.readGenres()
 
@@ -13,13 +16,13 @@ export class GenresService {
     }
 
     readGenres() {
-        const genresUrl = `${dirGenres.slice(0, -24)}/jsons/genres.json`
+        const genresUrl = this.dirService.getDir('jsons','genres.json')
 
         try {
             const genresDataJSON = fs.readFileSync(genresUrl, 'utf-8')
-            const res: GenresDto[] = JSON.parse(genresDataJSON)
+            const genres: GenresDto[] = JSON.parse(genresDataJSON)
 
-            return res
+            return genres
         } catch (error) {
             this.writeGenres([])
 
@@ -28,7 +31,9 @@ export class GenresService {
     }
 
     writeGenres(file: GenresDto[]) {
-        fs.writeFile(dirGenres, JSON.stringify(file), 'utf-8', (error) => {
+        const genresUrl = this.dirService.getDir('jsons','genres.json')
+
+        fs.writeFile(genresUrl, JSON.stringify(file), 'utf-8', (error) => {
             if (error) {
                 console.log(`WRITE ERROR: ${error}`)
                 throw new NotFoundException(`WRITE ERROR: ${error}`)

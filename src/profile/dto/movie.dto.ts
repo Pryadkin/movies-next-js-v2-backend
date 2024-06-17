@@ -38,6 +38,11 @@ export class MovieDto {
     adult: boolean
 
     @ApiProperty({
+        default: '',
+    })
+    first_air_date: string
+
+    @ApiProperty({
         default: '/o8dPH0ZSIyyViP6rjRX1djwCUwI.jpg',
     })
     backdrop_path_en: string | null
@@ -100,6 +105,7 @@ export class MovieDto {
     settings: {
         tags: ITag[],
         dateAdd: string,
-        dateViewing: string[]
+        dateViewing: string[],
+        isTv?: boolean
     }
 }
