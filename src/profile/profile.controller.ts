@@ -24,10 +24,11 @@ export class ProfileController {
     numberPage,
     limit,
     filterByMovieName,
-    sortItem,
-    filterByMovieWithoutDate,
+    sortItemName,
+    sortItemType,
+    isWithDateOfViewing,
   }: GetMovieDto) {
-    const isFilterByMovieWithoutDate = filterByMovieWithoutDate === 'true' ? true : false
+    const isFilterByMovieWithDateOfViewing = isWithDateOfViewing === 'true' ? true : false
 
     const allMovies = this.profileService.getMovies()
 
@@ -37,11 +38,20 @@ export class ProfileController {
       ? this.profileService.filterByMovieName(filteredMoviesByGenre, filterByMovieName)
       : filteredMoviesByGenre
 
-    const movieWithoutDate = isFilterByMovieWithoutDate
+    const movieWithoutDate = isFilterByMovieWithDateOfViewing
       ? this.profileService.getFilterByMovieWithoutDate(filteredMovieByName)
       : filteredMovieByName
 
-    const moviesBySort = sortItem ? this.profileService.getSortMovies(movieWithoutDate, sortItem) : filteredMovieByName
+    const moviesBySort = sortItemName ? this.profileService.getSortMovies(movieWithoutDate, sortItemName, sortItemType) : filteredMovieByName
+
+    // const adfadsf = allMovies.filter(elee => elee.release_date.includes('2024'))
+    // console.log('adfadsf', adfadsf.map(ele => ele.title_ru))
+
+    // const aaaaaa = this.profileService.getFilterByMovieWithoutDate(filteredMovieByName)
+    // // console.log('moviesBySort', aaaaaa.map(elem => elem.release_date))
+    // const sdfs = this.profileService.getSortMovies(allMovies, 'release_date', 'asc')
+    // // console.log('moviesBySort', sdfs.map(elem => elem.release_date))
+    // console.log('sdfs', sdfs.map(elem => elem.release_date))
 
     const moviesByPage =  this.profileService.getMoviesByPagination(moviesBySort, Number(numberPage), Number(limit))
 

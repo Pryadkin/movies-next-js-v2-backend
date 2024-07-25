@@ -7,8 +7,7 @@ import {
 import {MovieDto} from './dto/movie.dto'
 import fs = require('fs')
 import {UpdateTagDto} from 'src/movie-tags/dto/update-tag.dto'
-import {TSortItem} from './dto/get-movie.dto'
-import dayjs = require('dayjs')
+import {TSortItem, TSortType} from './dto/get-movie.dto'
 import {FilterService} from 'src/filters/filters.service'
 import {DirService} from 'src/dir/dir.service'
 import {PersonDto} from './dto/person.dto'
@@ -46,32 +45,35 @@ export class ProfileService {
     return []
     }
 
-  getSortMovies(movies: MovieDto[], sortType: TSortItem) {
+  getSortMovies(movies: MovieDto[], sortName: TSortItem, sortType: TSortType) {
     const getSorted = (
         a: string,
         b: string,
         sortT: string
     ) => {
-        const updateLastA = dayjs(a)
-            .valueOf()
-        const updateLastB = dayjs(b)
-            .valueOf()
+        const updateLastA = new Date(a).getTime()
+        const updateLastB = new Date(b).getTime()
+        const result = updateLastA - updateLastB
 
-        return sortT.slice(0 , 3) === 'asc' ? updateLastB - updateLastA : updateLastA - updateLastB
+        return sortT === 'asc' ? -result : result
     }
 
     return [...movies].sort((a, b) => {
-        if (sortType.slice(-11) === 'ReleaseDate') {
-            const lastDateA = a.release_date
-            const lastDateB = b.release_date
+      switch (sortName) {
+        case 'release_date':
+          const releaseDateA = new Date(a.release_date).getTime()
+          const releaseDateB = new Date(b.release_date).getTime()
+          const result = releaseDateA - releaseDateB
+          return sortType === 'asc' ? -result : result
 
-            return getSorted(lastDateA, lastDateB, sortType)
-        } else {
-            const lastDateA = a.settings.dateViewing.slice(-1)[0]
-            const lastDateB = b.settings.dateViewing.slice(-1)[0]
+        case 'date_of_viewing':
+          const lastDateA = a.settings.dateViewing.slice(-1)[0]
+          const lastDateB = b.settings.dateViewing.slice(-1)[0]
 
-            return getSorted(lastDateA, lastDateB, sortType)
-        }
+          return getSorted(lastDateA, lastDateB, sortType)
+        default:
+          return null
+      }
     })
   }
 

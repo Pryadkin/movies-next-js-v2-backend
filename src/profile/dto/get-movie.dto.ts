@@ -1,6 +1,7 @@
 import {ApiProperty} from '@nestjs/swagger'
 
-export type TSortItem = 'ascDate' | 'descDate' | 'ascReleaseDate' | 'descReleaseDate' | ''
+export type TSortItem = 'release_date' | 'date_of_viewing'
+export type TSortType = 'asc' | 'desc'
 
 export class GetMovieDto {
     @ApiProperty()
@@ -10,11 +11,14 @@ export class GetMovieDto {
     limit: string
 
     @ApiProperty()
-    sortItem: TSortItem
+    sortItemName: TSortItem
+
+    @ApiProperty()
+    sortItemType: TSortType
 
     @ApiProperty()
     filterByMovieName: string | undefined
 
     @ApiProperty()
-    filterByMovieWithoutDate: string
+    isWithDateOfViewing: string
 }
