@@ -388,25 +388,19 @@ export class ProfileService {
     return 'movies updated successfully'
   }
 
+  deleteMovieId(movieId: number) {
+    const movieIdsData = this.getMovieIds()
+    const updateMovieId = movieIdsData.filter(id => id !== movieId)
+
+    this.writeMovieIds(updateMovieId)
+  }
+
   saveMovieId(movieId: number) {
-    const movieIdsUrl = this.dirService.getDir('jsons', 'movieIds.json')
-    const movieIdsDataJSON = fs.readFileSync(movieIdsUrl, 'utf-8')
-    const movieIdsData: number[] = JSON.parse(movieIdsDataJSON)
+    const movieIdsData = this.getMovieIds()
 
     movieIdsData.push(movieId)
 
-    fs.writeFile(movieIdsUrl, JSON.stringify(movieIdsData), 'utf-8', (error) => {
-      if (error) {
-        console.log(`WRITE ERROR: ${error}`)
-
-        throw new BadRequestException('Something bad happened', {
-          cause: new Error(),
-          description: 'Some error description'
-        })
-      } else {
-        console.log('FILE WRITTEN TO')
-      }
-    })
+    this.writeMovieIds(movieIdsData)
   }
 
   getMovieIds() {
@@ -421,6 +415,23 @@ export class ProfileService {
     const moviesUrl = this.dirService.getDir('jsons', 'movies.json')
 
     fs.writeFile(moviesUrl, JSON.stringify(movies), 'utf-8', (error) => {
+      if (error) {
+        console.log(`WRITE ERROR: ${error}`)
+
+        throw new BadRequestException('Something bad happened', {
+          cause: new Error(),
+          description: 'Some error description'
+        })
+      } else {
+        console.log('FILE WRITTEN TO')
+      }
+    })
+  }
+
+  writeMovieIds(movieIds: number[]) {
+    const movieIdsUrl = this.dirService.getDir('jsons', 'movieIds.json')
+
+    fs.writeFile(movieIdsUrl, JSON.stringify(movieIds), 'utf-8', (error) => {
       if (error) {
         console.log(`WRITE ERROR: ${error}`)
 

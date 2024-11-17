@@ -116,6 +116,7 @@ export class ProfileController {
   async delete(
     @Body('id') id: string | number,
   ) {
+    this.profileService.deleteMovieId(+id)
     return this.profileService.deleteMovie(+id)
   }
 
