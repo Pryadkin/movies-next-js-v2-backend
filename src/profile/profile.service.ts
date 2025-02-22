@@ -12,6 +12,7 @@ import {FilterService} from 'src/filters/filters.service'
 import {DirService} from 'src/dir/dir.service'
 import {PersonDto} from './dto/person.dto'
 import {TGender, TPersonKnownDepartment, TPersonPopularitySort} from './personType'
+import {CollectionMovieDto} from './dto/collection-movie.dto'
 
 @Injectable()
 export class ProfileService {
@@ -30,6 +31,134 @@ export class ProfileService {
       new Error('Failed to get movies')
     }
     return []
+  }
+
+  getMovieArrByName(name: string): MovieDto[] {
+    const movies = this.getMovies()
+    const movie = movies.filter(movie => {
+      if (movie.title_ru?.includes(name)) return true
+      if (movie.title_en?.includes(name)) return true
+      return false
+    })
+
+    if (movie.length) return movie
+    return []
+  }
+
+  getMovieByName(name: string): MovieDto {
+    const movies = this.getMovies()
+    const movie = movies.find(movie => {
+      return movie.title_ru === name || movie.title_en === name
+    })
+
+    return movie
+  }
+
+  getCollections(): CollectionMovieDto[] {
+    try {
+      const collectionUrl = this.dirService.getDir('jsons', 'moviesCollection.json')
+      const collectionDataJSON = fs.readFileSync(collectionUrl, 'utf-8')
+      const collectionData: CollectionMovieDto[] = JSON.parse(collectionDataJSON)
+
+      return collectionData
+    } catch (err) {
+      new Error('Failed to get movies Collection')
+    }
+  }
+
+  getCollectionByName(name: string): CollectionMovieDto {
+    try {
+      const collections = this.getCollections()
+
+      const collection = collections.find(collect => collect.name === name)
+
+      return collection
+    } catch (err) {
+      new Error('Failed to get movies Collection')
+    }
+  }
+
+  getCollectionNames(): string[] {
+    try {
+      const collections = this.getCollections()
+
+      return collections.map(collect => collect.name)
+    } catch (err) {
+      new Error('Failed to get movies Collection')
+    }
+  }
+
+  getCorrectCollection(collection: CollectionMovieDto) {
+    const movies = collection.movieList.map(name => {
+      return this.getMovieByName(name) || null
+    }, [])
+
+    console.log('movies', movies)
+
+    return {
+      ...collection,
+      movies
+    }
+  }
+
+  setMoviesCollection(newCollectionMovies: CollectionMovieDto): CollectionMovieDto {
+    const collectionNames = this.getCollectionNames()
+    const moviesCollection = this.getCollections()
+
+    if (!moviesCollection) {
+      this.writeMoviesCollection([this.getCorrectCollection(newCollectionMovies)])
+      return newCollectionMovies
+    }
+
+    const isCollectionExist = collectionNames.includes(newCollectionMovies.name)
+
+    if (isCollectionExist) {
+      throw new ConflictException('Collection already exist')
+    }
+
+    const updateCollection = [
+      ...moviesCollection,
+      this.getCorrectCollection(newCollectionMovies)
+    ]
+
+    this.writeMoviesCollection(updateCollection)
+
+    return this.getCorrectCollection(newCollectionMovies)
+  }
+
+  setMovieToCollection(movie: MovieDto, collectionName: string) {
+    const collections = this.getCollections()
+
+    const collection = collections.find(collect => collect.name === collectionName)
+
+    const movieName = collection.movieList.find(name => {
+      const getCorName = (str: string) => str
+        .toLowerCase()
+        .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()…]/g, '')
+        .trim()
+
+      const compareName = getCorName(name)
+      const compareMovieName = getCorName(movie.title_ru)
+
+      return compareName.includes(compareMovieName) || compareName.includes(compareMovieName)
+    })
+    const moviePosition = collection.movieList.indexOf(movieName)
+
+    collection.movies[moviePosition] = movie
+
+    const updateCollection: CollectionMovieDto = {
+      ...collection,
+      movies: collection.movies
+    }
+
+    const updateCollections = [
+      ...collections.filter(collect => collect.name !== collectionName),
+      updateCollection
+    ]
+
+    this.writeMoviesCollection(updateCollections)
+
+    return updateCollection
   }
 
   getPersons(): PersonDto[] {
@@ -432,6 +561,40 @@ export class ProfileService {
     const movieIdsUrl = this.dirService.getDir('jsons', 'movieIds.json')
 
     fs.writeFile(movieIdsUrl, JSON.stringify(movieIds), 'utf-8', (error) => {
+      if (error) {
+        console.log(`WRITE ERROR: ${error}`)
+
+        throw new BadRequestException('Something bad happened', {
+          cause: new Error(),
+          description: 'Some error description'
+        })
+      } else {
+        console.log('FILE WRITTEN TO')
+      }
+    })
+  }
+
+  deleteMoviesCollection(collectionMovies: CollectionMovieDto[]) {
+    const movieIdsUrl = this.dirService.getDir('jsons', 'moviesCollection.json')
+
+    fs.writeFile(movieIdsUrl, JSON.stringify(collectionMovies), 'utf-8', (error) => {
+      if (error) {
+        console.log(`WRITE ERROR: ${error}`)
+
+        throw new BadRequestException('Something bad happened', {
+          cause: new Error(),
+          description: 'Some error description'
+        })
+      } else {
+        console.log('FILE WRITTEN TO')
+      }
+    })
+  }
+
+  writeMoviesCollection(collectionMovies: CollectionMovieDto[]) {
+    const movieIdsUrl = this.dirService.getDir('jsons', 'moviesCollection.json')
+
+    fs.writeFile(movieIdsUrl, JSON.stringify(collectionMovies), 'utf-8', (error) => {
       if (error) {
         console.log(`WRITE ERROR: ${error}`)
 

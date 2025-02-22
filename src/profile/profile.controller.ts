@@ -8,11 +8,62 @@ import {DeleteMovieTagsDto} from './dto/delete-movie-tags.dto'
 import {GetMovieDto} from './dto/get-movie.dto'
 import {PersonDto} from './dto/person.dto'
 import {IPersonQuary} from './personType'
+import {CollectionMovieDto} from './dto/collection-movie.dto'
 
 @Controller('profile')
 @ApiTags('profile')
 export class ProfileController {
   constructor(private readonly profileService: ProfileService) { }
+
+  @ApiOkResponse({
+    description: 'Collections name',
+    type: MovieDto,
+    isArray: true
+  })
+  @Get('get_collections_name')
+  async getCollectionsName() {
+    return this.profileService.getCollectionNames()
+  }
+
+  @ApiOkResponse({
+    description: 'set_movie_to_collection',
+    type: MovieDto,
+    isArray: true
+  })
+  @Post('set_movie_to_collection')
+  async setMovieToCollection(@Body() {movie, collectionName}: {movie: MovieDto, collectionName: string}) {
+    return this.profileService.setMovieToCollection(movie, collectionName)
+  }
+
+  @ApiOkResponse({
+    description: 'The movies collection',
+    type: MovieDto,
+    isArray: true
+  })
+  @Post('set_movies_collection')
+  async setMoviesCollection(@Body() collectionMovies: CollectionMovieDto) {
+    return this.profileService.setMoviesCollection(collectionMovies)
+  }
+
+  @ApiOkResponse({
+    description: 'Get movies collection',
+    type: MovieDto,
+    isArray: true
+  })
+  @Get('get_collection_by_name')
+  async getMoviesCollection(@Query() {name}: {name: string}) {
+    return this.profileService.getCollectionByName(name)
+  }
+
+  @ApiOkResponse({
+    description: 'The movies list',
+    type: MovieDto,
+    isArray: true
+  })
+  @Get('get_movie_by_name')
+  async getMovieByName(@Query() {movieName}: {movieName: string}): Promise<MovieDto[]> {
+    return this.profileService.getMovieArrByName(movieName)
+  }
 
   @ApiOkResponse({
     description: 'The movies list',
