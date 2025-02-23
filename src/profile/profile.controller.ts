@@ -41,8 +41,18 @@ export class ProfileController {
     isArray: true
   })
   @Post('set_movies_collection')
-  async setMoviesCollection(@Body() collectionMovies: CollectionMovieDto) {
-    return this.profileService.setMoviesCollection(collectionMovies)
+  async createMoviesCollection(@Body() collectionMovies: CollectionMovieDto) {
+    return this.profileService.createMoviesCollection(collectionMovies)
+  }
+
+  @ApiOkResponse({
+    description: 'The movies collection',
+    type: MovieDto,
+    isArray: true
+  })
+  @Post('edit_movie_collection')
+  async editMoviesCollection(@Body() collectionMovies: CollectionMovieDto) {
+    return this.profileService.editCollection(collectionMovies)
   }
 
   @ApiOkResponse({

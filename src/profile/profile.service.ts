@@ -45,7 +45,7 @@ export class ProfileService {
     return []
   }
 
-  getMovieByName(name: string): MovieDto {
+  getMovieByName(name: string): MovieDto | undefined {
     const movies = this.getMovies()
     const movie = movies.find(movie => {
       return movie.title_ru === name || movie.title_en === name
@@ -88,28 +88,59 @@ export class ProfileService {
     }
   }
 
-  getCorrectCollection(collection: CollectionMovieDto) {
-    const movies = collection.movieList.map(name => {
-      return this.getMovieByName(name) || null
-    }, [])
+  addMovieProfileToCollectionMovieList(collection: CollectionMovieDto) {
+    const movieList = collection.movieList.map(mov => {
+      const movie = this.getMovieByName(mov.name) || null
 
-    console.log('movies', movies)
+      return {
+        id: mov.id,
+        name: mov.name,
+        movie: movie
+      }
+    }, [])
 
     return {
       ...collection,
-      movies
+      movieList
     }
   }
 
-  setMoviesCollection(newCollectionMovies: CollectionMovieDto): CollectionMovieDto {
-    const collectionNames = this.getCollectionNames()
-    const moviesCollection = this.getCollections()
+  addMovieToCollectionMovieList(
+    collection: CollectionMovieDto,
+    movieId: number
+  ): CollectionMovieDto {
+    const movieList = collection.movieList.map(mov => {
+      if (movieId === mov.id) {
+        return {
+          id: mov.id,
+          name: mov.name,
+          movie: this.getMovieByName(mov.name)
+        }
+      }
 
-    if (!moviesCollection) {
-      this.writeMoviesCollection([this.getCorrectCollection(newCollectionMovies)])
+      return mov
+    }, [])
+
+    return {
+      ...collection,
+      movieList
+    }
+  }
+
+  createMoviesCollection(
+    newCollectionMovies: CollectionMovieDto,
+  ): CollectionMovieDto {
+    const collectionNames = this.getCollectionNames()
+
+    // If movie collection already exist in profile, add movie to collection
+    const collectionWithMovie = this.addMovieProfileToCollectionMovieList(newCollectionMovies)
+
+    if (!collectionNames) {
+      this.writeMoviesCollection([collectionWithMovie])
       return newCollectionMovies
     }
 
+    const collections = this.getCollections()
     const isCollectionExist = collectionNames.includes(newCollectionMovies.name)
 
     if (isCollectionExist) {
@@ -117,13 +148,28 @@ export class ProfileService {
     }
 
     const updateCollection = [
-      ...moviesCollection,
-      this.getCorrectCollection(newCollectionMovies)
+      ...collections,
+      collectionWithMovie
     ]
 
     this.writeMoviesCollection(updateCollection)
 
-    return this.getCorrectCollection(newCollectionMovies)
+    return collectionWithMovie
+  }
+
+  editCollection(newCollectionMovies: CollectionMovieDto): CollectionMovieDto {
+    const collections = this.getCollections()
+
+    const updateCollections = collections.map(item => {
+      if (item.id === newCollectionMovies.id) {
+        return newCollectionMovies
+      }
+      return item
+    })
+
+    this.writeMoviesCollection(updateCollections)
+
+    return newCollectionMovies
   }
 
   setMovieToCollection(movie: MovieDto, collectionName: string) {
@@ -131,24 +177,27 @@ export class ProfileService {
 
     const collection = collections.find(collect => collect.name === collectionName)
 
-    const movieName = collection.movieList.find(name => {
+    const movieList = collection.movieList.map(item => {
       const getCorName = (str: string) => str
         .toLowerCase()
         .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()…]/g, '')
         .trim()
 
-      const compareName = getCorName(name)
+      const compareName = getCorName(item.name)
       const compareMovieName = getCorName(movie.title_ru)
+      const isEqualName = compareName.includes(compareMovieName) || compareName.includes(compareMovieName)
 
-      return compareName.includes(compareMovieName) || compareName.includes(compareMovieName)
+      if (isEqualName) return {
+        ...item,
+        movie
+      }
+
+      return item
     })
-    const moviePosition = collection.movieList.indexOf(movieName)
-
-    collection.movies[moviePosition] = movie
 
     const updateCollection: CollectionMovieDto = {
       ...collection,
-      movies: collection.movies
+      movieList
     }
 
     const updateCollections = [

@@ -1,7 +1,21 @@
 import {ApiProperty} from '@nestjs/swagger'
 import {MovieDto} from './movie.dto'
 
+export class MovieListDto {
+    @ApiProperty()
+    id: number
+
+    @ApiProperty()
+    name: string
+
+    @ApiProperty()
+    movie: MovieDto | null
+}
+
 export class CollectionMovieDto {
+    @ApiProperty()
+    id: string
+
     @ApiProperty()
     name: string
 
@@ -12,8 +26,5 @@ export class CollectionMovieDto {
     rating: number
 
     @ApiProperty()
-    movieList: string[]
-
-    @ApiProperty()
-    movies: MovieDto[]
+    movieList: MovieListDto[]
 }
