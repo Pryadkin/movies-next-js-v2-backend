@@ -172,6 +172,16 @@ export class ProfileService {
     return newCollectionMovies
   }
 
+  deleteCollection(collectionId: string): string {
+    const collections = this.getCollections()
+
+    const updateCollections = collections.filter(item => item.id !== collectionId)
+
+    this.writeMoviesCollection(updateCollections)
+
+    return 'collection deleted'
+  }
+
   setMovieToCollection(movie: MovieDto, collectionName: string) {
     const collections = this.getCollections()
 
